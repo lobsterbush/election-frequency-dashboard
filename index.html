@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Election frequency and its political consequences</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --color-bg:oklch(0.982 0.004 91);
+  --color-paper:oklch(1 0 0);
+  --color-ink:oklch(0.209 0.010 268);
+  --color-ink-2:oklch(0.447 0.034 261);
+  --color-rule:oklch(0.924 0.009 258);
+  --color-accent:oklch(0.345 0.073 254);
+  --color-focus:oklch(0.520 0.074 254);
+  --font-display:"Newsreader",Georgia,serif;
+  --font-body:"IBM Plex Sans",system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,monospace;
+  /* Okabe-Ito, ordered autocracy -> democracy, colour-blind safe */
+  --reg0:#D55E00; --reg1:#E69F00; --reg2:#56B4E9; --reg3:#0072B2;
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px; --s8:64px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--color-bg);color:var(--color-ink);
+  font-family:var(--font-body);font-size:17px;line-height:1.65;
+  font-variant-numeric:tabular-nums;
+}
+.wrap{max-width:1040px;margin:0 auto;padding:0 var(--s5)}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;letter-spacing:-0.015em;line-height:1.15;
+  overflow-wrap:anywhere}
+h1{font-size:clamp(2rem,5vw,3rem);margin:0 0 var(--s3)}
+h2{font-size:clamp(1.4rem,3vw,1.9rem);margin:0 0 var(--s3)}
+h3{font-size:1.15rem;margin:0 0 var(--s2)}
+p{margin:0 0 var(--s4);max-width:65ch}
+a{color:var(--color-accent);text-underline-offset:2px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px}
+.mono{font-family:var(--font-mono)}
+.ink2{color:var(--color-ink-2)}
+
+/* masthead / minimal nav */
+.nav{border-bottom:1px solid var(--color-rule);background:var(--color-paper)}
+.nav .wrap{display:flex;align-items:baseline;justify-content:space-between;
+  padding-top:var(--s3);padding-bottom:var(--s3);gap:var(--s4);flex-wrap:wrap}
+.mark{font-family:var(--font-display);font-weight:600;font-size:1.05rem;letter-spacing:-0.01em}
+.navlinks{display:flex;gap:var(--s5);font-size:0.95rem}
+.navlinks a{text-decoration:none}
+.navlinks a:hover{text-decoration:underline}
+
+header.hero{padding:var(--s8) 0 var(--s6);border-bottom:1px solid var(--color-rule)}
+header.hero p.lead{font-size:1.2rem;color:var(--color-ink-2);max-width:60ch}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:var(--s5);
+  margin-top:var(--s6);border-top:1px solid var(--color-rule);padding-top:var(--s5)}
+.stat .n{font-family:var(--font-display);font-size:2rem;font-weight:600;display:block;line-height:1}
+.stat .l{font-size:0.85rem;color:var(--color-ink-2);margin-top:var(--s1)}
+
+section{padding:var(--s7) 0;border-bottom:1px solid var(--color-rule)}
+.section-lead{max-width:65ch;margin-bottom:var(--s5)}
+
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:var(--s5);align-items:flex-end;margin-bottom:var(--s4)}
+.ctrl-group{display:flex;flex-direction:column;gap:var(--s2)}
+.ctrl-group>span{font-size:0.78rem;letter-spacing:0.02em;color:var(--color-ink-2);
+  text-transform:uppercase;font-family:var(--font-mono)}
+.seg{display:inline-flex;border:1px solid var(--color-rule);background:var(--color-paper)}
+.seg button{font-family:var(--font-body);font-size:0.9rem;padding:var(--s2) var(--s4);
+  border:0;background:transparent;color:var(--color-ink-2);cursor:pointer;
+  transition:background 160ms ease,color 160ms ease}
+.seg button+button{border-left:1px solid var(--color-rule)}
+.seg button[aria-pressed="true"]{background:var(--color-accent);color:#fff}
+.seg button:hover:not([aria-pressed="true"]){background:var(--color-bg)}
+
+.legend{display:flex;flex-wrap:wrap;gap:var(--s2)}
+.legend button{display:inline-flex;align-items:center;gap:var(--s2);cursor:pointer;
+  border:1px solid var(--color-rule);background:var(--color-paper);
+  padding:var(--s1) var(--s3);font-family:var(--font-body);font-size:0.85rem;color:var(--color-ink);
+  transition:opacity 160ms ease}
+.legend button[aria-pressed="false"]{opacity:0.32}
+.legend .dot{width:11px;height:11px;border-radius:50%;flex:none}
+
+input[type=search]{font-family:var(--font-body);font-size:0.9rem;padding:var(--s2) var(--s3);
+  border:1px solid var(--color-rule);background:var(--color-paper);color:var(--color-ink);min-width:180px}
+
+.figure{background:var(--color-paper);border:1px solid var(--color-rule);padding:var(--s5)}
+.figwrap{position:relative;width:100%}
+svg{display:block;width:100%;height:auto;overflow:visible}
+.readout{font-family:var(--font-mono);font-size:0.9rem;color:var(--color-ink-2);margin-top:var(--s3)}
+.caption{font-size:0.86rem;color:var(--color-ink-2);margin-top:var(--s3);max-width:70ch}
+
+.axis line,.axis path{stroke:var(--color-rule)}
+.axis text{fill:var(--color-ink-2);font-family:var(--font-mono);font-size:11px}
+.axis-title{fill:var(--color-ink-2);font-family:var(--font-body);font-size:12px}
+.gridline{stroke:var(--color-rule);stroke-dasharray:2 3;opacity:0.7}
+.fitline{stroke:var(--color-ink);stroke-width:1.6}
+.fitband{fill:var(--color-accent);opacity:0.08}
+.pt{stroke:var(--color-paper);stroke-width:0.8;cursor:pointer;transition:opacity 140ms ease}
+.pt.dim{opacity:0.12}
+.pt.hi{stroke:var(--color-ink);stroke-width:1.6}
+
+.tip{position:absolute;pointer-events:none;background:var(--color-ink);color:#fff;
+  font-size:0.8rem;line-height:1.35;padding:var(--s2) var(--s3);opacity:0;transition:opacity 120ms ease;
+  transform:translate(-50%,-115%);white-space:nowrap;z-index:5;font-variant-numeric:tabular-nums}
+.tip b{font-family:var(--font-display);font-weight:600}
+.tip .k{font-family:var(--font-mono);font-size:0.72rem;color:oklch(0.85 0.02 258)}
+
+.bar-row{cursor:default}
+.bar-lab{fill:var(--color-ink);font-size:12px;font-family:var(--font-body)}
+.bar-lab.hl{font-weight:600;fill:var(--color-accent)}
+.bar-val{fill:#fff;font-size:11px;font-family:var(--font-mono);font-weight:500}
+
+.coefgrid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s6)}
+@media(max-width:720px){.coefgrid{grid-template-columns:1fr}}
+.coeftitle{font-family:var(--font-display);font-weight:600;font-size:1.05rem;margin-bottom:var(--s2)}
+.coef-line{stroke:var(--color-accent);stroke-width:1.4}
+.coef-pt{fill:var(--color-accent)}
+.coef-cc{stroke:var(--reg0);stroke-width:1.4}
+.coef-cc-pt{fill:var(--reg0)}
+.zero{stroke:var(--color-ink-2);stroke-width:1}
+.coef-lab{fill:var(--color-ink-2);font-size:11px;font-family:var(--font-body)}
+
+.methods dl{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:var(--s2) var(--s5);margin:0}
+.methods dt{font-family:var(--font-mono);font-size:0.85rem;color:var(--color-accent)}
+.methods dd{margin:0;color:var(--color-ink-2);font-size:0.95rem}
+@media(max-width:560px){.methods dl{grid-template-columns:1fr}.methods dt{margin-top:var(--s3)}}
+
+footer{padding:var(--s8) 0;background:var(--color-paper)}
+footer .big{font-family:var(--font-display);font-size:1.6rem;font-weight:600;margin-bottom:var(--s2)}
+footer .contact{color:var(--color-ink-2);font-size:0.95rem}
+footer a{text-decoration:none}
+.note{background:var(--color-paper);border:1px solid var(--color-rule);border-left:3px solid var(--color-accent);
+  padding:var(--s4) var(--s5);font-size:0.92rem;color:var(--color-ink-2);margin-top:var(--s5)}
+@media(prefers-reduced-motion:reduce){*{transition-duration:120ms!important}}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+  <span class="mark">Elections &amp; their consequences</span>
+  <span class="navlinks">
+    <a href="#findings">Findings</a>
+    <a href="#methods">Methods</a>
+    <a href="https://charlescrabtree.org">charlescrabtree.org</a>
+  </span>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>How often nations vote, and what it does to them</h1>
+  <p class="lead">A country-year record of national elections since 1945, and a first look at
+  whether voting more often changes political division and political indifference. Explore it below.</p>
+  <div class="stats" id="stats"></div>
+</div></header>
+
+<section id="findings"><div class="wrap">
+  <h2>The two findings, interactively</h2>
+  <p class="section-lead">Each dot is a country, 2000 to 2020. Move between the two outcomes,
+  switch regime types on and off, or hover a country. The fitted line and correlation recompute
+  from whatever is showing, so you can see how much any group is driving the pattern.</p>
+
+  <div class="controls">
+    <div class="ctrl-group"><span>Outcome</span>
+      <div class="seg" id="outcome">
+        <button data-v="t" aria-pressed="true">Turnout (indifference)</button>
+        <button data-v="p" aria-pressed="false">Polarization (division)</button>
+      </div>
+    </div>
+    <div class="ctrl-group"><span>Regime type</span>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="ctrl-group"><span>Find a country</span>
+      <input type="search" id="search" placeholder="e.g. Mongolia" autocomplete="off">
+    </div>
+  </div>
+
+  <div class="figure">
+    <div class="figwrap">
+      <svg id="scatter" viewBox="0 0 720 460" role="img" aria-label="Election frequency vs outcome"></svg>
+      <div class="tip" id="tip"></div>
+    </div>
+    <div class="readout" id="readout"></div>
+    <p class="caption" id="scatter-cap"></p>
+  </div>
+  <div class="note">Descriptive association, not causation. Election frequency is endogenous to regime
+  type: consolidated democracies and electoral autocracies both hold elections often, so a slope is
+  not evidence that elections <em>cause</em> the outcome. That is why regime type is always on the plot.</div>
+</div></section>
+
+<section id="ranking"><div class="wrap">
+  <h2>Who votes most often</h2>
+  <p class="section-lead">National elections per decade, 2000 to 2020, collapsed to one polling
+  occasion per day. Choose how many countries to show; hover for the count.</p>
+  <div class="controls">
+    <div class="ctrl-group"><span>Show top</span>
+      <div class="seg" id="topn">
+        <button data-n="10" aria-pressed="false">10</button>
+        <button data-n="20" aria-pressed="true">20</button>
+        <button data-n="30" aria-pressed="false">30</button>
+      </div>
+    </div>
+  </div>
+  <div class="figure"><div class="figwrap">
+    <svg id="rankingChart" viewBox="0 0 720 620" role="img" aria-label="Top countries by election frequency"></svg>
+    <div class="tip" id="tip2"></div>
+  </div></div>
+</div></section>
+
+<section id="time"><div class="wrap">
+  <h2>Elections over time</h2>
+  <p class="section-lead">National polling occasions worldwide each year, 1945 to 2024. The rise
+  tracks decolonisation, the third wave of democratisation, and the post-communist transitions.</p>
+  <div class="figure"><div class="figwrap">
+    <svg id="timeseries" viewBox="0 0 720 340" role="img" aria-label="Elections per year worldwide"></svg>
+    <div class="tip" id="tip3"></div>
+  </div></div>
+</div></section>
+
+<section id="robustness"><div class="wrap">
+  <h2>Does the pattern hold up</h2>
+  <p class="section-lead">The frequency coefficient (per one standard deviation) with country and
+  year fixed effects, standard errors clustered by country. Turnout stays negative across every
+  recent-frequency measure; division sits near zero and changes sign. Left of the line means more
+  elections predict lower turnout or less division.</p>
+  <div class="coefgrid">
+    <div><div class="coeftitle">Indifference: turnout (pp)</div>
+      <svg id="coef-turnout" viewBox="0 0 460 260" role="img" aria-label="Turnout robustness coefficients"></svg></div>
+    <div><div class="coeftitle">Division: polarization</div>
+      <svg id="coef-division" viewBox="0 0 460 260" role="img" aria-label="Division robustness coefficients"></svg></div>
+  </div>
+</div></section>
+
+<section id="imputation"><div class="wrap">
+  <h2>With the missing data filled in</h2>
+  <p class="section-lead">Multiple imputation (Amelia, m set to the maximum missingness) pooled with
+  Rubin's rules, so imputation uncertainty is carried into the intervals, against the complete-case
+  estimate. Standard errors clustered by country, the treatment level.</p>
+  <div class="coefgrid">
+    <div><div class="coeftitle">Division (polarization)</div>
+      <svg id="imp-division" viewBox="0 0 460 170" role="img" aria-label="Division: imputation vs complete case"></svg></div>
+    <div><div class="coeftitle">Indifference (turnout)</div>
+      <svg id="imp-turnout" viewBox="0 0 460 170" role="img" aria-label="Turnout: imputation vs complete case"></svg></div>
+  </div>
+</div></section>
+
+<section id="methods" class="methods"><div class="wrap">
+  <h2>What's behind the numbers</h2>
+  <p class="section-lead">Everything here is real, drawn straight from the analysis outputs. Sources
+  are attributed; nothing is invented.</p>
+  <dl>
+    <dt>National election</dt><dd>Elections choosing national legislative or executive
+      representatives. Same-day contests count once (one polling occasion per day). Referendums excluded.</dd>
+    <dt>Frequency</dt><dd>Rolling count of polling occasions over the past ten years.</dd>
+    <dt>Division</dt><dd>V-Dem political polarization (v2cacamps), higher means more divided.</dd>
+    <dt>Indifference</dt><dd>Voter turnout, share of registered voters. Lower turnout is the proxy.</dd>
+    <dt>Sources</dt><dd>NELDA 6.0 (1945–2020), International IDEA voter turnout (extension and
+      turnout, to 2026), V-Dem v14 (outcomes and covariates), World Bank (robustness covariates).</dd>
+    <dt>Inference</dt><dd>Country and year fixed effects; standard errors clustered by country;
+      missing values multiply imputed with Rubin pooling.</dd>
+    <dt>Caveat</dt><dd>Descriptive associations, not causal estimates. Frequency is endogenous to
+      regime type.</dd>
+  </dl>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="big">National elections frequency and its political consequences</div>
+  <div class="contact">Charles Crabtree, with Kiyoteru Tsutsui, Daisuke Asahara, and Liang-Yu Ko ·
+    <a href="https://charlescrabtree.org">charlescrabtree.org</a></div>
+</div></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
