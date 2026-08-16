@@ -9,1710 +9,3504 @@ const DASH = {
     "generated": "2026-08-17"
   },
   "regimes": ["Closed autocracy", "Electoral autocracy", "Electoral democracy", "Liberal democracy"],
-  "countries": [
+  "windows": [
     {
-      "c": "Afghanistan",
-      "iso": "AFG",
-      "reg": 1,
-      "f": 2.48,
-      "t": 45.8,
-      "p": 0.14,
-      "poly": 0.309
+      "key": "1945",
+      "label": "Since 1945",
+      "range": "1945–2024"
     },
     {
-      "c": "Angola",
-      "iso": "AGO",
-      "reg": 1,
-      "f": 1.19,
-      "t": 73.9,
-      "p": -0.21,
-      "poly": 0.239
-    },
-    {
-      "c": "Albania",
-      "iso": "ALB",
-      "reg": 2,
-      "f": 2.76,
-      "t": 50.9,
-      "p": -1.37,
-      "poly": 0.517
-    },
-    {
-      "c": "Andorra",
-      "iso": "AND",
-      "reg": null,
-      "f": 2.86,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Argentina",
-      "iso": "ARG",
-      "reg": 2,
-      "f": 4.9,
-      "t": 76,
-      "p": 1.1,
-      "poly": 0.787
-    },
-    {
-      "c": "Armenia",
-      "iso": "ARM",
-      "reg": 1,
-      "f": 4.43,
-      "t": 61.5,
-      "p": 0.88,
-      "poly": 0.404
-    },
-    {
-      "c": "Antigua & Barbuda",
-      "iso": "ATG",
-      "reg": null,
-      "f": 2.05,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Australia",
-      "iso": "AUS",
-      "reg": 3,
-      "f": 3.43,
-      "t": 93.3,
-      "p": -1.15,
-      "poly": 0.875
-    },
-    {
-      "c": "Austria",
-      "iso": "AUT",
-      "reg": 3,
-      "f": 4.62,
-      "t": 74.6,
-      "p": -0.49,
-      "poly": 0.866
-    },
-    {
-      "c": "Azerbaijan",
-      "iso": "AZE",
-      "reg": 1,
-      "f": 5.1,
-      "t": 61.4,
-      "p": 0.39,
-      "poly": 0.213
-    },
-    {
-      "c": "Burundi",
-      "iso": "BDI",
-      "reg": 1,
-      "f": 2.33,
-      "t": 79.1,
-      "p": 1.5,
-      "poly": 0.255
-    },
-    {
-      "c": "Belgium",
-      "iso": "BEL",
-      "reg": 3,
-      "f": 2.57,
-      "t": 89.9,
-      "p": -1.85,
-      "poly": 0.896
-    },
-    {
-      "c": "Benin",
-      "iso": "BEN",
-      "reg": 2,
-      "f": 4.52,
-      "t": 65.5,
-      "p": -1.04,
-      "poly": 0.612
-    },
-    {
-      "c": "Burkina Faso",
-      "iso": "BFA",
-      "reg": 2,
-      "f": 3.52,
-      "t": 60,
-      "p": -0.76,
-      "poly": 0.564
-    },
-    {
-      "c": "Bangladesh",
-      "iso": "BGD",
-      "reg": 1,
-      "f": 2,
-      "t": 72.9,
-      "p": 1.15,
-      "poly": 0.364
-    },
-    {
-      "c": "Bulgaria",
-      "iso": "BGR",
-      "reg": 2,
-      "f": 4.95,
-      "t": 54.8,
-      "p": -1.19,
-      "poly": 0.677
-    },
-    {
-      "c": "Bahrain",
-      "iso": "BHR",
-      "reg": 0,
-      "f": 1.9,
-      "t": 62.3,
-      "p": 1.46,
-      "poly": 0.165
-    },
-    {
-      "c": "Bahamas",
-      "iso": "BHS",
-      "reg": null,
-      "f": 2,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Bosnia and Herzegovina",
-      "iso": "BIH",
-      "reg": 2,
-      "f": 3.05,
-      "t": 55.8,
-      "p": 1.26,
-      "poly": 0.585
-    },
-    {
-      "c": "Belarus",
-      "iso": "BLR",
-      "reg": 1,
-      "f": 4.38,
-      "t": 81.2,
-      "p": 1.24,
-      "poly": 0.24
-    },
-    {
-      "c": "Belize",
-      "iso": "BLZ",
-      "reg": null,
-      "f": 2.24,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Bolivia",
-      "iso": "BOL",
-      "reg": 2,
-      "f": 3.33,
-      "t": 85.7,
-      "p": 0.91,
-      "poly": 0.663
-    },
-    {
-      "c": "Brazil",
-      "iso": "BRA",
-      "reg": 2,
-      "f": 2.48,
-      "t": 81.5,
-      "p": 0.04,
-      "poly": 0.837
-    },
-    {
-      "c": "Barbados",
-      "iso": "BRB",
-      "reg": 2,
-      "f": 2.14,
-      "t": 61.4,
-      "p": -3.39,
-      "poly": 0.776
-    },
-    {
-      "c": "Bhutan",
-      "iso": "BTN",
-      "reg": 2,
-      "f": 3,
-      "t": 72.3,
-      "p": -1.3,
-      "poly": 0.55
-    },
-    {
-      "c": "Botswana",
-      "iso": "BWA",
-      "reg": 3,
-      "f": 2,
-      "t": 80.2,
-      "p": -1.81,
-      "poly": 0.696
-    },
-    {
-      "c": "Central African Republic",
-      "iso": "CAF",
-      "reg": 1,
-      "f": 2.57,
-      "t": 58.1,
-      "p": 0.88,
-      "poly": 0.329
-    },
-    {
-      "c": "Canada",
-      "iso": "CAN",
-      "reg": 3,
-      "f": 3.24,
-      "t": 63.3,
-      "p": -1.41,
-      "poly": 0.831
-    },
-    {
-      "c": "Switzerland",
-      "iso": "CHE",
-      "reg": 3,
-      "f": 2.52,
-      "t": 47.2,
-      "p": -1.75,
-      "poly": 0.897
-    },
-    {
-      "c": "Chile",
-      "iso": "CHL",
-      "reg": 3,
-      "f": 4.33,
-      "t": 77.8,
-      "p": -1.5,
-      "poly": 0.881
-    },
-    {
-      "c": "Cote d'Ivoire",
-      "iso": "CIV",
-      "reg": 1,
-      "f": 3.43,
-      "t": 49.8,
-      "p": 1.03,
-      "poly": 0.458
-    },
-    {
-      "c": "Cameroon",
-      "iso": "CMR",
-      "reg": 1,
-      "f": 3.71,
-      "t": 64.2,
-      "p": 1.13,
-      "poly": 0.312
-    },
-    {
-      "c": "Congo, Democratic Republic of",
-      "iso": "COD",
-      "reg": 1,
-      "f": 1.1,
-      "t": 58.3,
-      "p": 0.86,
-      "poly": 0.288
-    },
-    {
-      "c": "Congo",
-      "iso": "COG",
-      "reg": 1,
-      "f": 3.1,
-      "t": 62.7,
-      "p": 0.21,
-      "poly": 0.243
-    },
-    {
-      "c": "Colombia",
-      "iso": "COL",
-      "reg": 2,
-      "f": 5,
-      "t": 48.4,
-      "p": 0.78,
-      "poly": 0.617
-    },
-    {
-      "c": "Comoros",
-      "iso": "COM",
-      "reg": 1,
-      "f": 3.86,
-      "t": 66.2,
-      "p": 0.71,
-      "poly": 0.401
-    },
-    {
-      "c": "Cabo Verde",
-      "iso": "CPV",
-      "reg": 2,
-      "f": 3.95,
-      "t": 63.8,
-      "p": -0.88,
-      "poly": 0.785
-    },
-    {
-      "c": "Costa Rica",
-      "iso": "CRI",
-      "reg": 3,
-      "f": 2.48,
-      "t": 67.6,
-      "p": -1.42,
-      "poly": 0.902
-    },
-    {
-      "c": "Cuba",
-      "iso": "CUB",
-      "reg": 0,
-      "f": 2,
-      "t": 92.8,
-      "p": -0.45,
-      "poly": 0.146
-    },
-    {
-      "c": "Cyprus",
-      "iso": "CYP",
-      "reg": 3,
-      "f": 4,
-      "t": 83.1,
-      "p": 0.36,
-      "poly": 0.832
-    },
-    {
-      "c": "Czech Republic",
-      "iso": "CZE",
-      "reg": 3,
-      "f": 7.67,
-      "t": 62.3,
-      "p": -1.73,
-      "poly": 0.873
-    },
-    {
-      "c": "German Federal Republic",
-      "iso": "DEU",
-      "reg": 3,
-      "f": 2.57,
-      "t": 75,
-      "p": -2.06,
-      "poly": 0.894
-    },
-    {
-      "c": "Djibouti",
-      "iso": "DJI",
-      "reg": 1,
-      "f": 3.67,
-      "t": 67.9,
-      "p": 0.19,
-      "poly": 0.249
-    },
-    {
-      "c": "Dominica",
-      "iso": "DMA",
-      "reg": null,
-      "f": 1.76,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Denmark",
-      "iso": "DNK",
-      "reg": 3,
-      "f": 2.86,
-      "t": 86.1,
-      "p": -3,
-      "poly": 0.918
-    },
-    {
-      "c": "Dominican Republic",
-      "iso": "DOM",
-      "reg": 2,
-      "f": 4.43,
-      "t": 64.4,
-      "p": -0.36,
-      "poly": 0.613
-    },
-    {
-      "c": "Algeria",
-      "iso": "DZA",
-      "reg": 1,
-      "f": 4,
-      "t": 48,
-      "p": -1.19,
-      "poly": 0.32
-    },
-    {
-      "c": "Ecuador",
-      "iso": "ECU",
-      "reg": 2,
-      "f": 3.76,
-      "t": 76.5,
-      "p": 1.08,
-      "poly": 0.626
-    },
-    {
-      "c": "Egypt",
-      "iso": "EGY",
-      "reg": 1,
-      "f": 5.43,
-      "t": 40.5,
-      "p": -0.18,
-      "poly": 0.199
-    },
-    {
-      "c": "Spain",
-      "iso": "ESP",
-      "reg": 3,
-      "f": 3.05,
-      "t": 72.5,
-      "p": -1.17,
-      "poly": 0.875
-    },
-    {
-      "c": "Estonia",
-      "iso": "EST",
-      "reg": 3,
-      "f": 2.57,
-      "t": 62.3,
-      "p": -1.36,
-      "poly": 0.882
-    },
-    {
-      "c": "Ethiopia",
-      "iso": "ETH",
-      "reg": 1,
-      "f": 2.14,
-      "t": 89.8,
-      "p": 0.81,
-      "poly": 0.247
-    },
-    {
-      "c": "Finland",
-      "iso": "FIN",
-      "reg": 3,
-      "f": 4.24,
-      "t": 69.6,
-      "p": -1.5,
-      "poly": 0.878
-    },
-    {
-      "c": "Fiji",
-      "iso": "FJI",
-      "reg": 1,
-      "f": 2.14,
-      "t": 75.4,
-      "p": -0.67,
-      "poly": 0.308
-    },
-    {
-      "c": "France",
-      "iso": "FRA",
-      "reg": 3,
-      "f": 3.86,
-      "t": 80.4,
-      "p": 0.11,
-      "poly": 0.88
-    },
-    {
-      "c": "Federated States of Micronesia",
-      "iso": "FSM",
-      "reg": null,
-      "f": 4.62,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Gabon",
-      "iso": "GAB",
-      "reg": 1,
-      "f": 3.57,
-      "t": 52,
-      "p": -0.66,
-      "poly": 0.363
-    },
-    {
-      "c": "United Kingdom",
-      "iso": "GBR",
-      "reg": 3,
-      "f": 2.43,
-      "t": 64.8,
-      "p": -0.63,
-      "poly": 0.864
-    },
-    {
-      "c": "Georgia",
-      "iso": "GEO",
-      "reg": 2,
-      "f": 4.86,
-      "t": 61.2,
-      "p": 1.16,
-      "poly": 0.545
-    },
-    {
-      "c": "Ghana",
-      "iso": "GHA",
-      "reg": 3,
-      "f": 2.62,
-      "t": 74.4,
-      "p": -0.47,
-      "poly": 0.739
-    },
-    {
-      "c": "Guinea",
-      "iso": "GIN",
-      "reg": 1,
-      "f": 2.95,
-      "t": 72.2,
-      "p": 1.27,
-      "poly": 0.295
-    },
-    {
-      "c": "Gambia",
-      "iso": "GMB",
-      "reg": 1,
-      "f": 3.95,
-      "t": 56.2,
-      "p": -0.66,
-      "poly": 0.299
-    },
-    {
-      "c": "Guinea-Bissau",
-      "iso": "GNB",
-      "reg": 1,
-      "f": 3.95,
-      "t": 75.7,
-      "p": -0.79,
-      "poly": 0.442
-    },
-    {
-      "c": "Equatorial Guinea",
-      "iso": "GNQ",
-      "reg": 1,
-      "f": 3.57,
-      "t": 92.9,
-      "p": 0.86,
-      "poly": 0.182
-    },
-    {
-      "c": "Greece",
-      "iso": "GRC",
-      "reg": 3,
-      "f": 3.86,
-      "t": 69,
-      "p": -1.09,
-      "poly": 0.883
-    },
-    {
-      "c": "Grenada",
-      "iso": "GRD",
-      "reg": null,
-      "f": 2.14,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Guatemala",
-      "iso": "GTM",
-      "reg": 2,
-      "f": 3,
-      "t": 63.6,
-      "p": -0.7,
-      "poly": 0.579
-    },
-    {
-      "c": "Guyana",
-      "iso": "GUY",
-      "reg": 2,
-      "f": 2.19,
-      "t": 75.6,
-      "p": 1.15,
-      "poly": 0.597
-    },
-    {
-      "c": "Honduras",
-      "iso": "HND",
-      "reg": 1,
-      "f": 2.48,
-      "t": 58.4,
-      "p": -0.74,
-      "poly": 0.467
-    },
-    {
-      "c": "Croatia",
-      "iso": "HRV",
-      "reg": 2,
-      "f": 5.67,
-      "t": 55.3,
-      "p": 0.42,
-      "poly": 0.787
-    },
-    {
-      "c": "Haiti",
-      "iso": "HTI",
-      "reg": 1,
-      "f": 4.05,
-      "t": 38.3,
-      "p": 0.99,
-      "poly": 0.398
-    },
-    {
-      "c": "Hungary",
-      "iso": "HUN",
-      "reg": 2,
-      "f": 2.48,
-      "t": 67.4,
-      "p": 1.34,
-      "poly": 0.735
-    },
-    {
-      "c": "Indonesia",
-      "iso": "IDN",
-      "reg": 2,
-      "f": 3.52,
-      "t": 78.3,
-      "p": 0.65,
-      "poly": 0.668
-    },
-    {
-      "c": "India",
-      "iso": "IND",
-      "reg": 2,
-      "f": 2.52,
-      "t": 62.5,
-      "p": 0.44,
-      "poly": 0.636
-    },
-    {
-      "c": "Ireland",
-      "iso": "IRL",
-      "reg": 3,
-      "f": 3.1,
-      "t": 61.9,
-      "p": -3.37,
-      "poly": 0.893
-    },
-    {
-      "c": "Iran",
-      "iso": "IRN",
-      "reg": 1,
-      "f": 5.33,
-      "t": 63.3,
-      "p": 0.98,
-      "poly": 0.186
-    },
-    {
-      "c": "Iraq",
-      "iso": "IRQ",
-      "reg": 1,
-      "f": 2.9,
-      "t": 72.7,
-      "p": 1.8,
-      "poly": 0.341
-    },
-    {
-      "c": "Iceland",
-      "iso": "ISL",
-      "reg": 3,
-      "f": 4.9,
-      "t": 77.5,
-      "p": -0.77,
-      "poly": 0.871
-    },
-    {
-      "c": "Israel",
-      "iso": "ISR",
-      "reg": 3,
-      "f": 3.24,
-      "t": 67.7,
-      "p": 0.56,
-      "poly": 0.748
-    },
-    {
-      "c": "Italy",
-      "iso": "ITA",
-      "reg": 3,
-      "f": 2.52,
-      "t": 78.7,
-      "p": 0.23,
-      "poly": 0.857
-    },
-    {
-      "c": "Jamaica",
-      "iso": "JAM",
-      "reg": 2,
-      "f": 2.19,
-      "t": 51.5,
-      "p": -1.32,
-      "poly": 0.772
-    },
-    {
-      "c": "Jordan",
-      "iso": "JOR",
-      "reg": 0,
-      "f": 2.57,
-      "t": 47.9,
-      "p": -1.04,
-      "poly": 0.236
-    },
-    {
-      "c": "Japan",
-      "iso": "JPN",
-      "reg": 3,
-      "f": 6.24,
-      "t": 60.4,
-      "p": -1.9,
-      "poly": 0.842
-    },
-    {
-      "c": "Kazakhstan",
-      "iso": "KAZ",
-      "reg": 1,
-      "f": 4.48,
-      "t": 77.1,
-      "p": -0.49,
-      "poly": 0.242
-    },
-    {
-      "c": "Kenya",
-      "iso": "KEN",
-      "reg": 1,
-      "f": 2.14,
-      "t": 72.9,
-      "p": 0.22,
-      "poly": 0.475
-    },
-    {
-      "c": "Kyrgyz Republic",
-      "iso": "KGZ",
-      "reg": 1,
-      "f": 4.86,
-      "t": 66,
-      "p": -0.33,
-      "poly": 0.375
-    },
-    {
-      "c": "Cambodia",
-      "iso": "KHM",
-      "reg": 1,
-      "f": 2,
-      "t": 77.5,
-      "p": 0.04,
-      "poly": 0.291
-    },
-    {
-      "c": "Kiribati",
-      "iso": "KIR",
-      "reg": null,
-      "f": 5.38,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Saint Kitts and Nevis",
-      "iso": "KNA",
-      "reg": null,
-      "f": 2.1,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Korea, Republic of",
-      "iso": "KOR",
-      "reg": 3,
-      "f": 4.52,
-      "t": 63.8,
-      "p": 0.17,
-      "poly": 0.804
-    },
-    {
-      "c": "Kuwait",
-      "iso": "KWT",
-      "reg": 0,
-      "f": 4.24,
-      "t": 64.5,
-      "p": -1.4,
-      "poly": 0.311
-    },
-    {
-      "c": "Lao People's Dem. Republic",
-      "iso": "LAO",
-      "reg": 0,
-      "f": 2.1,
-      "t": 99.3,
-      "p": -0.52,
-      "poly": 0.097
-    },
-    {
-      "c": "Lebanon",
-      "iso": "LBN",
-      "reg": 1,
-      "f": 1.95,
-      "t": 48.8,
-      "p": 1.09,
-      "poly": 0.435
-    },
-    {
-      "c": "Liberia",
-      "iso": "LBR",
-      "reg": 2,
-      "f": 1.86,
-      "t": 74.4,
-      "p": 0.33,
-      "poly": 0.541
-    },
-    {
-      "c": "Libya",
-      "iso": "LBY",
-      "reg": 0,
-      "f": 1.1,
-      "t": 55.6,
-      "p": 1.38,
-      "poly": 0.179
-    },
-    {
-      "c": "Saint Lucia",
-      "iso": "LCA",
-      "reg": null,
-      "f": 2.1,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Liechtenstein",
-      "iso": "LIE",
-      "reg": null,
-      "f": 2.62,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Sri Lanka",
-      "iso": "LKA",
-      "reg": 1,
-      "f": 4.1,
-      "t": 77,
-      "p": 0.43,
-      "poly": 0.474
-    },
-    {
-      "c": "Lesotho",
-      "iso": "LSO",
-      "reg": 2,
-      "f": 1.9,
-      "t": 51.7,
-      "p": 0.16,
-      "poly": 0.566
-    },
-    {
-      "c": "Lithuania",
-      "iso": "LTU",
-      "reg": 3,
-      "f": 5.71,
-      "t": 52.6,
-      "p": -2.84,
-      "poly": 0.825
-    },
-    {
-      "c": "Luxembourg",
-      "iso": "LUX",
-      "reg": 3,
-      "f": 2.1,
-      "t": 90.9,
-      "p": -2.32,
-      "poly": 0.874
-    },
-    {
-      "c": "Latvia",
-      "iso": "LVA",
-      "reg": 2,
-      "f": 3.14,
-      "t": 61.6,
-      "p": -2.48,
-      "poly": 0.819
-    },
-    {
-      "c": "Morocco",
-      "iso": "MAR",
-      "reg": 0,
-      "f": 2.14,
-      "t": 44.3,
-      "p": -0.67,
-      "poly": 0.256
-    },
-    {
-      "c": "Monaco",
-      "iso": "MCO",
-      "reg": null,
-      "f": 2,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Moldova",
-      "iso": "MDA",
-      "reg": 2,
-      "f": 4,
-      "t": 59.3,
-      "p": -0.23,
-      "poly": 0.537
-    },
-    {
-      "c": "Madagascar",
-      "iso": "MDG",
-      "reg": 1,
-      "f": 3.95,
-      "t": 58.7,
-      "p": 1.05,
-      "poly": 0.425
-    },
-    {
-      "c": "Maldives",
-      "iso": "MDV",
-      "reg": 1,
-      "f": 4.38,
-      "t": 81,
-      "p": 0.54,
-      "poly": 0.38
-    },
-    {
-      "c": "Mexico",
-      "iso": "MEX",
-      "reg": 2,
-      "f": 3.33,
-      "t": 57.6,
-      "p": 0.03,
-      "poly": 0.662
-    },
-    {
-      "c": "Marshall Islands",
-      "iso": "MHL",
-      "reg": null,
-      "f": 2.52,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Macedonia (FYROM)",
-      "iso": "MKD",
-      "reg": 2,
-      "f": 4.9,
-      "t": 58.2,
-      "p": 1.08,
-      "poly": 0.53
-    },
-    {
-      "c": "Mali",
-      "iso": "MLI",
-      "reg": 2,
-      "f": 4.05,
-      "t": 40.4,
-      "p": 0.33,
-      "poly": 0.545
-    },
-    {
-      "c": "Malta",
-      "iso": "MLT",
-      "reg": 2,
-      "f": 2.29,
-      "t": 93.5,
-      "p": 1.06,
-      "poly": 0.789
-    },
-    {
-      "c": "Myanmar",
-      "iso": "MMR",
-      "reg": 0,
-      "f": 0.81,
-      "t": 73,
-      "p": 1.42,
-      "poly": 0.224
-    },
-    {
-      "c": "Montenegro",
-      "iso": "MNE",
-      "reg": 1,
-      "f": 3.54,
-      "t": 69,
-      "p": 0.82,
-      "poly": 0.478
-    },
-    {
-      "c": "Mongolia",
-      "iso": "MNG",
-      "reg": 2,
-      "f": 5,
-      "t": 74.3,
-      "p": 0.14,
-      "poly": 0.672
-    },
-    {
-      "c": "Mozambique",
-      "iso": "MOZ",
-      "reg": 1,
-      "f": 2,
-      "t": 45.3,
-      "p": -0.82,
-      "poly": 0.43
-    },
-    {
-      "c": "Mauritania",
-      "iso": "MRT",
-      "reg": 1,
-      "f": 4.14,
-      "t": 65.6,
-      "p": -0.97,
-      "poly": 0.38
-    },
-    {
-      "c": "Mauritius",
-      "iso": "MUS",
-      "reg": 3,
-      "f": 2.14,
-      "t": 78.3,
-      "p": 0.79,
-      "poly": 0.728
-    },
-    {
-      "c": "Malawi",
-      "iso": "MWI",
-      "reg": 1,
-      "f": 2.14,
-      "t": 70.4,
-      "p": -0.84,
-      "poly": 0.498
-    },
-    {
-      "c": "Malaysia",
-      "iso": "MYS",
-      "reg": 1,
-      "f": 2.14,
-      "t": 79.3,
-      "p": 1.12,
-      "poly": 0.335
-    },
-    {
-      "c": "Namibia",
-      "iso": "NAM",
-      "reg": 2,
-      "f": 2,
-      "t": 72.5,
-      "p": -0.62,
-      "poly": 0.66
-    },
-    {
-      "c": "Niger",
-      "iso": "NER",
-      "reg": 2,
-      "f": 4.14,
-      "t": 57.2,
-      "p": -0.97,
-      "poly": 0.544
-    },
-    {
-      "c": "Nigeria",
-      "iso": "NGA",
-      "reg": 1,
-      "f": 4.24,
-      "t": 51.7,
-      "p": -0.91,
-      "poly": 0.48
-    },
-    {
-      "c": "Nicaragua",
-      "iso": "NIC",
-      "reg": 1,
-      "f": 1.95,
-      "t": 70.2,
-      "p": 0.24,
-      "poly": 0.427
-    },
-    {
-      "c": "Netherlands",
-      "iso": "NLD",
-      "reg": 3,
-      "f": 3.1,
-      "t": 78.6,
-      "p": -1.31,
-      "poly": 0.868
-    },
-    {
-      "c": "Norway",
-      "iso": "NOR",
-      "reg": 3,
-      "f": 2.48,
-      "t": 77.1,
-      "p": -2.29,
-      "poly": 0.893
-    },
-    {
-      "c": "Nepal",
-      "iso": "NPL",
-      "reg": 1,
-      "f": 1.71,
-      "t": 70.1,
-      "p": 1,
-      "poly": 0.447
-    },
-    {
-      "c": "Nauru",
-      "iso": "NRU",
-      "reg": null,
-      "f": 4.71,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "New Zealand",
-      "iso": "NZL",
-      "reg": 3,
-      "f": 3.33,
-      "t": 78.6,
-      "p": -2.52,
-      "poly": 0.886
-    },
-    {
-      "c": "Oman",
-      "iso": "OMN",
-      "reg": 0,
-      "f": 2.11,
-      "t": 61.1,
-      "p": -2.04,
-      "poly": 0.166
-    },
-    {
-      "c": "Pakistan",
-      "iso": "PAK",
-      "reg": 1,
-      "f": 2.43,
-      "t": 52.5,
-      "p": -0.78,
-      "poly": 0.383
-    },
-    {
-      "c": "Panama",
-      "iso": "PAN",
-      "reg": 2,
-      "f": 2.05,
-      "t": 73.8,
-      "p": -0.87,
-      "poly": 0.739
-    },
-    {
-      "c": "Peru",
-      "iso": "PER",
-      "reg": 2,
-      "f": 2.52,
-      "t": 82.9,
-      "p": -0.05,
-      "poly": 0.782
-    },
-    {
-      "c": "Philippines",
-      "iso": "PHL",
-      "reg": 2,
-      "f": 3.33,
-      "t": 75.8,
-      "p": -1.15,
-      "poly": 0.51
-    },
-    {
-      "c": "Palau",
-      "iso": "PLW",
-      "reg": null,
-      "f": 3.38,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Papua New Guinea",
-      "iso": "PNG",
-      "reg": 1,
-      "f": 2,
-      "t": 64.3,
-      "p": -1.56,
-      "poly": 0.476
-    },
-    {
-      "c": "Poland",
-      "iso": "POL",
-      "reg": 3,
-      "f": 4.81,
-      "t": 55.7,
-      "p": 1.53,
-      "poly": 0.836
-    },
-    {
-      "c": "North Korea",
-      "iso": "PRK",
-      "reg": 0,
-      "f": 1.67,
-      "t": 100,
-      "p": -1,
-      "poly": 0.084
-    },
-    {
-      "c": "Portugal",
-      "iso": "PRT",
-      "reg": 3,
-      "f": 5,
-      "t": 56.6,
-      "p": -2.22,
-      "poly": 0.887
-    },
-    {
-      "c": "Paraguay",
-      "iso": "PRY",
-      "reg": 2,
-      "f": 2.52,
-      "t": 63.5,
-      "p": -1.15,
-      "poly": 0.591
-    },
-    {
-      "c": "Romania",
-      "iso": "ROU",
-      "reg": 2,
-      "f": 4.33,
-      "t": 50.1,
-      "p": 0.2,
-      "poly": 0.66
-    },
-    {
-      "c": "Russia (Soviet Union)",
-      "iso": "RUS",
-      "reg": 1,
-      "f": 4.81,
-      "t": 62.5,
-      "p": 0.23,
-      "poly": 0.304
-    },
-    {
-      "c": "Rwanda",
-      "iso": "RWA",
-      "reg": 1,
-      "f": 2.62,
-      "t": 97.1,
-      "p": 0.74,
-      "poly": 0.197
-    },
-    {
-      "c": "Saudi Arabia",
-      "iso": "SAU",
-      "reg": 0,
-      "f": 1,
-      "t": null,
-      "p": -1.3,
-      "poly": 0.015
-    },
-    {
-      "c": "Sudan",
-      "iso": "SDN",
-      "reg": 1,
-      "f": 1.52,
-      "t": 59.2,
-      "p": 1.04,
-      "poly": 0.203
-    },
-    {
-      "c": "Senegal",
-      "iso": "SEN",
-      "reg": 2,
-      "f": 3.71,
-      "t": 62.7,
-      "p": -1.1,
-      "poly": 0.692
-    },
-    {
-      "c": "Singapore",
-      "iso": "SGP",
-      "reg": 1,
-      "f": 2.76,
-      "t": 94.5,
-      "p": -1,
-      "poly": 0.397
-    },
-    {
-      "c": "Solomon Islands",
-      "iso": "SLB",
-      "reg": 2,
-      "f": 2.33,
-      "t": 65.7,
-      "p": -1.56,
-      "poly": 0.531
-    },
-    {
-      "c": "Sierra Leone",
-      "iso": "SLE",
-      "reg": 2,
-      "f": 1.81,
-      "t": 83.2,
-      "p": 0.39,
-      "poly": 0.492
-    },
-    {
-      "c": "El Salvador",
-      "iso": "SLV",
-      "reg": 2,
-      "f": 5.14,
-      "t": 50.6,
-      "p": 0.83,
-      "poly": 0.592
-    },
-    {
-      "c": "San Marino",
-      "iso": "SMR",
-      "reg": null,
-      "f": 2.71,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Somalia",
-      "iso": "SOM",
-      "reg": 0,
-      "f": 0,
-      "t": null,
-      "p": 2.25,
-      "poly": 0.172
-    },
-    {
-      "c": "Serbia",
-      "iso": "SRB",
-      "reg": 2,
-      "f": 5.52,
-      "t": 57.6,
-      "p": -0.14,
-      "poly": 0.528
-    },
-    {
-      "c": "Sao Tome and Principe",
-      "iso": "STP",
-      "reg": 2,
-      "f": 4.52,
-      "t": 73.3,
-      "p": -2.05,
-      "poly": 0.671
-    },
-    {
-      "c": "Surinam",
-      "iso": "SUR",
-      "reg": 2,
-      "f": 2.1,
-      "t": 66.8,
-      "p": -1.2,
-      "poly": 0.767
-    },
-    {
-      "c": "Slovakia",
-      "iso": "SVK",
-      "reg": 3,
-      "f": 4.14,
-      "t": 56.7,
-      "p": -0.75,
-      "poly": 0.842
-    },
-    {
-      "c": "Slovenia",
-      "iso": "SVN",
-      "reg": 3,
-      "f": 4.67,
-      "t": 58.7,
-      "p": 0.48,
-      "poly": 0.841
-    },
-    {
-      "c": "Sweden",
-      "iso": "SWE",
-      "reg": 3,
-      "f": 2.52,
-      "t": 83.9,
-      "p": -2.1,
-      "poly": 0.913
-    },
-    {
-      "c": "Swaziland",
-      "iso": "SWZ",
-      "reg": 0,
-      "f": 2,
-      "t": 60.5,
-      "p": 1.31,
-      "poly": 0.129
-    },
-    {
-      "c": "Seychelles",
-      "iso": "SYC",
-      "reg": 2,
-      "f": 4.05,
-      "t": 88,
-      "p": 0.33,
-      "poly": 0.488
-    },
-    {
-      "c": "Syria",
-      "iso": "SYR",
-      "reg": 1,
-      "f": 3.76,
-      "t": 67,
-      "p": 2.02,
-      "poly": 0.144
-    },
-    {
-      "c": "Chad",
-      "iso": "TCD",
-      "reg": 1,
-      "f": 3.24,
-      "t": 57.8,
-      "p": 1.71,
-      "poly": 0.279
-    },
-    {
-      "c": "Togo",
-      "iso": "TGO",
-      "reg": 1,
-      "f": 4.38,
-      "t": 70.1,
-      "p": 1.64,
-      "poly": 0.394
-    },
-    {
-      "c": "Thailand",
-      "iso": "THA",
-      "reg": 1,
-      "f": 4.95,
-      "t": 70,
-      "p": 1.66,
-      "poly": 0.354
-    },
-    {
-      "c": "Tajikistan",
-      "iso": "TJK",
-      "reg": 1,
-      "f": 3.57,
-      "t": 89.6,
-      "p": -0.99,
-      "poly": 0.215
-    },
-    {
-      "c": "Turkmenistan",
-      "iso": "TKM",
-      "reg": 0,
-      "f": 4.14,
-      "t": 92.4,
-      "p": -2.37,
-      "poly": 0.12
-    },
-    {
-      "c": "East Timor",
-      "iso": "TLS",
-      "reg": 2,
-      "f": 3.5,
-      "t": 79.2,
-      "p": -0.23,
-      "poly": 0.65
-    },
-    {
-      "c": "Tonga",
-      "iso": "TON",
-      "reg": null,
-      "f": 3.29,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Trinidad and Tobago",
-      "iso": "TTO",
-      "reg": 3,
-      "f": 3,
-      "t": 65.6,
-      "p": -2.04,
-      "poly": 0.758
-    },
-    {
-      "c": "Tunisia",
-      "iso": "TUN",
-      "reg": 1,
-      "f": 2.9,
-      "t": 79.1,
-      "p": 0.69,
-      "poly": 0.43
-    },
-    {
-      "c": "Turkey",
-      "iso": "TUR",
-      "reg": 2,
-      "f": 3.19,
-      "t": 82.8,
-      "p": 1.84,
-      "poly": 0.499
-    },
-    {
-      "c": "Tuvalu",
-      "iso": "TUV",
-      "reg": null,
-      "f": 2.48,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Taiwan",
-      "iso": "TWN",
-      "reg": 3,
-      "f": 5.1,
-      "t": 65,
-      "p": -1.77,
-      "poly": 0.802
-    },
-    {
-      "c": "Tanzania",
-      "iso": "TZA",
-      "reg": 1,
-      "f": 2,
-      "t": 63.5,
-      "p": -1.09,
-      "poly": 0.446
-    },
-    {
-      "c": "Uganda",
-      "iso": "UGA",
-      "reg": 1,
-      "f": 2.9,
-      "t": 66.6,
-      "p": -0.03,
-      "poly": 0.308
-    },
-    {
-      "c": "Ukraine",
-      "iso": "UKR",
-      "reg": 1,
-      "f": 4.9,
-      "t": 66.4,
-      "p": 0.1,
-      "poly": 0.473
-    },
-    {
-      "c": "Uruguay",
-      "iso": "URY",
-      "reg": 3,
-      "f": 2,
-      "t": 89.7,
-      "p": -3.1,
-      "poly": 0.892
-    },
-    {
-      "c": "United States",
-      "iso": "USA",
-      "reg": 3,
-      "f": 5,
-      "t": 61.9,
-      "p": 0.4,
-      "poly": 0.868
-    },
-    {
-      "c": "Uzbekistan",
-      "iso": "UZB",
-      "reg": 1,
-      "f": 4.29,
-      "t": 83.3,
-      "p": -2.12,
-      "poly": 0.168
-    },
-    {
-      "c": "Saint Vincent and the Grenadines",
-      "iso": "VCT",
-      "reg": null,
-      "f": 2.33,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Venezuela",
-      "iso": "VEN",
-      "reg": 1,
-      "f": 5,
-      "t": 57.4,
-      "p": 1.67,
-      "poly": 0.386
-    },
-    {
-      "c": "Democratic Republic of Vietnam",
-      "iso": "VNM",
-      "reg": 0,
-      "f": 2.1,
-      "t": 99.4,
-      "p": -0.79,
-      "poly": 0.155
-    },
-    {
-      "c": "Vanuatu",
-      "iso": "VUT",
-      "reg": 2,
-      "f": 2.81,
-      "t": 62.2,
-      "p": -1.29,
-      "poly": 0.694
-    },
-    {
-      "c": "Samoa",
-      "iso": "WSM",
-      "reg": null,
-      "f": 1.71,
-      "t": null,
-      "p": null,
-      "poly": null
-    },
-    {
-      "c": "Yemen",
-      "iso": "YEM",
-      "reg": 1,
-      "f": 2.29,
-      "t": 68.3,
-      "p": 1.54,
-      "poly": 0.244
-    },
-    {
-      "c": "South Africa",
-      "iso": "ZAF",
-      "reg": 3,
-      "f": 2,
-      "t": 73.4,
-      "p": 0.09,
-      "poly": 0.754
-    },
-    {
-      "c": "Zambia",
-      "iso": "ZMB",
-      "reg": 1,
-      "f": 2.76,
-      "t": 54.4,
-      "p": 0.06,
-      "poly": 0.465
-    },
-    {
-      "c": "Zimbabwe",
-      "iso": "ZWE",
-      "reg": 1,
-      "f": 2.95,
-      "t": 55.4,
-      "p": 2.29,
-      "poly": 0.274
+      "key": "2000",
+      "label": "2000–2020",
+      "range": "2000–2020"
     }
   ],
+  "countries": {
+    "1945": [
+      {
+        "c": "Aruba",
+        "iso": "ABW",
+        "reg": null,
+        "f": 0.25,
+        "t": 84.7,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Afghanistan",
+        "iso": "AFG",
+        "reg": 0,
+        "f": 0.2,
+        "t": 46.3,
+        "p": 1.01,
+        "poly": 0.158
+      },
+      {
+        "c": "Angola",
+        "iso": "AGO",
+        "reg": 0,
+        "f": 0.15,
+        "t": 71.4,
+        "p": 0.19,
+        "poly": 0.23
+      },
+      {
+        "c": "Albania",
+        "iso": "ALB",
+        "reg": 1,
+        "f": 0.22,
+        "t": 65.3,
+        "p": 0.57,
+        "poly": 0.303
+      },
+      {
+        "c": "Andorra",
+        "iso": "AND",
+        "reg": null,
+        "f": 0.34,
+        "t": 75,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Argentina",
+        "iso": "ARG",
+        "reg": 1,
+        "f": 0.46,
+        "t": 80.6,
+        "p": 1.29,
+        "poly": 0.55
+      },
+      {
+        "c": "Armenia",
+        "iso": "ARM",
+        "reg": 1,
+        "f": 0.41,
+        "t": 59.1,
+        "p": 0.92,
+        "poly": 0.46
+      },
+      {
+        "c": "Antigua & Barbuda",
+        "iso": "ATG",
+        "reg": null,
+        "f": 0.22,
+        "t": 72.9,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Australia",
+        "iso": "AUS",
+        "reg": 3,
+        "f": 0.43,
+        "t": 94.5,
+        "p": -1.31,
+        "poly": 0.861
+      },
+      {
+        "c": "Austria",
+        "iso": "AUT",
+        "reg": 3,
+        "f": 0.48,
+        "t": 86.1,
+        "p": -0.54,
+        "poly": 0.839
+      },
+      {
+        "c": "Azerbaijan",
+        "iso": "AZE",
+        "reg": 1,
+        "f": 0.53,
+        "t": 69,
+        "p": 0.61,
+        "poly": 0.222
+      },
+      {
+        "c": "Burundi",
+        "iso": "BDI",
+        "reg": 0,
+        "f": 0.2,
+        "t": 87.6,
+        "p": 0.59,
+        "poly": 0.178
+      },
+      {
+        "c": "Belgium",
+        "iso": "BEL",
+        "reg": 3,
+        "f": 0.3,
+        "t": 91.8,
+        "p": -1.57,
+        "poly": 0.838
+      },
+      {
+        "c": "Benin",
+        "iso": "BEN",
+        "reg": 1,
+        "f": 0.37,
+        "t": 68.5,
+        "p": -0.46,
+        "poly": 0.386
+      },
+      {
+        "c": "Burkina Faso",
+        "iso": "BFA",
+        "reg": 1,
+        "f": 0.27,
+        "t": 55.7,
+        "p": -0.19,
+        "poly": 0.368
+      },
+      {
+        "c": "Bangladesh",
+        "iso": "BGD",
+        "reg": 1,
+        "f": 0.29,
+        "t": 61,
+        "p": 1.17,
+        "poly": 0.347
+      },
+      {
+        "c": "Bulgaria",
+        "iso": "BGR",
+        "reg": 1,
+        "f": 0.41,
+        "t": 72.7,
+        "p": 0.76,
+        "poly": 0.393
+      },
+      {
+        "c": "Bahrain",
+        "iso": "BHR",
+        "reg": 0,
+        "f": 0.15,
+        "t": 66.1,
+        "p": 1.16,
+        "poly": 0.106
+      },
+      {
+        "c": "Bahamas",
+        "iso": "BHS",
+        "reg": null,
+        "f": 0.21,
+        "t": 87.6,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Bosnia and Herzegovina",
+        "iso": "BIH",
+        "reg": 2,
+        "f": 0.31,
+        "t": 57.5,
+        "p": 1.41,
+        "poly": 0.566
+      },
+      {
+        "c": "Belarus",
+        "iso": "BLR",
+        "reg": 1,
+        "f": 0.45,
+        "t": 78,
+        "p": 1.44,
+        "poly": 0.266
+      },
+      {
+        "c": "Belize",
+        "iso": "BLZ",
+        "reg": null,
+        "f": 0.22,
+        "t": 77.4,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Bolivia",
+        "iso": "BOL",
+        "reg": 1,
+        "f": 0.29,
+        "t": 83.6,
+        "p": 0.98,
+        "poly": 0.426
+      },
+      {
+        "c": "Brazil",
+        "iso": "BRA",
+        "reg": 1,
+        "f": 0.32,
+        "t": 78.8,
+        "p": 1.26,
+        "poly": 0.539
+      },
+      {
+        "c": "Barbados",
+        "iso": "BRB",
+        "reg": 2,
+        "f": 0.22,
+        "t": 64.9,
+        "p": -3.25,
+        "poly": 0.762
+      },
+      {
+        "c": "Bhutan",
+        "iso": "BTN",
+        "reg": 2,
+        "f": 0.44,
+        "t": 66.8,
+        "p": -1.26,
+        "poly": 0.552
+      },
+      {
+        "c": "Botswana",
+        "iso": "BWA",
+        "reg": 2,
+        "f": 0.21,
+        "t": 70.2,
+        "p": -2.05,
+        "poly": 0.664
+      },
+      {
+        "c": "Central African Republic",
+        "iso": "CAF",
+        "reg": 1,
+        "f": 0.23,
+        "t": 63.9,
+        "p": 0.61,
+        "poly": 0.238
+      },
+      {
+        "c": "Canada",
+        "iso": "CAN",
+        "reg": 3,
+        "f": 0.31,
+        "t": 70.9,
+        "p": -1.72,
+        "poly": 0.812
+      },
+      {
+        "c": "Switzerland",
+        "iso": "CHE",
+        "reg": 3,
+        "f": 0.26,
+        "t": 53.8,
+        "p": -2.17,
+        "poly": 0.8
+      },
+      {
+        "c": "Chile",
+        "iso": "CHL",
+        "reg": 2,
+        "f": 0.36,
+        "t": 79.1,
+        "p": 0.04,
+        "poly": 0.57
+      },
+      {
+        "c": "Cote d'Ivoire",
+        "iso": "CIV",
+        "reg": 1,
+        "f": 0.32,
+        "t": 65.6,
+        "p": -0.67,
+        "poly": 0.31
+      },
+      {
+        "c": "Cameroon",
+        "iso": "CMR",
+        "reg": 1,
+        "f": 0.37,
+        "t": 82.3,
+        "p": 0.92,
+        "poly": 0.239
+      },
+      {
+        "c": "Congo, Democratic Republic of",
+        "iso": "COD",
+        "reg": 0,
+        "f": 0.22,
+        "t": 67.7,
+        "p": 0.7,
+        "poly": 0.211
+      },
+      {
+        "c": "Congo",
+        "iso": "COG",
+        "reg": 0,
+        "f": 0.27,
+        "t": 76.5,
+        "p": 0.54,
+        "poly": 0.201
+      },
+      {
+        "c": "Cook Islands",
+        "iso": "COK",
+        "reg": null,
+        "f": 0.33,
+        "t": 77,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Colombia",
+        "iso": "COL",
+        "reg": 1,
+        "f": 0.56,
+        "t": 50.2,
+        "p": 0.61,
+        "poly": 0.449
+      },
+      {
+        "c": "Comoros",
+        "iso": "COM",
+        "reg": 1,
+        "f": 0.45,
+        "t": 65.7,
+        "p": 0.56,
+        "poly": 0.339
+      },
+      {
+        "c": "Cabo Verde",
+        "iso": "CPV",
+        "reg": 2,
+        "f": 0.32,
+        "t": 67.1,
+        "p": -0.84,
+        "poly": 0.605
+      },
+      {
+        "c": "Costa Rica",
+        "iso": "CRI",
+        "reg": 2,
+        "f": 0.3,
+        "t": 72.1,
+        "p": -0.96,
+        "poly": 0.796
+      },
+      {
+        "c": "Cuba",
+        "iso": "CUB",
+        "reg": 0,
+        "f": 0.15,
+        "t": 87.3,
+        "p": -0.01,
+        "poly": 0.143
+      },
+      {
+        "c": "Cayman Islands",
+        "iso": "CYM",
+        "reg": null,
+        "f": 0.25,
+        "t": 73.1,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Cyprus",
+        "iso": "CYP",
+        "reg": 2,
+        "f": 0.39,
+        "t": 86.1,
+        "p": 0.82,
+        "poly": 0.725
+      },
+      {
+        "c": "Czech Republic",
+        "iso": "CZE",
+        "reg": 3,
+        "f": 0.83,
+        "t": 66,
+        "p": -1.64,
+        "poly": 0.872
+      },
+      {
+        "c": "German Federal Republic",
+        "iso": "DEU",
+        "reg": 3,
+        "f": 0.26,
+        "t": 82.6,
+        "p": -1.52,
+        "poly": 0.871
+      },
+      {
+        "c": "Djibouti",
+        "iso": "DJI",
+        "reg": 1,
+        "f": 0.36,
+        "t": 69,
+        "p": 0.35,
+        "poly": 0.23
+      },
+      {
+        "c": "Dominica",
+        "iso": "DMA",
+        "reg": null,
+        "f": 0.2,
+        "t": 60.2,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Denmark",
+        "iso": "DNK",
+        "reg": 3,
+        "f": 0.36,
+        "t": 86,
+        "p": -2.66,
+        "poly": 0.903
+      },
+      {
+        "c": "Dominican Republic",
+        "iso": "DOM",
+        "reg": 1,
+        "f": 0.33,
+        "t": 66.4,
+        "p": 1.09,
+        "poly": 0.416
+      },
+      {
+        "c": "Algeria",
+        "iso": "DZA",
+        "reg": 1,
+        "f": 0.38,
+        "t": 65.3,
+        "p": -0.98,
+        "poly": 0.233
+      },
+      {
+        "c": "Ecuador",
+        "iso": "ECU",
+        "reg": 1,
+        "f": 0.42,
+        "t": 73.7,
+        "p": 0.56,
+        "poly": 0.494
+      },
+      {
+        "c": "Egypt",
+        "iso": "EGY",
+        "reg": 1,
+        "f": 0.44,
+        "t": 44.1,
+        "p": -1.06,
+        "poly": 0.186
+      },
+      {
+        "c": "Spain",
+        "iso": "ESP",
+        "reg": 3,
+        "f": 0.33,
+        "t": 73,
+        "p": -1.26,
+        "poly": 0.866
+      },
+      {
+        "c": "Estonia",
+        "iso": "EST",
+        "reg": 3,
+        "f": 0.27,
+        "t": 63.3,
+        "p": -1.31,
+        "poly": 0.869
+      },
+      {
+        "c": "Ethiopia",
+        "iso": "ETH",
+        "reg": 0,
+        "f": 0.21,
+        "t": 90.6,
+        "p": 1,
+        "poly": 0.169
+      },
+      {
+        "c": "Finland",
+        "iso": "FIN",
+        "reg": 3,
+        "f": 0.44,
+        "t": 73.3,
+        "p": -1.57,
+        "poly": 0.838
+      },
+      {
+        "c": "Fiji",
+        "iso": "FJI",
+        "reg": 1,
+        "f": 0.25,
+        "t": 77.6,
+        "p": -0.64,
+        "poly": 0.421
+      },
+      {
+        "c": "France",
+        "iso": "FRA",
+        "reg": 3,
+        "f": 0.45,
+        "t": 78.3,
+        "p": 0.25,
+        "poly": 0.822
+      },
+      {
+        "c": "Federated States of Micronesia",
+        "iso": "FSM",
+        "reg": null,
+        "f": 0.47,
+        "t": 43.5,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Gabon",
+        "iso": "GAB",
+        "reg": 1,
+        "f": 0.33,
+        "t": 74.4,
+        "p": -1.15,
+        "poly": 0.271
+      },
+      {
+        "c": "United Kingdom",
+        "iso": "GBR",
+        "reg": 3,
+        "f": 0.28,
+        "t": 72.1,
+        "p": -0.69,
+        "poly": 0.828
+      },
+      {
+        "c": "Georgia",
+        "iso": "GEO",
+        "reg": 2,
+        "f": 0.45,
+        "t": 63.2,
+        "p": 1.34,
+        "poly": 0.502
+      },
+      {
+        "c": "Ghana",
+        "iso": "GHA",
+        "reg": 1,
+        "f": 0.2,
+        "t": 66.7,
+        "p": -0.19,
+        "poly": 0.436
+      },
+      {
+        "c": "Gibraltar",
+        "iso": "GIB",
+        "reg": null,
+        "f": 0.5,
+        "t": 76.4,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Guinea",
+        "iso": "GIN",
+        "reg": 0,
+        "f": 0.25,
+        "t": 81.2,
+        "p": 0.87,
+        "poly": 0.202
+      },
+      {
+        "c": "Gambia",
+        "iso": "GMB",
+        "reg": 1,
+        "f": 0.31,
+        "t": 65.2,
+        "p": -1,
+        "poly": 0.387
+      },
+      {
+        "c": "Guinea-Bissau",
+        "iso": "GNB",
+        "reg": 1,
+        "f": 0.39,
+        "t": 76.1,
+        "p": -0.6,
+        "poly": 0.418
+      },
+      {
+        "c": "Equatorial Guinea",
+        "iso": "GNQ",
+        "reg": 1,
+        "f": 0.33,
+        "t": 89.4,
+        "p": 0.77,
+        "poly": 0.175
+      },
+      {
+        "c": "Greece",
+        "iso": "GRC",
+        "reg": 2,
+        "f": 0.37,
+        "t": 75.6,
+        "p": 0.03,
+        "poly": 0.645
+      },
+      {
+        "c": "Grenada",
+        "iso": "GRD",
+        "reg": null,
+        "f": 0.2,
+        "t": 70.8,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Greenland",
+        "iso": "GRL",
+        "reg": null,
+        "f": 0.25,
+        "t": 65.8,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Guatemala",
+        "iso": "GTM",
+        "reg": 1,
+        "f": 0.41,
+        "t": 53.8,
+        "p": 0.97,
+        "poly": 0.352
+      },
+      {
+        "c": "Guyana",
+        "iso": "GUY",
+        "reg": 1,
+        "f": 0.19,
+        "t": 80.3,
+        "p": 0.96,
+        "poly": 0.443
+      },
+      {
+        "c": "Honduras",
+        "iso": "HND",
+        "reg": 1,
+        "f": 0.23,
+        "t": 68.9,
+        "p": -1.41,
+        "poly": 0.34
+      },
+      {
+        "c": "Croatia",
+        "iso": "HRV",
+        "reg": 2,
+        "f": 0.61,
+        "t": 57.8,
+        "p": 0.53,
+        "poly": 0.686
+      },
+      {
+        "c": "Haiti",
+        "iso": "HTI",
+        "reg": 1,
+        "f": 0.32,
+        "t": 37.7,
+        "p": 1.33,
+        "poly": 0.247
+      },
+      {
+        "c": "Hungary",
+        "iso": "HUN",
+        "reg": 1,
+        "f": 0.24,
+        "t": 82.3,
+        "p": 1.2,
+        "poly": 0.4
+      },
+      {
+        "c": "Indonesia",
+        "iso": "IDN",
+        "reg": 1,
+        "f": 0.24,
+        "t": 86.3,
+        "p": 0.43,
+        "poly": 0.385
+      },
+      {
+        "c": "India",
+        "iso": "IND",
+        "reg": 2,
+        "f": 0.24,
+        "t": 60.6,
+        "p": 0.12,
+        "poly": 0.628
+      },
+      {
+        "c": "Ireland",
+        "iso": "IRL",
+        "reg": 3,
+        "f": 0.38,
+        "t": 68.4,
+        "p": -2.33,
+        "poly": 0.844
+      },
+      {
+        "c": "Iran",
+        "iso": "IRN",
+        "reg": 1,
+        "f": 0.54,
+        "t": 62.1,
+        "p": 1.14,
+        "poly": 0.151
+      },
+      {
+        "c": "Iraq",
+        "iso": "IRQ",
+        "reg": 0,
+        "f": 0.23,
+        "t": 75.3,
+        "p": 1.8,
+        "poly": 0.177
+      },
+      {
+        "c": "Iceland",
+        "iso": "ISL",
+        "reg": 3,
+        "f": 0.46,
+        "t": 84.8,
+        "p": -0.81,
+        "poly": 0.841
+      },
+      {
+        "c": "Israel",
+        "iso": "ISR",
+        "reg": 3,
+        "f": 0.33,
+        "t": 75.4,
+        "p": 0.27,
+        "poly": 0.716
+      },
+      {
+        "c": "Italy",
+        "iso": "ITA",
+        "reg": 3,
+        "f": 0.25,
+        "t": 86.2,
+        "p": 0.12,
+        "poly": 0.785
+      },
+      {
+        "c": "Jamaica",
+        "iso": "JAM",
+        "reg": 2,
+        "f": 0.22,
+        "t": 61.9,
+        "p": -1.19,
+        "poly": 0.647
+      },
+      {
+        "c": "Jordan",
+        "iso": "JOR",
+        "reg": 0,
+        "f": 0.24,
+        "t": 49.4,
+        "p": -1.26,
+        "poly": 0.178
+      },
+      {
+        "c": "Japan",
+        "iso": "JPN",
+        "reg": 3,
+        "f": 0.65,
+        "t": 67.5,
+        "p": -1.73,
+        "poly": 0.8
+      },
+      {
+        "c": "Kazakhstan",
+        "iso": "KAZ",
+        "reg": 1,
+        "f": 0.52,
+        "t": 74.6,
+        "p": -0.53,
+        "poly": 0.254
+      },
+      {
+        "c": "Kenya",
+        "iso": "KEN",
+        "reg": 1,
+        "f": 0.24,
+        "t": 72.4,
+        "p": -0.54,
+        "poly": 0.339
+      },
+      {
+        "c": "Kyrgyz Republic",
+        "iso": "KGZ",
+        "reg": 1,
+        "f": 0.44,
+        "t": 67.3,
+        "p": -0.54,
+        "poly": 0.356
+      },
+      {
+        "c": "Cambodia",
+        "iso": "KHM",
+        "reg": 1,
+        "f": 0.21,
+        "t": 82,
+        "p": 0.75,
+        "poly": 0.227
+      },
+      {
+        "c": "Kiribati",
+        "iso": "KIR",
+        "reg": null,
+        "f": 0.6,
+        "t": 74.6,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Saint Kitts and Nevis",
+        "iso": "KNA",
+        "reg": null,
+        "f": 0.22,
+        "t": 67.5,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Korea, Republic of",
+        "iso": "KOR",
+        "reg": 2,
+        "f": 0.48,
+        "t": 74.1,
+        "p": 0.47,
+        "poly": 0.509
+      },
+      {
+        "c": "Kuwait",
+        "iso": "KWT",
+        "reg": 0,
+        "f": 0.36,
+        "t": 69.5,
+        "p": -1.73,
+        "poly": 0.253
+      },
+      {
+        "c": "Lao People's Dem. Republic",
+        "iso": "LAO",
+        "reg": 0,
+        "f": 0.2,
+        "t": 92.8,
+        "p": 0.02,
+        "poly": 0.133
+      },
+      {
+        "c": "Lebanon",
+        "iso": "LBN",
+        "reg": 1,
+        "f": 0.19,
+        "t": 49.7,
+        "p": 1.08,
+        "poly": 0.374
+      },
+      {
+        "c": "Liberia",
+        "iso": "LBR",
+        "reg": 1,
+        "f": 0.22,
+        "t": 78.5,
+        "p": 0.38,
+        "poly": 0.315
+      },
+      {
+        "c": "Libya",
+        "iso": "LBY",
+        "reg": 0,
+        "f": 0.11,
+        "t": 55.6,
+        "p": 0.71,
+        "poly": 0.119
+      },
+      {
+        "c": "Saint Lucia",
+        "iso": "LCA",
+        "reg": null,
+        "f": 0.24,
+        "t": 58.7,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Liechtenstein",
+        "iso": "LIE",
+        "reg": null,
+        "f": 0.29,
+        "t": 90,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Sri Lanka",
+        "iso": "LKA",
+        "reg": 2,
+        "f": 0.33,
+        "t": 75.5,
+        "p": 0.12,
+        "poly": 0.546
+      },
+      {
+        "c": "Lesotho",
+        "iso": "LSO",
+        "reg": 1,
+        "f": 0.13,
+        "t": 58,
+        "p": -0.09,
+        "poly": 0.364
+      },
+      {
+        "c": "Lithuania",
+        "iso": "LTU",
+        "reg": 3,
+        "f": 0.61,
+        "t": 58.2,
+        "p": -2.27,
+        "poly": 0.821
+      },
+      {
+        "c": "Luxembourg",
+        "iso": "LUX",
+        "reg": 3,
+        "f": 0.22,
+        "t": 89.8,
+        "p": -2.24,
+        "poly": 0.856
+      },
+      {
+        "c": "Latvia",
+        "iso": "LVA",
+        "reg": 2,
+        "f": 0.31,
+        "t": 66.2,
+        "p": -2.06,
+        "poly": 0.817
+      },
+      {
+        "c": "Morocco",
+        "iso": "MAR",
+        "reg": 0,
+        "f": 0.18,
+        "t": 59.6,
+        "p": -0.26,
+        "poly": 0.2
+      },
+      {
+        "c": "Monaco",
+        "iso": "MCO",
+        "reg": null,
+        "f": 0.23,
+        "t": 71.3,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Moldova",
+        "iso": "MDA",
+        "reg": 2,
+        "f": 0.47,
+        "t": 62.8,
+        "p": -0.19,
+        "poly": 0.562
+      },
+      {
+        "c": "Madagascar",
+        "iso": "MDG",
+        "reg": 1,
+        "f": 0.38,
+        "t": 67,
+        "p": 0.46,
+        "poly": 0.331
+      },
+      {
+        "c": "Maldives",
+        "iso": "MDV",
+        "reg": 0,
+        "f": 0.44,
+        "t": 81,
+        "p": -0.79,
+        "poly": 0.27
+      },
+      {
+        "c": "Mexico",
+        "iso": "MEX",
+        "reg": 1,
+        "f": 0.34,
+        "t": 63.1,
+        "p": -0.37,
+        "poly": 0.408
+      },
+      {
+        "c": "Marshall Islands",
+        "iso": "MHL",
+        "reg": null,
+        "f": 0.26,
+        "t": 46.1,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Macedonia (FYROM)",
+        "iso": "MKD",
+        "reg": 2,
+        "f": 0.52,
+        "t": 61.3,
+        "p": 0.95,
+        "poly": 0.522
+      },
+      {
+        "c": "Mali",
+        "iso": "MLI",
+        "reg": 1,
+        "f": 0.3,
+        "t": 57.6,
+        "p": 0.32,
+        "poly": 0.351
+      },
+      {
+        "c": "Malta",
+        "iso": "MLT",
+        "reg": 2,
+        "f": 0.22,
+        "t": 93.6,
+        "p": 1.28,
+        "poly": 0.744
+      },
+      {
+        "c": "Myanmar",
+        "iso": "MMR",
+        "reg": 0,
+        "f": 0.16,
+        "t": 71.1,
+        "p": 1.95,
+        "poly": 0.18
+      },
+      {
+        "c": "Montenegro",
+        "iso": "MNE",
+        "reg": 1,
+        "f": 0.59,
+        "t": 69.2,
+        "p": 0.94,
+        "poly": 0.497
+      },
+      {
+        "c": "Mongolia",
+        "iso": "MNG",
+        "reg": 1,
+        "f": 0.39,
+        "t": 85.3,
+        "p": -1.32,
+        "poly": 0.401
+      },
+      {
+        "c": "Mozambique",
+        "iso": "MOZ",
+        "reg": 1,
+        "f": 0.19,
+        "t": 55.8,
+        "p": -0.11,
+        "poly": 0.307
+      },
+      {
+        "c": "Mauritania",
+        "iso": "MRT",
+        "reg": 1,
+        "f": 0.33,
+        "t": 72.7,
+        "p": -0.55,
+        "poly": 0.265
+      },
+      {
+        "c": "Mauritius",
+        "iso": "MUS",
+        "reg": 3,
+        "f": 0.24,
+        "t": 81.8,
+        "p": 0.89,
+        "poly": 0.699
+      },
+      {
+        "c": "Malawi",
+        "iso": "MWI",
+        "reg": 1,
+        "f": 0.23,
+        "t": 75.8,
+        "p": -0.87,
+        "poly": 0.4
+      },
+      {
+        "c": "Malaysia",
+        "iso": "MYS",
+        "reg": 1,
+        "f": 0.23,
+        "t": 74.9,
+        "p": 1.1,
+        "poly": 0.301
+      },
+      {
+        "c": "Namibia",
+        "iso": "NAM",
+        "reg": 2,
+        "f": 0.23,
+        "t": 71.3,
+        "p": -0.58,
+        "poly": 0.655
+      },
+      {
+        "c": "Niger",
+        "iso": "NER",
+        "reg": 1,
+        "f": 0.32,
+        "t": 52.2,
+        "p": -1.68,
+        "poly": 0.339
+      },
+      {
+        "c": "Nigeria",
+        "iso": "NGA",
+        "reg": 1,
+        "f": 0.33,
+        "t": 43.7,
+        "p": -0.87,
+        "poly": 0.329
+      },
+      {
+        "c": "Nicaragua",
+        "iso": "NIC",
+        "reg": 1,
+        "f": 0.21,
+        "t": 73.3,
+        "p": 1.04,
+        "poly": 0.313
+      },
+      {
+        "c": "Niue",
+        "iso": "NIU",
+        "reg": null,
+        "f": 0.5,
+        "t": 74,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Netherlands",
+        "iso": "NLD",
+        "reg": 3,
+        "f": 0.3,
+        "t": 84.5,
+        "p": -1.44,
+        "poly": 0.835
+      },
+      {
+        "c": "Norway",
+        "iso": "NOR",
+        "reg": 3,
+        "f": 0.25,
+        "t": 79.7,
+        "p": -1.91,
+        "poly": 0.848
+      },
+      {
+        "c": "Nepal",
+        "iso": "NPL",
+        "reg": 1,
+        "f": 0.15,
+        "t": 68.7,
+        "p": 1.3,
+        "poly": 0.289
+      },
+      {
+        "c": "Nauru",
+        "iso": "NRU",
+        "reg": null,
+        "f": 0.43,
+        "t": 92.2,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "New Zealand",
+        "iso": "NZL",
+        "reg": 3,
+        "f": 0.34,
+        "t": 86.6,
+        "p": -2.35,
+        "poly": 0.853
+      },
+      {
+        "c": "Oman",
+        "iso": "OMN",
+        "reg": 0,
+        "f": 0.27,
+        "t": 62.1,
+        "p": -2.21,
+        "poly": 0.167
+      },
+      {
+        "c": "Pakistan",
+        "iso": "PAK",
+        "reg": 1,
+        "f": 0.24,
+        "t": 48.1,
+        "p": -0.89,
+        "poly": 0.303
+      },
+      {
+        "c": "Panama",
+        "iso": "PAN",
+        "reg": 1,
+        "f": 0.25,
+        "t": 72.5,
+        "p": -0.48,
+        "poly": 0.444
+      },
+      {
+        "c": "Peru",
+        "iso": "PER",
+        "reg": 1,
+        "f": 0.25,
+        "t": 80.9,
+        "p": 0.32,
+        "poly": 0.466
+      },
+      {
+        "c": "Philippines",
+        "iso": "PHL",
+        "reg": 1,
+        "f": 0.41,
+        "t": 78.9,
+        "p": -1.05,
+        "poly": 0.399
+      },
+      {
+        "c": "Palau",
+        "iso": "PLW",
+        "reg": null,
+        "f": 0.38,
+        "t": 62.6,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Papua New Guinea",
+        "iso": "PNG",
+        "reg": 2,
+        "f": 0.19,
+        "t": 66.6,
+        "p": -1.2,
+        "poly": 0.505
+      },
+      {
+        "c": "Poland",
+        "iso": "POL",
+        "reg": 1,
+        "f": 0.35,
+        "t": 71.1,
+        "p": 1.52,
+        "poly": 0.473
+      },
+      {
+        "c": "North Korea",
+        "iso": "PRK",
+        "reg": 0,
+        "f": 0.18,
+        "t": 100,
+        "p": -1.1,
+        "poly": 0.086
+      },
+      {
+        "c": "Portugal",
+        "iso": "PRT",
+        "reg": 2,
+        "f": 0.49,
+        "t": 66.4,
+        "p": -1.16,
+        "poly": 0.578
+      },
+      {
+        "c": "Paraguay",
+        "iso": "PRY",
+        "reg": 1,
+        "f": 0.32,
+        "t": 71.7,
+        "p": -0.07,
+        "poly": 0.338
+      },
+      {
+        "c": "Qatar",
+        "iso": "QAT",
+        "reg": 0,
+        "f": 0.25,
+        "t": 63.5,
+        "p": -2,
+        "poly": 0.087
+      },
+      {
+        "c": "Romania",
+        "iso": "ROU",
+        "reg": 1,
+        "f": 0.34,
+        "t": 72.9,
+        "p": 1.04,
+        "poly": 0.379
+      },
+      {
+        "c": "Russia (Soviet Union)",
+        "iso": "RUS",
+        "reg": 0,
+        "f": 0.33,
+        "t": 63.3,
+        "p": 0.5,
+        "poly": 0.205
+      },
+      {
+        "c": "Rwanda",
+        "iso": "RWA",
+        "reg": 1,
+        "f": 0.27,
+        "t": 95.8,
+        "p": 0.76,
+        "poly": 0.188
+      },
+      {
+        "c": "Saudi Arabia",
+        "iso": "SAU",
+        "reg": 0,
+        "f": 0.2,
+        "t": null,
+        "p": -1.55,
+        "poly": 0.015
+      },
+      {
+        "c": "Sudan",
+        "iso": "SDN",
+        "reg": 1,
+        "f": 0.25,
+        "t": 73.4,
+        "p": 0.51,
+        "poly": 0.172
+      },
+      {
+        "c": "Senegal",
+        "iso": "SEN",
+        "reg": 2,
+        "f": 0.32,
+        "t": 64.5,
+        "p": -0.41,
+        "poly": 0.551
+      },
+      {
+        "c": "Singapore",
+        "iso": "SGP",
+        "reg": 1,
+        "f": 0.28,
+        "t": 93.9,
+        "p": -0.79,
+        "poly": 0.368
+      },
+      {
+        "c": "Solomon Islands",
+        "iso": "SLB",
+        "reg": 2,
+        "f": 0.24,
+        "t": 66.2,
+        "p": -1.77,
+        "poly": 0.537
+      },
+      {
+        "c": "Sierra Leone",
+        "iso": "SLE",
+        "reg": 1,
+        "f": 0.21,
+        "t": 80.8,
+        "p": 0.4,
+        "poly": 0.33
+      },
+      {
+        "c": "El Salvador",
+        "iso": "SLV",
+        "reg": 1,
+        "f": 0.54,
+        "t": 50.3,
+        "p": 1.44,
+        "poly": 0.321
+      },
+      {
+        "c": "San Marino",
+        "iso": "SMR",
+        "reg": null,
+        "f": 0.25,
+        "t": 70.7,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Somalia",
+        "iso": "SOM",
+        "reg": 0,
+        "f": 0.08,
+        "t": 99.9,
+        "p": 1.5,
+        "poly": 0.163
+      },
+      {
+        "c": "Serbia",
+        "iso": "SRB",
+        "reg": 1,
+        "f": 0.27,
+        "t": 58.2,
+        "p": 0.03,
+        "poly": 0.247
+      },
+      {
+        "c": "Sao Tome and Principe",
+        "iso": "STP",
+        "reg": 1,
+        "f": 0.4,
+        "t": 70.8,
+        "p": -1.96,
+        "poly": 0.504
+      },
+      {
+        "c": "Surinam",
+        "iso": "SUR",
+        "reg": 2,
+        "f": 0.19,
+        "t": 69.7,
+        "p": -1.32,
+        "poly": 0.656
+      },
+      {
+        "c": "Slovakia",
+        "iso": "SVK",
+        "reg": 3,
+        "f": 0.45,
+        "t": 62.1,
+        "p": -0.43,
+        "poly": 0.818
+      },
+      {
+        "c": "Slovenia",
+        "iso": "SVN",
+        "reg": 3,
+        "f": 0.48,
+        "t": 63.3,
+        "p": 0.64,
+        "poly": 0.832
+      },
+      {
+        "c": "Sweden",
+        "iso": "SWE",
+        "reg": 3,
+        "f": 0.3,
+        "t": 85.5,
+        "p": -2.17,
+        "poly": 0.868
+      },
+      {
+        "c": "Swaziland",
+        "iso": "SWZ",
+        "reg": 0,
+        "f": 0.13,
+        "t": 67.2,
+        "p": 1.37,
+        "poly": 0.125
+      },
+      {
+        "c": "Seychelles",
+        "iso": "SYC",
+        "reg": 1,
+        "f": 0.37,
+        "t": 89,
+        "p": 0.48,
+        "poly": 0.405
+      },
+      {
+        "c": "Syria",
+        "iso": "SYR",
+        "reg": 1,
+        "f": 0.36,
+        "t": 74.6,
+        "p": 1.48,
+        "poly": 0.154
+      },
+      {
+        "c": "Chad",
+        "iso": "TCD",
+        "reg": 1,
+        "f": 0.24,
+        "t": 68.3,
+        "p": 1.21,
+        "poly": 0.197
+      },
+      {
+        "c": "Togo",
+        "iso": "TGO",
+        "reg": 1,
+        "f": 0.31,
+        "t": 73.7,
+        "p": 0.98,
+        "poly": 0.261
+      },
+      {
+        "c": "Thailand",
+        "iso": "THA",
+        "reg": 1,
+        "f": 0.37,
+        "t": 57.5,
+        "p": 0.46,
+        "poly": 0.259
+      },
+      {
+        "c": "Tajikistan",
+        "iso": "TJK",
+        "reg": 1,
+        "f": 0.35,
+        "t": 89.4,
+        "p": -0.59,
+        "poly": 0.209
+      },
+      {
+        "c": "Turkmenistan",
+        "iso": "TKM",
+        "reg": 0,
+        "f": 0.42,
+        "t": 94.5,
+        "p": -2.46,
+        "poly": 0.131
+      },
+      {
+        "c": "East Timor",
+        "iso": "TLS",
+        "reg": 2,
+        "f": 0.56,
+        "t": 78.9,
+        "p": -0.25,
+        "poly": 0.663
+      },
+      {
+        "c": "Tonga",
+        "iso": "TON",
+        "reg": null,
+        "f": 0.32,
+        "t": 61.9,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Trinidad and Tobago",
+        "iso": "TTO",
+        "reg": 2,
+        "f": 0.24,
+        "t": 61.8,
+        "p": -1.9,
+        "poly": 0.707
+      },
+      {
+        "c": "Tunisia",
+        "iso": "TUN",
+        "reg": 1,
+        "f": 0.3,
+        "t": 74,
+        "p": 0.94,
+        "poly": 0.269
+      },
+      {
+        "c": "Turkey",
+        "iso": "TUR",
+        "reg": 1,
+        "f": 0.37,
+        "t": 81.6,
+        "p": 0.99,
+        "poly": 0.436
+      },
+      {
+        "c": "Tuvalu",
+        "iso": "TUV",
+        "reg": null,
+        "f": 0.27,
+        "t": 82.5,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Taiwan",
+        "iso": "TWN",
+        "reg": 2,
+        "f": 0.45,
+        "t": 67.4,
+        "p": -1.17,
+        "poly": 0.61
+      },
+      {
+        "c": "Tanzania",
+        "iso": "TZA",
+        "reg": 1,
+        "f": 0.21,
+        "t": 72,
+        "p": -1.5,
+        "poly": 0.356
+      },
+      {
+        "c": "Uganda",
+        "iso": "UGA",
+        "reg": 1,
+        "f": 0.22,
+        "t": 68.5,
+        "p": -0.04,
+        "poly": 0.269
+      },
+      {
+        "c": "Ukraine",
+        "iso": "UKR",
+        "reg": 1,
+        "f": 0.44,
+        "t": 68.4,
+        "p": -0.21,
+        "poly": 0.476
+      },
+      {
+        "c": "Uruguay",
+        "iso": "URY",
+        "reg": 2,
+        "f": 0.22,
+        "t": 82.3,
+        "p": -1.3,
+        "poly": 0.708
+      },
+      {
+        "c": "United States",
+        "iso": "USA",
+        "reg": 3,
+        "f": 0.51,
+        "t": 69.4,
+        "p": -0.49,
+        "poly": 0.783
+      },
+      {
+        "c": "Uzbekistan",
+        "iso": "UZB",
+        "reg": 1,
+        "f": 0.5,
+        "t": 85,
+        "p": -1.88,
+        "poly": 0.176
+      },
+      {
+        "c": "Saint Vincent and the Grenadines",
+        "iso": "VCT",
+        "reg": null,
+        "f": 0.22,
+        "t": 69.4,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Venezuela",
+        "iso": "VEN",
+        "reg": 1,
+        "f": 0.33,
+        "t": 69.3,
+        "p": -0.29,
+        "poly": 0.504
+      },
+      {
+        "c": "Virgin Islands, British",
+        "iso": "VGB",
+        "reg": null,
+        "f": 0.5,
+        "t": 57.5,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Democratic Republic of Vietnam",
+        "iso": "VNM",
+        "reg": 0,
+        "f": 0.22,
+        "t": 98.7,
+        "p": -0.07,
+        "poly": 0.171
+      },
+      {
+        "c": "Vanuatu",
+        "iso": "VUT",
+        "reg": 2,
+        "f": 0.29,
+        "t": 63.7,
+        "p": -1.32,
+        "poly": 0.687
+      },
+      {
+        "c": "Samoa",
+        "iso": "WSM",
+        "reg": null,
+        "f": 0.25,
+        "t": 77.9,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Yemen",
+        "iso": "YEM",
+        "reg": 1,
+        "f": 0.15,
+        "t": 69.3,
+        "p": 0.91,
+        "poly": 0.192
+      },
+      {
+        "c": "South Africa",
+        "iso": "ZAF",
+        "reg": 1,
+        "f": 0.27,
+        "t": 74.7,
+        "p": 1.71,
+        "poly": 0.401
+      },
+      {
+        "c": "Zambia",
+        "iso": "ZMB",
+        "reg": 1,
+        "f": 0.25,
+        "t": 57.1,
+        "p": -0.24,
+        "poly": 0.363
+      },
+      {
+        "c": "Zimbabwe",
+        "iso": "ZWE",
+        "reg": 1,
+        "f": 0.29,
+        "t": 52.9,
+        "p": 1.4,
+        "poly": 0.267
+      }
+    ],
+    "2000": [
+      {
+        "c": "Afghanistan",
+        "iso": "AFG",
+        "reg": 1,
+        "f": 0.33,
+        "t": 45.8,
+        "p": 0.14,
+        "poly": 0.309
+      },
+      {
+        "c": "Angola",
+        "iso": "AGO",
+        "reg": 1,
+        "f": 0.14,
+        "t": 73.9,
+        "p": -0.21,
+        "poly": 0.239
+      },
+      {
+        "c": "Albania",
+        "iso": "ALB",
+        "reg": 2,
+        "f": 0.24,
+        "t": 50.9,
+        "p": -1.37,
+        "poly": 0.517
+      },
+      {
+        "c": "Andorra",
+        "iso": "AND",
+        "reg": null,
+        "f": 0.29,
+        "t": 74.2,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Argentina",
+        "iso": "ARG",
+        "reg": 2,
+        "f": 0.48,
+        "t": 76,
+        "p": 1.1,
+        "poly": 0.787
+      },
+      {
+        "c": "Armenia",
+        "iso": "ARM",
+        "reg": 1,
+        "f": 0.38,
+        "t": 61.5,
+        "p": 0.88,
+        "poly": 0.404
+      },
+      {
+        "c": "Antigua & Barbuda",
+        "iso": "ATG",
+        "reg": null,
+        "f": 0.19,
+        "t": 84.6,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Australia",
+        "iso": "AUS",
+        "reg": 3,
+        "f": 0.33,
+        "t": 93.3,
+        "p": -1.15,
+        "poly": 0.875
+      },
+      {
+        "c": "Austria",
+        "iso": "AUT",
+        "reg": 3,
+        "f": 0.43,
+        "t": 74.6,
+        "p": -0.49,
+        "poly": 0.866
+      },
+      {
+        "c": "Azerbaijan",
+        "iso": "AZE",
+        "reg": 1,
+        "f": 0.52,
+        "t": 61.4,
+        "p": 0.39,
+        "poly": 0.213
+      },
+      {
+        "c": "Burundi",
+        "iso": "BDI",
+        "reg": 1,
+        "f": 0.29,
+        "t": 79.1,
+        "p": 1.5,
+        "poly": 0.255
+      },
+      {
+        "c": "Belgium",
+        "iso": "BEL",
+        "reg": 3,
+        "f": 0.24,
+        "t": 89.9,
+        "p": -1.85,
+        "poly": 0.896
+      },
+      {
+        "c": "Benin",
+        "iso": "BEN",
+        "reg": 2,
+        "f": 0.43,
+        "t": 65.5,
+        "p": -1.04,
+        "poly": 0.612
+      },
+      {
+        "c": "Burkina Faso",
+        "iso": "BFA",
+        "reg": 2,
+        "f": 0.33,
+        "t": 60,
+        "p": -0.76,
+        "poly": 0.564
+      },
+      {
+        "c": "Bangladesh",
+        "iso": "BGD",
+        "reg": 1,
+        "f": 0.19,
+        "t": 72.9,
+        "p": 1.15,
+        "poly": 0.364
+      },
+      {
+        "c": "Bulgaria",
+        "iso": "BGR",
+        "reg": 2,
+        "f": 0.48,
+        "t": 54.8,
+        "p": -1.19,
+        "poly": 0.677
+      },
+      {
+        "c": "Bahrain",
+        "iso": "BHR",
+        "reg": 0,
+        "f": 0.24,
+        "t": 62.3,
+        "p": 1.46,
+        "poly": 0.165
+      },
+      {
+        "c": "Bahamas",
+        "iso": "BHS",
+        "reg": null,
+        "f": 0.19,
+        "t": 90,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Bosnia and Herzegovina",
+        "iso": "BIH",
+        "reg": 2,
+        "f": 0.29,
+        "t": 55.8,
+        "p": 1.26,
+        "poly": 0.585
+      },
+      {
+        "c": "Belarus",
+        "iso": "BLR",
+        "reg": 1,
+        "f": 0.52,
+        "t": 81.2,
+        "p": 1.24,
+        "poly": 0.24
+      },
+      {
+        "c": "Belize",
+        "iso": "BLZ",
+        "reg": null,
+        "f": 0.24,
+        "t": 76.9,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Bolivia",
+        "iso": "BOL",
+        "reg": 2,
+        "f": 0.38,
+        "t": 85.7,
+        "p": 0.91,
+        "poly": 0.663
+      },
+      {
+        "c": "Brazil",
+        "iso": "BRA",
+        "reg": 2,
+        "f": 0.24,
+        "t": 81.5,
+        "p": 0.04,
+        "poly": 0.837
+      },
+      {
+        "c": "Barbados",
+        "iso": "BRB",
+        "reg": 2,
+        "f": 0.19,
+        "t": 61.4,
+        "p": -3.39,
+        "poly": 0.776
+      },
+      {
+        "c": "Bhutan",
+        "iso": "BTN",
+        "reg": 2,
+        "f": 0.43,
+        "t": 68,
+        "p": -1.3,
+        "poly": 0.55
+      },
+      {
+        "c": "Botswana",
+        "iso": "BWA",
+        "reg": 3,
+        "f": 0.19,
+        "t": 80.2,
+        "p": -1.81,
+        "poly": 0.696
+      },
+      {
+        "c": "Central African Republic",
+        "iso": "CAF",
+        "reg": 1,
+        "f": 0.24,
+        "t": 58.1,
+        "p": 0.88,
+        "poly": 0.329
+      },
+      {
+        "c": "Canada",
+        "iso": "CAN",
+        "reg": 3,
+        "f": 0.33,
+        "t": 63.3,
+        "p": -1.41,
+        "poly": 0.831
+      },
+      {
+        "c": "Switzerland",
+        "iso": "CHE",
+        "reg": 3,
+        "f": 0.24,
+        "t": 47.2,
+        "p": -1.75,
+        "poly": 0.897
+      },
+      {
+        "c": "Chile",
+        "iso": "CHL",
+        "reg": 3,
+        "f": 0.38,
+        "t": 77.8,
+        "p": -1.5,
+        "poly": 0.881
+      },
+      {
+        "c": "Cote d'Ivoire",
+        "iso": "CIV",
+        "reg": 1,
+        "f": 0.38,
+        "t": 49.8,
+        "p": 1.03,
+        "poly": 0.458
+      },
+      {
+        "c": "Cameroon",
+        "iso": "CMR",
+        "reg": 1,
+        "f": 0.38,
+        "t": 64.2,
+        "p": 1.13,
+        "poly": 0.312
+      },
+      {
+        "c": "Congo, Democratic Republic of",
+        "iso": "COD",
+        "reg": 1,
+        "f": 0.14,
+        "t": 58.3,
+        "p": 0.86,
+        "poly": 0.288
+      },
+      {
+        "c": "Congo",
+        "iso": "COG",
+        "reg": 1,
+        "f": 0.33,
+        "t": 62.7,
+        "p": 0.21,
+        "poly": 0.243
+      },
+      {
+        "c": "Colombia",
+        "iso": "COL",
+        "reg": 2,
+        "f": 0.48,
+        "t": 48.4,
+        "p": 0.78,
+        "poly": 0.617
+      },
+      {
+        "c": "Comoros",
+        "iso": "COM",
+        "reg": 1,
+        "f": 0.43,
+        "t": 66.2,
+        "p": 0.71,
+        "poly": 0.401
+      },
+      {
+        "c": "Cabo Verde",
+        "iso": "CPV",
+        "reg": 2,
+        "f": 0.38,
+        "t": 63.8,
+        "p": -0.88,
+        "poly": 0.785
+      },
+      {
+        "c": "Costa Rica",
+        "iso": "CRI",
+        "reg": 3,
+        "f": 0.24,
+        "t": 67.6,
+        "p": -1.42,
+        "poly": 0.902
+      },
+      {
+        "c": "Cuba",
+        "iso": "CUB",
+        "reg": 0,
+        "f": 0.19,
+        "t": 92.8,
+        "p": -0.45,
+        "poly": 0.146
+      },
+      {
+        "c": "Cyprus",
+        "iso": "CYP",
+        "reg": 3,
+        "f": 0.38,
+        "t": 83.1,
+        "p": 0.36,
+        "poly": 0.832
+      },
+      {
+        "c": "Czech Republic",
+        "iso": "CZE",
+        "reg": 3,
+        "f": 0.81,
+        "t": 62.3,
+        "p": -1.73,
+        "poly": 0.873
+      },
+      {
+        "c": "German Federal Republic",
+        "iso": "DEU",
+        "reg": 3,
+        "f": 0.24,
+        "t": 75,
+        "p": -2.06,
+        "poly": 0.894
+      },
+      {
+        "c": "Djibouti",
+        "iso": "DJI",
+        "reg": 1,
+        "f": 0.33,
+        "t": 67.9,
+        "p": 0.19,
+        "poly": 0.249
+      },
+      {
+        "c": "Dominica",
+        "iso": "DMA",
+        "reg": null,
+        "f": 0.19,
+        "t": 56.8,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Denmark",
+        "iso": "DNK",
+        "reg": 3,
+        "f": 0.29,
+        "t": 86.1,
+        "p": -3,
+        "poly": 0.918
+      },
+      {
+        "c": "Dominican Republic",
+        "iso": "DOM",
+        "reg": 2,
+        "f": 0.43,
+        "t": 64.4,
+        "p": -0.36,
+        "poly": 0.613
+      },
+      {
+        "c": "Algeria",
+        "iso": "DZA",
+        "reg": 1,
+        "f": 0.38,
+        "t": 48,
+        "p": -1.19,
+        "poly": 0.32
+      },
+      {
+        "c": "Ecuador",
+        "iso": "ECU",
+        "reg": 2,
+        "f": 0.29,
+        "t": 76.5,
+        "p": 1.08,
+        "poly": 0.626
+      },
+      {
+        "c": "Egypt",
+        "iso": "EGY",
+        "reg": 1,
+        "f": 0.62,
+        "t": 40.5,
+        "p": -0.18,
+        "poly": 0.199
+      },
+      {
+        "c": "Spain",
+        "iso": "ESP",
+        "reg": 3,
+        "f": 0.38,
+        "t": 72.5,
+        "p": -1.17,
+        "poly": 0.875
+      },
+      {
+        "c": "Estonia",
+        "iso": "EST",
+        "reg": 3,
+        "f": 0.24,
+        "t": 62.3,
+        "p": -1.36,
+        "poly": 0.882
+      },
+      {
+        "c": "Ethiopia",
+        "iso": "ETH",
+        "reg": 1,
+        "f": 0.19,
+        "t": 89.8,
+        "p": 0.81,
+        "poly": 0.247
+      },
+      {
+        "c": "Finland",
+        "iso": "FIN",
+        "reg": 3,
+        "f": 0.43,
+        "t": 69.6,
+        "p": -1.5,
+        "poly": 0.878
+      },
+      {
+        "c": "Fiji",
+        "iso": "FJI",
+        "reg": 1,
+        "f": 0.19,
+        "t": 75.4,
+        "p": -0.67,
+        "poly": 0.308
+      },
+      {
+        "c": "France",
+        "iso": "FRA",
+        "reg": 3,
+        "f": 0.38,
+        "t": 80.4,
+        "p": 0.11,
+        "poly": 0.88
+      },
+      {
+        "c": "Federated States of Micronesia",
+        "iso": "FSM",
+        "reg": null,
+        "f": 0.43,
+        "t": 43.5,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Gabon",
+        "iso": "GAB",
+        "reg": 1,
+        "f": 0.33,
+        "t": 52,
+        "p": -0.66,
+        "poly": 0.363
+      },
+      {
+        "c": "United Kingdom",
+        "iso": "GBR",
+        "reg": 3,
+        "f": 0.29,
+        "t": 64.8,
+        "p": -0.63,
+        "poly": 0.864
+      },
+      {
+        "c": "Georgia",
+        "iso": "GEO",
+        "reg": 2,
+        "f": 0.52,
+        "t": 61.2,
+        "p": 1.16,
+        "poly": 0.545
+      },
+      {
+        "c": "Ghana",
+        "iso": "GHA",
+        "reg": 3,
+        "f": 0.29,
+        "t": 74.4,
+        "p": -0.47,
+        "poly": 0.739
+      },
+      {
+        "c": "Guinea",
+        "iso": "GIN",
+        "reg": 1,
+        "f": 0.33,
+        "t": 72.2,
+        "p": 1.27,
+        "poly": 0.295
+      },
+      {
+        "c": "Gambia",
+        "iso": "GMB",
+        "reg": 1,
+        "f": 0.38,
+        "t": 56.2,
+        "p": -0.66,
+        "poly": 0.299
+      },
+      {
+        "c": "Guinea-Bissau",
+        "iso": "GNB",
+        "reg": 1,
+        "f": 0.43,
+        "t": 75.7,
+        "p": -0.79,
+        "poly": 0.442
+      },
+      {
+        "c": "Equatorial Guinea",
+        "iso": "GNQ",
+        "reg": 1,
+        "f": 0.33,
+        "t": 92.9,
+        "p": 0.86,
+        "poly": 0.182
+      },
+      {
+        "c": "Greece",
+        "iso": "GRC",
+        "reg": 3,
+        "f": 0.43,
+        "t": 69,
+        "p": -1.09,
+        "poly": 0.883
+      },
+      {
+        "c": "Grenada",
+        "iso": "GRD",
+        "reg": null,
+        "f": 0.19,
+        "t": 74.8,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Guatemala",
+        "iso": "GTM",
+        "reg": 2,
+        "f": 0.24,
+        "t": 63.6,
+        "p": -0.7,
+        "poly": 0.579
+      },
+      {
+        "c": "Guyana",
+        "iso": "GUY",
+        "reg": 2,
+        "f": 0.24,
+        "t": 75.6,
+        "p": 1.15,
+        "poly": 0.597
+      },
+      {
+        "c": "Honduras",
+        "iso": "HND",
+        "reg": 1,
+        "f": 0.24,
+        "t": 58.4,
+        "p": -0.74,
+        "poly": 0.467
+      },
+      {
+        "c": "Croatia",
+        "iso": "HRV",
+        "reg": 2,
+        "f": 0.62,
+        "t": 55.3,
+        "p": 0.42,
+        "poly": 0.787
+      },
+      {
+        "c": "Haiti",
+        "iso": "HTI",
+        "reg": 1,
+        "f": 0.38,
+        "t": 38.3,
+        "p": 0.99,
+        "poly": 0.398
+      },
+      {
+        "c": "Hungary",
+        "iso": "HUN",
+        "reg": 2,
+        "f": 0.24,
+        "t": 67.4,
+        "p": 1.34,
+        "poly": 0.735
+      },
+      {
+        "c": "Indonesia",
+        "iso": "IDN",
+        "reg": 2,
+        "f": 0.33,
+        "t": 78.3,
+        "p": 0.65,
+        "poly": 0.668
+      },
+      {
+        "c": "India",
+        "iso": "IND",
+        "reg": 2,
+        "f": 0.19,
+        "t": 62.5,
+        "p": 0.44,
+        "poly": 0.636
+      },
+      {
+        "c": "Ireland",
+        "iso": "IRL",
+        "reg": 3,
+        "f": 0.33,
+        "t": 61.9,
+        "p": -3.37,
+        "poly": 0.893
+      },
+      {
+        "c": "Iran",
+        "iso": "IRN",
+        "reg": 1,
+        "f": 0.48,
+        "t": 65,
+        "p": 0.98,
+        "poly": 0.186
+      },
+      {
+        "c": "Iraq",
+        "iso": "IRQ",
+        "reg": 1,
+        "f": 0.29,
+        "t": 72.7,
+        "p": 1.8,
+        "poly": 0.341
+      },
+      {
+        "c": "Iceland",
+        "iso": "ISL",
+        "reg": 3,
+        "f": 0.52,
+        "t": 77.5,
+        "p": -0.77,
+        "poly": 0.871
+      },
+      {
+        "c": "Israel",
+        "iso": "ISR",
+        "reg": 3,
+        "f": 0.38,
+        "t": 67.7,
+        "p": 0.56,
+        "poly": 0.748
+      },
+      {
+        "c": "Italy",
+        "iso": "ITA",
+        "reg": 3,
+        "f": 0.24,
+        "t": 78.7,
+        "p": 0.23,
+        "poly": 0.857
+      },
+      {
+        "c": "Jamaica",
+        "iso": "JAM",
+        "reg": 2,
+        "f": 0.24,
+        "t": 51.5,
+        "p": -1.32,
+        "poly": 0.772
+      },
+      {
+        "c": "Jordan",
+        "iso": "JOR",
+        "reg": 0,
+        "f": 0.29,
+        "t": 47.9,
+        "p": -1.04,
+        "poly": 0.236
+      },
+      {
+        "c": "Japan",
+        "iso": "JPN",
+        "reg": 3,
+        "f": 0.62,
+        "t": 60.4,
+        "p": -1.9,
+        "poly": 0.842
+      },
+      {
+        "c": "Kazakhstan",
+        "iso": "KAZ",
+        "reg": 1,
+        "f": 0.38,
+        "t": 77.1,
+        "p": -0.49,
+        "poly": 0.242
+      },
+      {
+        "c": "Kenya",
+        "iso": "KEN",
+        "reg": 1,
+        "f": 0.24,
+        "t": 72.9,
+        "p": 0.22,
+        "poly": 0.475
+      },
+      {
+        "c": "Kyrgyz Republic",
+        "iso": "KGZ",
+        "reg": 1,
+        "f": 0.52,
+        "t": 66,
+        "p": -0.33,
+        "poly": 0.375
+      },
+      {
+        "c": "Cambodia",
+        "iso": "KHM",
+        "reg": 1,
+        "f": 0.19,
+        "t": 77.5,
+        "p": 0.04,
+        "poly": 0.291
+      },
+      {
+        "c": "Kiribati",
+        "iso": "KIR",
+        "reg": null,
+        "f": 0.52,
+        "t": 72.3,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Saint Kitts and Nevis",
+        "iso": "KNA",
+        "reg": null,
+        "f": 0.19,
+        "t": 67.5,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Korea, Republic of",
+        "iso": "KOR",
+        "reg": 3,
+        "f": 0.48,
+        "t": 63.8,
+        "p": 0.17,
+        "poly": 0.804
+      },
+      {
+        "c": "Kuwait",
+        "iso": "KWT",
+        "reg": 0,
+        "f": 0.43,
+        "t": 64.5,
+        "p": -1.4,
+        "poly": 0.311
+      },
+      {
+        "c": "Lao People's Dem. Republic",
+        "iso": "LAO",
+        "reg": 0,
+        "f": 0.19,
+        "t": 99.3,
+        "p": -0.52,
+        "poly": 0.097
+      },
+      {
+        "c": "Lebanon",
+        "iso": "LBN",
+        "reg": 1,
+        "f": 0.19,
+        "t": 48.8,
+        "p": 1.09,
+        "poly": 0.435
+      },
+      {
+        "c": "Liberia",
+        "iso": "LBR",
+        "reg": 2,
+        "f": 0.24,
+        "t": 74.4,
+        "p": 0.33,
+        "poly": 0.541
+      },
+      {
+        "c": "Libya",
+        "iso": "LBY",
+        "reg": 0,
+        "f": 0.14,
+        "t": 55.6,
+        "p": 1.38,
+        "poly": 0.179
+      },
+      {
+        "c": "Saint Lucia",
+        "iso": "LCA",
+        "reg": null,
+        "f": 0.19,
+        "t": 50.1,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Liechtenstein",
+        "iso": "LIE",
+        "reg": null,
+        "f": 0.24,
+        "t": 83.1,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Sri Lanka",
+        "iso": "LKA",
+        "reg": 1,
+        "f": 0.43,
+        "t": 77,
+        "p": 0.43,
+        "poly": 0.474
+      },
+      {
+        "c": "Lesotho",
+        "iso": "LSO",
+        "reg": 2,
+        "f": 0.14,
+        "t": 51.7,
+        "p": 0.16,
+        "poly": 0.566
+      },
+      {
+        "c": "Lithuania",
+        "iso": "LTU",
+        "reg": 3,
+        "f": 0.57,
+        "t": 52.6,
+        "p": -2.84,
+        "poly": 0.825
+      },
+      {
+        "c": "Luxembourg",
+        "iso": "LUX",
+        "reg": 3,
+        "f": 0.19,
+        "t": 90.9,
+        "p": -2.32,
+        "poly": 0.874
+      },
+      {
+        "c": "Latvia",
+        "iso": "LVA",
+        "reg": 2,
+        "f": 0.29,
+        "t": 61.6,
+        "p": -2.48,
+        "poly": 0.819
+      },
+      {
+        "c": "Morocco",
+        "iso": "MAR",
+        "reg": 0,
+        "f": 0.19,
+        "t": 44.3,
+        "p": -0.67,
+        "poly": 0.256
+      },
+      {
+        "c": "Monaco",
+        "iso": "MCO",
+        "reg": null,
+        "f": 0.19,
+        "t": 75.4,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Moldova",
+        "iso": "MDA",
+        "reg": 2,
+        "f": 0.43,
+        "t": 59.3,
+        "p": -0.23,
+        "poly": 0.537
+      },
+      {
+        "c": "Madagascar",
+        "iso": "MDG",
+        "reg": 1,
+        "f": 0.38,
+        "t": 58.7,
+        "p": 1.05,
+        "poly": 0.425
+      },
+      {
+        "c": "Maldives",
+        "iso": "MDV",
+        "reg": 1,
+        "f": 0.43,
+        "t": 81,
+        "p": 0.54,
+        "poly": 0.38
+      },
+      {
+        "c": "Mexico",
+        "iso": "MEX",
+        "reg": 2,
+        "f": 0.33,
+        "t": 57.6,
+        "p": 0.03,
+        "poly": 0.662
+      },
+      {
+        "c": "Marshall Islands",
+        "iso": "MHL",
+        "reg": null,
+        "f": 0.24,
+        "t": 49.5,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Macedonia (FYROM)",
+        "iso": "MKD",
+        "reg": 2,
+        "f": 0.52,
+        "t": 58.2,
+        "p": 1.08,
+        "poly": 0.53
+      },
+      {
+        "c": "Mali",
+        "iso": "MLI",
+        "reg": 2,
+        "f": 0.38,
+        "t": 40.4,
+        "p": 0.33,
+        "poly": 0.545
+      },
+      {
+        "c": "Malta",
+        "iso": "MLT",
+        "reg": 2,
+        "f": 0.19,
+        "t": 93.5,
+        "p": 1.06,
+        "poly": 0.789
+      },
+      {
+        "c": "Myanmar",
+        "iso": "MMR",
+        "reg": 0,
+        "f": 0.14,
+        "t": 73,
+        "p": 1.42,
+        "poly": 0.224
+      },
+      {
+        "c": "Montenegro",
+        "iso": "MNE",
+        "reg": 1,
+        "f": 0.54,
+        "t": 69,
+        "p": 0.82,
+        "poly": 0.478
+      },
+      {
+        "c": "Mongolia",
+        "iso": "MNG",
+        "reg": 2,
+        "f": 0.52,
+        "t": 74.3,
+        "p": 0.14,
+        "poly": 0.672
+      },
+      {
+        "c": "Mozambique",
+        "iso": "MOZ",
+        "reg": 1,
+        "f": 0.19,
+        "t": 45.3,
+        "p": -0.82,
+        "poly": 0.43
+      },
+      {
+        "c": "Mauritania",
+        "iso": "MRT",
+        "reg": 1,
+        "f": 0.43,
+        "t": 65.6,
+        "p": -0.97,
+        "poly": 0.38
+      },
+      {
+        "c": "Mauritius",
+        "iso": "MUS",
+        "reg": 3,
+        "f": 0.24,
+        "t": 78.3,
+        "p": 0.79,
+        "poly": 0.728
+      },
+      {
+        "c": "Malawi",
+        "iso": "MWI",
+        "reg": 1,
+        "f": 0.24,
+        "t": 70.4,
+        "p": -0.84,
+        "poly": 0.498
+      },
+      {
+        "c": "Malaysia",
+        "iso": "MYS",
+        "reg": 1,
+        "f": 0.19,
+        "t": 79.3,
+        "p": 1.12,
+        "poly": 0.335
+      },
+      {
+        "c": "Namibia",
+        "iso": "NAM",
+        "reg": 2,
+        "f": 0.19,
+        "t": 71.6,
+        "p": -0.62,
+        "poly": 0.66
+      },
+      {
+        "c": "Niger",
+        "iso": "NER",
+        "reg": 2,
+        "f": 0.29,
+        "t": 57.2,
+        "p": -0.97,
+        "poly": 0.544
+      },
+      {
+        "c": "Nigeria",
+        "iso": "NGA",
+        "reg": 1,
+        "f": 0.33,
+        "t": 51.7,
+        "p": -0.91,
+        "poly": 0.48
+      },
+      {
+        "c": "Nicaragua",
+        "iso": "NIC",
+        "reg": 1,
+        "f": 0.19,
+        "t": 70.2,
+        "p": 0.24,
+        "poly": 0.427
+      },
+      {
+        "c": "Netherlands",
+        "iso": "NLD",
+        "reg": 3,
+        "f": 0.29,
+        "t": 78.6,
+        "p": -1.31,
+        "poly": 0.868
+      },
+      {
+        "c": "Norway",
+        "iso": "NOR",
+        "reg": 3,
+        "f": 0.24,
+        "t": 77.1,
+        "p": -2.29,
+        "poly": 0.893
+      },
+      {
+        "c": "Nepal",
+        "iso": "NPL",
+        "reg": 1,
+        "f": 0.14,
+        "t": 70.1,
+        "p": 1,
+        "poly": 0.447
+      },
+      {
+        "c": "Nauru",
+        "iso": "NRU",
+        "reg": null,
+        "f": 0.48,
+        "t": 90.7,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "New Zealand",
+        "iso": "NZL",
+        "reg": 3,
+        "f": 0.33,
+        "t": 78.6,
+        "p": -2.52,
+        "poly": 0.886
+      },
+      {
+        "c": "Oman",
+        "iso": "OMN",
+        "reg": 0,
+        "f": 0.28,
+        "t": 61.1,
+        "p": -2.04,
+        "poly": 0.166
+      },
+      {
+        "c": "Pakistan",
+        "iso": "PAK",
+        "reg": 1,
+        "f": 0.24,
+        "t": 52.5,
+        "p": -0.78,
+        "poly": 0.383
+      },
+      {
+        "c": "Panama",
+        "iso": "PAN",
+        "reg": 2,
+        "f": 0.19,
+        "t": 73.8,
+        "p": -0.87,
+        "poly": 0.739
+      },
+      {
+        "c": "Peru",
+        "iso": "PER",
+        "reg": 2,
+        "f": 0.29,
+        "t": 82.9,
+        "p": -0.05,
+        "poly": 0.782
+      },
+      {
+        "c": "Philippines",
+        "iso": "PHL",
+        "reg": 2,
+        "f": 0.33,
+        "t": 75.8,
+        "p": -1.15,
+        "poly": 0.51
+      },
+      {
+        "c": "Palau",
+        "iso": "PLW",
+        "reg": null,
+        "f": 0.43,
+        "t": 62.8,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Papua New Guinea",
+        "iso": "PNG",
+        "reg": 1,
+        "f": 0.19,
+        "t": 66.7,
+        "p": -1.56,
+        "poly": 0.476
+      },
+      {
+        "c": "Poland",
+        "iso": "POL",
+        "reg": 3,
+        "f": 0.52,
+        "t": 55.7,
+        "p": 1.53,
+        "poly": 0.836
+      },
+      {
+        "c": "North Korea",
+        "iso": "PRK",
+        "reg": 0,
+        "f": 0.14,
+        "t": 100,
+        "p": -1,
+        "poly": 0.084
+      },
+      {
+        "c": "Portugal",
+        "iso": "PRT",
+        "reg": 3,
+        "f": 0.48,
+        "t": 56.6,
+        "p": -2.22,
+        "poly": 0.887
+      },
+      {
+        "c": "Paraguay",
+        "iso": "PRY",
+        "reg": 2,
+        "f": 0.24,
+        "t": 63.5,
+        "p": -1.15,
+        "poly": 0.591
+      },
+      {
+        "c": "Romania",
+        "iso": "ROU",
+        "reg": 2,
+        "f": 0.52,
+        "t": 50.1,
+        "p": 0.2,
+        "poly": 0.66
+      },
+      {
+        "c": "Russia (Soviet Union)",
+        "iso": "RUS",
+        "reg": 1,
+        "f": 0.43,
+        "t": 62.5,
+        "p": 0.23,
+        "poly": 0.304
+      },
+      {
+        "c": "Rwanda",
+        "iso": "RWA",
+        "reg": 1,
+        "f": 0.33,
+        "t": 97.1,
+        "p": 0.74,
+        "poly": 0.197
+      },
+      {
+        "c": "Saudi Arabia",
+        "iso": "SAU",
+        "reg": 0,
+        "f": 1,
+        "t": null,
+        "p": -1.3,
+        "poly": 0.015
+      },
+      {
+        "c": "Sudan",
+        "iso": "SDN",
+        "reg": 1,
+        "f": 0.14,
+        "t": 59.2,
+        "p": 1.04,
+        "poly": 0.203
+      },
+      {
+        "c": "Senegal",
+        "iso": "SEN",
+        "reg": 2,
+        "f": 0.38,
+        "t": 62.7,
+        "p": -1.1,
+        "poly": 0.692
+      },
+      {
+        "c": "Singapore",
+        "iso": "SGP",
+        "reg": 1,
+        "f": 0.29,
+        "t": 94.5,
+        "p": -1,
+        "poly": 0.397
+      },
+      {
+        "c": "Solomon Islands",
+        "iso": "SLB",
+        "reg": 2,
+        "f": 0.24,
+        "t": 65.7,
+        "p": -1.56,
+        "poly": 0.531
+      },
+      {
+        "c": "Sierra Leone",
+        "iso": "SLE",
+        "reg": 2,
+        "f": 0.19,
+        "t": 83.2,
+        "p": 0.39,
+        "poly": 0.492
+      },
+      {
+        "c": "El Salvador",
+        "iso": "SLV",
+        "reg": 2,
+        "f": 0.52,
+        "t": 50.6,
+        "p": 0.83,
+        "poly": 0.592
+      },
+      {
+        "c": "San Marino",
+        "iso": "SMR",
+        "reg": null,
+        "f": 0.29,
+        "t": 65.6,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Somalia",
+        "iso": "SOM",
+        "reg": 0,
+        "f": 0,
+        "t": null,
+        "p": 2.25,
+        "poly": 0.172
+      },
+      {
+        "c": "Serbia",
+        "iso": "SRB",
+        "reg": 2,
+        "f": 0.62,
+        "t": 57.6,
+        "p": -0.14,
+        "poly": 0.528
+      },
+      {
+        "c": "Sao Tome and Principe",
+        "iso": "STP",
+        "reg": 2,
+        "f": 0.43,
+        "t": 73.3,
+        "p": -2.05,
+        "poly": 0.671
+      },
+      {
+        "c": "Surinam",
+        "iso": "SUR",
+        "reg": 2,
+        "f": 0.24,
+        "t": 66.8,
+        "p": -1.2,
+        "poly": 0.767
+      },
+      {
+        "c": "Slovakia",
+        "iso": "SVK",
+        "reg": 3,
+        "f": 0.48,
+        "t": 56.7,
+        "p": -0.75,
+        "poly": 0.842
+      },
+      {
+        "c": "Slovenia",
+        "iso": "SVN",
+        "reg": 3,
+        "f": 0.48,
+        "t": 58.7,
+        "p": 0.48,
+        "poly": 0.841
+      },
+      {
+        "c": "Sweden",
+        "iso": "SWE",
+        "reg": 3,
+        "f": 0.24,
+        "t": 83.9,
+        "p": -2.1,
+        "poly": 0.913
+      },
+      {
+        "c": "Swaziland",
+        "iso": "SWZ",
+        "reg": 0,
+        "f": 0.19,
+        "t": 60.5,
+        "p": 1.31,
+        "poly": 0.129
+      },
+      {
+        "c": "Seychelles",
+        "iso": "SYC",
+        "reg": 2,
+        "f": 0.43,
+        "t": 88,
+        "p": 0.33,
+        "poly": 0.488
+      },
+      {
+        "c": "Syria",
+        "iso": "SYR",
+        "reg": 1,
+        "f": 0.33,
+        "t": 67,
+        "p": 2.02,
+        "poly": 0.144
+      },
+      {
+        "c": "Chad",
+        "iso": "TCD",
+        "reg": 1,
+        "f": 0.29,
+        "t": 57.8,
+        "p": 1.71,
+        "poly": 0.279
+      },
+      {
+        "c": "Togo",
+        "iso": "TGO",
+        "reg": 1,
+        "f": 0.43,
+        "t": 70.1,
+        "p": 1.64,
+        "poly": 0.394
+      },
+      {
+        "c": "Thailand",
+        "iso": "THA",
+        "reg": 1,
+        "f": 0.48,
+        "t": 69.3,
+        "p": 1.66,
+        "poly": 0.354
+      },
+      {
+        "c": "Tajikistan",
+        "iso": "TJK",
+        "reg": 1,
+        "f": 0.38,
+        "t": 89.6,
+        "p": -0.99,
+        "poly": 0.215
+      },
+      {
+        "c": "Turkmenistan",
+        "iso": "TKM",
+        "reg": 0,
+        "f": 0.38,
+        "t": 92.4,
+        "p": -2.37,
+        "poly": 0.12
+      },
+      {
+        "c": "East Timor",
+        "iso": "TLS",
+        "reg": 2,
+        "f": 0.5,
+        "t": 79.2,
+        "p": -0.23,
+        "poly": 0.65
+      },
+      {
+        "c": "Tonga",
+        "iso": "TON",
+        "reg": null,
+        "f": 0.29,
+        "t": 66.4,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Trinidad and Tobago",
+        "iso": "TTO",
+        "reg": 3,
+        "f": 0.33,
+        "t": 65.6,
+        "p": -2.04,
+        "poly": 0.758
+      },
+      {
+        "c": "Tunisia",
+        "iso": "TUN",
+        "reg": 1,
+        "f": 0.33,
+        "t": 79.1,
+        "p": 0.69,
+        "poly": 0.43
+      },
+      {
+        "c": "Turkey",
+        "iso": "TUR",
+        "reg": 2,
+        "f": 0.33,
+        "t": 82.8,
+        "p": 1.84,
+        "poly": 0.499
+      },
+      {
+        "c": "Tuvalu",
+        "iso": "TUV",
+        "reg": null,
+        "f": 0.24,
+        "t": 80,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Taiwan",
+        "iso": "TWN",
+        "reg": 3,
+        "f": 0.48,
+        "t": 65,
+        "p": -1.77,
+        "poly": 0.802
+      },
+      {
+        "c": "Tanzania",
+        "iso": "TZA",
+        "reg": 1,
+        "f": 0.24,
+        "t": 63.5,
+        "p": -1.09,
+        "poly": 0.446
+      },
+      {
+        "c": "Uganda",
+        "iso": "UGA",
+        "reg": 1,
+        "f": 0.24,
+        "t": 66.6,
+        "p": -0.03,
+        "poly": 0.308
+      },
+      {
+        "c": "Ukraine",
+        "iso": "UKR",
+        "reg": 1,
+        "f": 0.48,
+        "t": 66.4,
+        "p": 0.1,
+        "poly": 0.473
+      },
+      {
+        "c": "Uruguay",
+        "iso": "URY",
+        "reg": 3,
+        "f": 0.19,
+        "t": 89.7,
+        "p": -3.1,
+        "poly": 0.892
+      },
+      {
+        "c": "United States",
+        "iso": "USA",
+        "reg": 3,
+        "f": 0.52,
+        "t": 61.9,
+        "p": 0.4,
+        "poly": 0.868
+      },
+      {
+        "c": "Uzbekistan",
+        "iso": "UZB",
+        "reg": 1,
+        "f": 0.48,
+        "t": 83.3,
+        "p": -2.12,
+        "poly": 0.168
+      },
+      {
+        "c": "Saint Vincent and the Grenadines",
+        "iso": "VCT",
+        "reg": null,
+        "f": 0.24,
+        "t": 67.1,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Venezuela",
+        "iso": "VEN",
+        "reg": 1,
+        "f": 0.48,
+        "t": 57.4,
+        "p": 1.67,
+        "poly": 0.386
+      },
+      {
+        "c": "Democratic Republic of Vietnam",
+        "iso": "VNM",
+        "reg": 0,
+        "f": 0.19,
+        "t": 99.4,
+        "p": -0.79,
+        "poly": 0.155
+      },
+      {
+        "c": "Vanuatu",
+        "iso": "VUT",
+        "reg": 2,
+        "f": 0.29,
+        "t": 62.2,
+        "p": -1.29,
+        "poly": 0.694
+      },
+      {
+        "c": "Samoa",
+        "iso": "WSM",
+        "reg": null,
+        "f": 0.19,
+        "t": 77.8,
+        "p": null,
+        "poly": null
+      },
+      {
+        "c": "Yemen",
+        "iso": "YEM",
+        "reg": 1,
+        "f": 0.14,
+        "t": 68.3,
+        "p": 1.54,
+        "poly": 0.244
+      },
+      {
+        "c": "South Africa",
+        "iso": "ZAF",
+        "reg": 3,
+        "f": 0.19,
+        "t": 73.4,
+        "p": 0.09,
+        "poly": 0.754
+      },
+      {
+        "c": "Zambia",
+        "iso": "ZMB",
+        "reg": 1,
+        "f": 0.29,
+        "t": 54.4,
+        "p": 0.06,
+        "poly": 0.465
+      },
+      {
+        "c": "Zimbabwe",
+        "iso": "ZWE",
+        "reg": 1,
+        "f": 0.29,
+        "t": 55.4,
+        "p": 2.29,
+        "poly": 0.274
+      }
+    ]
+  },
   "cors": {
-    "turnout": {
-      "r": -0.233,
-      "p": 0.0026,
-      "n": 166
+    "1945": {
+      "turnout": {
+        "r": -0.105,
+        "p": 0.145,
+        "n": 195
+      },
+      "polar": {
+        "r": -0.1,
+        "p": 0.194,
+        "n": 169
+      }
     },
-    "polar": {
-      "r": -0.03,
-      "p": 0.701,
-      "n": 168
+    "2000": {
+      "turnout": {
+        "r": -0.211,
+        "p": 0.0038,
+        "n": 186
+      },
+      "polar": {
+        "r": -0.041,
+        "p": 0.599,
+        "n": 168
+      }
     }
   },
   "yearly": [

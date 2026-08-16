@@ -181,11 +181,17 @@ footer a{text-decoration:none}
 
 <section id="findings"><div class="wrap">
   <h2>The two findings, interactively</h2>
-  <p class="section-lead">Each dot is a country, 2000 to 2020. Move between the two outcomes,
+  <p class="section-lead">Each dot is a country. Pick a period, move between the two outcomes,
   switch regime types on and off, or hover a country. The fitted line and correlation recompute
-  from whatever is showing, so you can see how much any group is driving the pattern.</p>
+  from whatever is showing, so you can see how much any group, or era, is driving the pattern.</p>
 
   <div class="controls">
+    <div class="ctrl-group"><span>Period</span>
+      <div class="seg period" data-role="period">
+        <button data-p="1945" aria-pressed="true">Since 1945</button>
+        <button data-p="2000" aria-pressed="false">2000–2020</button>
+      </div>
+    </div>
     <div class="ctrl-group"><span>Outcome</span>
       <div class="seg" id="outcome">
         <button data-v="t" aria-pressed="true">Turnout (indifference)</button>
@@ -215,9 +221,15 @@ footer a{text-decoration:none}
 
 <section id="ranking"><div class="wrap">
   <h2>Who votes most often</h2>
-  <p class="section-lead">National elections per decade, 2000 to 2020, collapsed to one polling
-  occasion per day. Choose how many countries to show; hover for the count.</p>
+  <p class="section-lead">National elections per year, collapsed to one polling occasion per day.
+  Pick a period and how many countries to show; hover for the count.</p>
   <div class="controls">
+    <div class="ctrl-group"><span>Period</span>
+      <div class="seg period" data-role="period">
+        <button data-p="1945" aria-pressed="true">Since 1945</button>
+        <button data-p="2000" aria-pressed="false">2000–2020</button>
+      </div>
+    </div>
     <div class="ctrl-group"><span>Show top</span>
       <div class="seg" id="topn">
         <button data-n="10" aria-pressed="false">10</button>

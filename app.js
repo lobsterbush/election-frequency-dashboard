@@ -5,6 +5,12 @@
   const SVGNS = "http://www.w3.org/2000/svg";
   const REGCOL = ["#D55E00", "#E69F00", "#56B4E9", "#0072B2"];
   const REG = DASH.regimes;
+  const WINLAB = {}; DASH.windows.forEach((w) => { WINLAB[w.key] = w.range; });
+  const state = { period: DASH.windows[0].key };   // default: since 1945
+  const rows = () => DASH.countries[state.period];  // current cross-section
+  const UNK = "#9a938a";                            // countries without a V-Dem regime code
+  const rcol = (d) => (d.reg == null ? UNK : REGCOL[d.reg]);
+  const rlab = (d) => (d.reg == null ? "Regime unclassified" : REG[d.reg]);
   const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // ---- small helpers -------------------------------------------------------
@@ -81,8 +87,8 @@
   scatter.draw = function () {
     const S = this, svg = S.svg; clear(svg); fade(svg);
     const meta = S.yMeta[S.outcome];
-    const all = DASH.countries.filter((d) => d[meta.key] != null);
-    const shown = all.filter((d) => S.active[d.reg]);
+    const all = rows().filter((d) => d[meta.key] != null);
+    const shown = all.filter((d) => d.reg == null || S.active[d.reg]);
     const xmax = Math.max.apply(null, all.map((d) => d.f)) * 1.05;
     const ys = all.map((d) => d[meta.key]);
     let ymin = Math.min.apply(null, ys), ymax = Math.max.apply(null, ys);
@@ -100,7 +106,7 @@
       axis.appendChild(el("text", { x: S.M.l - 8, y: y(t) + 4, "text-anchor": "end" }, t));
     });
     axis.appendChild(el("text", { class: "axis-title", x: (S.M.l + S.W - S.M.r) / 2, y: S.H - 10, "text-anchor": "middle" },
-      "National elections per decade, 2000–2020"));
+      "National elections per year, " + WINLAB[state.period]));
     svg.appendChild(el("text", { class: "axis-title", x: 16, y: (S.M.t + S.H - S.M.b) / 2, "text-anchor": "middle",
       transform: "rotate(-90 16 " + ((S.M.t + S.H - S.M.b) / 2) + ")" }, meta.label));
 
@@ -128,7 +134,7 @@
     // points
     shown.forEach((d) => {
       const px = x(d.f), py = y(d[meta.key]);
-      const c = el("circle", { class: "pt", cx: px, cy: py, r: 5, fill: REGCOL[d.reg] });
+      const c = el("circle", { class: "pt", cx: px, cy: py, r: 5, fill: rcol(d) });
       if (S.term && d.c.toLowerCase().indexOf(S.term) >= 0) c.classList.add("hi");
       else if (S.term) c.classList.add("dim");
       c.addEventListener("mouseenter", () => {
@@ -137,8 +143,8 @@
         chy.setAttribute("x1", S.M.l); chy.setAttribute("x2", px); chy.setAttribute("y1", py); chy.setAttribute("y2", py); chy.setAttribute("opacity", 1);
       });
       c.addEventListener("mousemove", () => tipShow(S.tip, svg, px, py,
-        "<b>" + d.c + "</b><br><span class='k'>" + REG[d.reg] + "</span><br>" +
-        d.f.toFixed(1) + " elections / decade<br>" +
+        "<b>" + d.c + "</b><br><span class='k'>" + rlab(d) + "</span><br>" +
+        d.f.toFixed(2) + " elections / year<br>" +
         (S.outcome === "t" ? d.t + "% turnout" : d.p + " polarization")));
       c.addEventListener("mouseleave", () => { c.setAttribute("r", 5); chx.setAttribute("opacity", 0); chy.setAttribute("opacity", 0); tipHide(S.tip); });
       svg.appendChild(c);
@@ -158,7 +164,7 @@
     if (f) {
       const unit = S.outcome === "t" ? "pp turnout" : "polarization";
       S.readout.textContent = "r = " + f.r.toFixed(2) + "   n = " + f.n +
-        "   slope = " + f.m.toFixed(2) + " " + unit + " per election/decade";
+        "   slope = " + f.m.toFixed(1) + " " + unit + " per election/year";
     } else { S.readout.textContent = "Select at least two points."; }
     S.cap.textContent = S.outcome === "t"
       ? "Countries that vote more often tend to have lower turnout. Shaded band is the 95% interval; line and r update as you filter."
@@ -189,6 +195,21 @@
     scatter.term = e.target.value.trim().toLowerCase(); scatter.draw();
   });
 
+  // period toggle drives BOTH the scatter and the ranking; the two toggle UIs stay in sync
+  function syncPeriodUI() {
+    document.querySelectorAll('.seg[data-role="period"] button').forEach((b) =>
+      b.setAttribute("aria-pressed", String(b.dataset.p === state.period)));
+  }
+  document.querySelectorAll('.seg[data-role="period"]').forEach((seg) => {
+    seg.addEventListener("click", (e) => {
+      const btn = e.target.closest("button"); if (!btn) return;
+      state.period = btn.dataset.p;
+      syncPeriodUI();
+      scatter.draw();
+      ranking.draw();
+    });
+  });
+
   // ---- 2. ranking ----------------------------------------------------------
   const ranking = {
     svg: document.getElementById("rankingChart"), tip: document.getElementById("tip2"),
@@ -196,7 +217,7 @@
   };
   ranking.draw = function () {
     const R = this, svg = R.svg; clear(svg); fade(svg);
-    const data = DASH.countries.slice().sort((a, b) => b.f - a.f).slice(0, R.n);
+    const data = rows().slice().sort((a, b) => b.f - a.f).slice(0, R.n);
     const H = R.n * 22 + R.M.t + R.M.b;
     svg.setAttribute("viewBox", "0 0 " + R.W + " " + H);
     const xmax = Math.max.apply(null, data.map((d) => d.f)) * 1.06;
@@ -208,17 +229,17 @@
       axis.appendChild(el("text", { x: x(t), y: H - R.M.b + 16, "text-anchor": "middle" }, t));
     });
     axis.appendChild(el("text", { class: "axis-title", x: (R.M.l + R.W - R.M.r) / 2, y: H - 6, "text-anchor": "middle" },
-      "National elections per decade"));
+      "National elections per year, " + WINLAB[state.period]));
     data.forEach((d, i) => {
       const cy = R.M.t + i * band + band / 2, hl = (d.c === "Mongolia" || d.c === "Japan");
       if (hl) svg.appendChild(el("rect", { x: 0, y: cy - band / 2, width: R.W, height: band, fill: "var(--color-accent)", opacity: 0.05 }));
-      svg.appendChild(el("line", { x1: R.M.l, x2: x(d.f), y1: cy, y2: cy, stroke: REGCOL[d.reg], "stroke-width": 2, opacity: 0.45 }));
-      svg.appendChild(el("circle", { cx: x(d.f), cy: cy, r: 6, fill: REGCOL[d.reg], stroke: "#fff", "stroke-width": 1 }));
-      svg.appendChild(el("text", { class: "coef-val", x: x(d.f) + 12, y: cy + 4 }, d.f.toFixed(1)));
+      svg.appendChild(el("line", { x1: R.M.l, x2: x(d.f), y1: cy, y2: cy, stroke: rcol(d), "stroke-width": 2, opacity: 0.45 }));
+      svg.appendChild(el("circle", { cx: x(d.f), cy: cy, r: 6, fill: rcol(d), stroke: "#fff", "stroke-width": 1 }));
+      svg.appendChild(el("text", { class: "coef-val", x: x(d.f) + 12, y: cy + 4 }, d.f.toFixed(2)));
       svg.appendChild(el("text", { class: "bar-lab" + (hl ? " hl" : ""), x: R.M.l - 10, y: cy + 4, "text-anchor": "end" }, d.c));
       const hit = el("rect", { x: 0, y: cy - band / 2, width: R.W, height: band, fill: "transparent" });
       hit.addEventListener("mousemove", () => tipShow(R.tip, svg, x(d.f), cy,
-        "<b>" + d.c + "</b><br><span class='k'>" + REG[d.reg] + "</span><br>" + d.f.toFixed(1) + " / decade"));
+        "<b>" + d.c + "</b><br><span class='k'>" + rlab(d) + "</span><br>" + d.f.toFixed(2) + " / year"));
       hit.addEventListener("mouseleave", () => tipHide(R.tip));
       svg.appendChild(hit);
     });
