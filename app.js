@@ -217,10 +217,10 @@
   };
   ranking.draw = function () {
     const R = this, svg = R.svg; clear(svg); fade(svg);
-    const data = rows().slice().sort((a, b) => b.f - a.f).slice(0, R.n);
+    const data = rows().slice().sort((a, b) => b.tot - a.tot).slice(0, R.n);
     const H = R.n * 22 + R.M.t + R.M.b;
     svg.setAttribute("viewBox", "0 0 " + R.W + " " + H);
-    const xmax = Math.max.apply(null, data.map((d) => d.f)) * 1.06;
+    const xmax = Math.max.apply(null, data.map((d) => d.tot)) * 1.06;
     const x = scale(0, xmax, R.M.l, R.W - R.M.r);
     const band = (H - R.M.t - R.M.b) / R.n;
     const axis = el("g", { class: "axis" }); svg.appendChild(axis);
@@ -229,17 +229,17 @@
       axis.appendChild(el("text", { x: x(t), y: H - R.M.b + 16, "text-anchor": "middle" }, t));
     });
     axis.appendChild(el("text", { class: "axis-title", x: (R.M.l + R.W - R.M.r) / 2, y: H - 6, "text-anchor": "middle" },
-      "National elections per year, " + WINLAB[state.period]));
+      "Total national elections, " + WINLAB[state.period]));
     data.forEach((d, i) => {
       const cy = R.M.t + i * band + band / 2, hl = (d.c === "Mongolia" || d.c === "Japan");
       if (hl) svg.appendChild(el("rect", { x: 0, y: cy - band / 2, width: R.W, height: band, fill: "var(--color-accent)", opacity: 0.05 }));
-      svg.appendChild(el("line", { x1: R.M.l, x2: x(d.f), y1: cy, y2: cy, stroke: rcol(d), "stroke-width": 2, opacity: 0.45 }));
-      svg.appendChild(el("circle", { cx: x(d.f), cy: cy, r: 6, fill: rcol(d), stroke: "#fff", "stroke-width": 1 }));
-      svg.appendChild(el("text", { class: "coef-val", x: x(d.f) + 12, y: cy + 4 }, d.f.toFixed(2)));
+      svg.appendChild(el("line", { x1: R.M.l, x2: x(d.tot), y1: cy, y2: cy, stroke: rcol(d), "stroke-width": 2, opacity: 0.45 }));
+      svg.appendChild(el("circle", { cx: x(d.tot), cy: cy, r: 6, fill: rcol(d), stroke: "#fff", "stroke-width": 1 }));
+      svg.appendChild(el("text", { class: "coef-val", x: x(d.tot) + 12, y: cy + 4 }, d.tot));
       svg.appendChild(el("text", { class: "bar-lab" + (hl ? " hl" : ""), x: R.M.l - 10, y: cy + 4, "text-anchor": "end" }, d.c));
       const hit = el("rect", { x: 0, y: cy - band / 2, width: R.W, height: band, fill: "transparent" });
-      hit.addEventListener("mousemove", () => tipShow(R.tip, svg, x(d.f), cy,
-        "<b>" + d.c + "</b><br><span class='k'>" + rlab(d) + "</span><br>" + d.f.toFixed(2) + " / year"));
+      hit.addEventListener("mousemove", () => tipShow(R.tip, svg, x(d.tot), cy,
+        "<b>" + d.c + "</b><br><span class='k'>" + rlab(d) + "</span><br>" + d.tot + " elections"));
       hit.addEventListener("mouseleave", () => tipHide(R.tip));
       svg.appendChild(hit);
     });

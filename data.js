@@ -28,6 +28,7 @@ const DASH = {
         "iso": "ABW",
         "reg": null,
         "f": 0.25,
+        "tot": 1,
         "t": 84.7,
         "p": null,
         "poly": null
@@ -37,6 +38,7 @@ const DASH = {
         "iso": "AFG",
         "reg": 0,
         "f": 0.2,
+        "tot": 15,
         "t": 46.3,
         "p": 1.01,
         "poly": 0.158
@@ -46,6 +48,7 @@ const DASH = {
         "iso": "AGO",
         "reg": 0,
         "f": 0.15,
+        "tot": 5,
         "t": 71.4,
         "p": 0.19,
         "poly": 0.23
@@ -55,6 +58,7 @@ const DASH = {
         "iso": "ALB",
         "reg": 1,
         "f": 0.22,
+        "tot": 18,
         "t": 65.3,
         "p": 0.57,
         "poly": 0.303
@@ -64,6 +68,7 @@ const DASH = {
         "iso": "AND",
         "reg": null,
         "f": 0.34,
+        "tot": 27,
         "t": 75,
         "p": null,
         "poly": null
@@ -73,6 +78,7 @@ const DASH = {
         "iso": "ARG",
         "reg": 1,
         "f": 0.46,
+        "tot": 36,
         "t": 80.6,
         "p": 1.29,
         "poly": 0.55
@@ -82,6 +88,7 @@ const DASH = {
         "iso": "ARM",
         "reg": 1,
         "f": 0.41,
+        "tot": 14,
         "t": 59.1,
         "p": 0.92,
         "poly": 0.46
@@ -91,6 +98,7 @@ const DASH = {
         "iso": "ATG",
         "reg": null,
         "f": 0.22,
+        "tot": 9,
         "t": 72.9,
         "p": null,
         "poly": null
@@ -100,6 +108,7 @@ const DASH = {
         "iso": "AUS",
         "reg": 3,
         "f": 0.43,
+        "tot": 34,
         "t": 94.5,
         "p": -1.31,
         "poly": 0.861
@@ -109,6 +118,7 @@ const DASH = {
         "iso": "AUT",
         "reg": 3,
         "f": 0.48,
+        "tot": 38,
         "t": 86.1,
         "p": -0.54,
         "poly": 0.839
@@ -118,6 +128,7 @@ const DASH = {
         "iso": "AZE",
         "reg": 1,
         "f": 0.53,
+        "tot": 18,
         "t": 69,
         "p": 0.61,
         "poly": 0.222
@@ -127,6 +138,7 @@ const DASH = {
         "iso": "BDI",
         "reg": 0,
         "f": 0.2,
+        "tot": 12,
         "t": 87.6,
         "p": 0.59,
         "poly": 0.178
@@ -136,6 +148,7 @@ const DASH = {
         "iso": "BEL",
         "reg": 3,
         "f": 0.3,
+        "tot": 24,
         "t": 91.8,
         "p": -1.57,
         "poly": 0.838
@@ -145,6 +158,7 @@ const DASH = {
         "iso": "BEN",
         "reg": 1,
         "f": 0.37,
+        "tot": 24,
         "t": 68.5,
         "p": -0.46,
         "poly": 0.386
@@ -154,6 +168,7 @@ const DASH = {
         "iso": "BFA",
         "reg": 1,
         "f": 0.27,
+        "tot": 16,
         "t": 55.7,
         "p": -0.19,
         "poly": 0.368
@@ -163,6 +178,7 @@ const DASH = {
         "iso": "BGD",
         "reg": 1,
         "f": 0.29,
+        "tot": 15,
         "t": 61,
         "p": 1.17,
         "poly": 0.347
@@ -172,6 +188,7 @@ const DASH = {
         "iso": "BGR",
         "reg": 1,
         "f": 0.41,
+        "tot": 33,
         "t": 72.7,
         "p": 0.76,
         "poly": 0.393
@@ -181,6 +198,7 @@ const DASH = {
         "iso": "BHR",
         "reg": 0,
         "f": 0.15,
+        "tot": 8,
         "t": 66.1,
         "p": 1.16,
         "poly": 0.106
@@ -190,6 +208,7 @@ const DASH = {
         "iso": "BHS",
         "reg": null,
         "f": 0.21,
+        "tot": 10,
         "t": 87.6,
         "p": null,
         "poly": null
@@ -199,6 +218,7 @@ const DASH = {
         "iso": "BIH",
         "reg": 2,
         "f": 0.31,
+        "tot": 9,
         "t": 57.5,
         "p": 1.41,
         "poly": 0.566
@@ -208,6 +228,7 @@ const DASH = {
         "iso": "BLR",
         "reg": 1,
         "f": 0.45,
+        "tot": 14,
         "t": 78,
         "p": 1.44,
         "poly": 0.266
@@ -217,6 +238,7 @@ const DASH = {
         "iso": "BLZ",
         "reg": null,
         "f": 0.22,
+        "tot": 9,
         "t": 77.4,
         "p": null,
         "poly": null
@@ -226,6 +248,7 @@ const DASH = {
         "iso": "BOL",
         "reg": 1,
         "f": 0.29,
+        "tot": 23,
         "t": 83.6,
         "p": 0.98,
         "poly": 0.426
@@ -235,6 +258,7 @@ const DASH = {
         "iso": "BRA",
         "reg": 1,
         "f": 0.32,
+        "tot": 26,
         "t": 78.8,
         "p": 1.26,
         "poly": 0.539
@@ -244,6 +268,7 @@ const DASH = {
         "iso": "BRB",
         "reg": 2,
         "f": 0.22,
+        "tot": 12,
         "t": 64.9,
         "p": -3.25,
         "poly": 0.762
@@ -253,6 +278,7 @@ const DASH = {
         "iso": "BTN",
         "reg": 2,
         "f": 0.44,
+        "tot": 8,
         "t": 66.8,
         "p": -1.26,
         "poly": 0.552
@@ -262,6 +288,7 @@ const DASH = {
         "iso": "BWA",
         "reg": 2,
         "f": 0.21,
+        "tot": 12,
         "t": 70.2,
         "p": -2.05,
         "poly": 0.664
@@ -271,6 +298,7 @@ const DASH = {
         "iso": "CAF",
         "reg": 1,
         "f": 0.23,
+        "tot": 14,
         "t": 63.9,
         "p": 0.61,
         "poly": 0.238
@@ -280,6 +308,7 @@ const DASH = {
         "iso": "CAN",
         "reg": 3,
         "f": 0.31,
+        "tot": 25,
         "t": 70.9,
         "p": -1.72,
         "poly": 0.812
@@ -289,6 +318,7 @@ const DASH = {
         "iso": "CHE",
         "reg": 3,
         "f": 0.26,
+        "tot": 20,
         "t": 53.8,
         "p": -2.17,
         "poly": 0.8
@@ -298,6 +328,7 @@ const DASH = {
         "iso": "CHL",
         "reg": 2,
         "f": 0.36,
+        "tot": 29,
         "t": 79.1,
         "p": 0.04,
         "poly": 0.57
@@ -307,6 +338,7 @@ const DASH = {
         "iso": "CIV",
         "reg": 1,
         "f": 0.32,
+        "tot": 21,
         "t": 65.6,
         "p": -0.67,
         "poly": 0.31
@@ -316,6 +348,7 @@ const DASH = {
         "iso": "CMR",
         "reg": 1,
         "f": 0.37,
+        "tot": 24,
         "t": 82.3,
         "p": 0.92,
         "poly": 0.239
@@ -325,6 +358,7 @@ const DASH = {
         "iso": "COD",
         "reg": 0,
         "f": 0.22,
+        "tot": 13,
         "t": 67.7,
         "p": 0.7,
         "poly": 0.211
@@ -334,6 +368,7 @@ const DASH = {
         "iso": "COG",
         "reg": 0,
         "f": 0.27,
+        "tot": 17,
         "t": 76.5,
         "p": 0.54,
         "poly": 0.201
@@ -343,6 +378,7 @@ const DASH = {
         "iso": "COK",
         "reg": null,
         "f": 0.33,
+        "tot": 1,
         "t": 77,
         "p": null,
         "poly": null
@@ -352,6 +388,7 @@ const DASH = {
         "iso": "COL",
         "reg": 1,
         "f": 0.56,
+        "tot": 45,
         "t": 50.2,
         "p": 0.61,
         "poly": 0.449
@@ -361,6 +398,7 @@ const DASH = {
         "iso": "COM",
         "reg": 1,
         "f": 0.45,
+        "tot": 21,
         "t": 65.7,
         "p": 0.56,
         "poly": 0.339
@@ -370,6 +408,7 @@ const DASH = {
         "iso": "CPV",
         "reg": 2,
         "f": 0.32,
+        "tot": 16,
         "t": 67.1,
         "p": -0.84,
         "poly": 0.605
@@ -379,6 +418,7 @@ const DASH = {
         "iso": "CRI",
         "reg": 2,
         "f": 0.3,
+        "tot": 24,
         "t": 72.1,
         "p": -0.96,
         "poly": 0.796
@@ -388,6 +428,7 @@ const DASH = {
         "iso": "CUB",
         "reg": 0,
         "f": 0.15,
+        "tot": 12,
         "t": 87.3,
         "p": -0.01,
         "poly": 0.143
@@ -397,6 +438,7 @@ const DASH = {
         "iso": "CYM",
         "reg": null,
         "f": 0.25,
+        "tot": 1,
         "t": 73.1,
         "p": null,
         "poly": null
@@ -406,6 +448,7 @@ const DASH = {
         "iso": "CYP",
         "reg": 2,
         "f": 0.39,
+        "tot": 22,
         "t": 86.1,
         "p": 0.82,
         "poly": 0.725
@@ -415,6 +458,7 @@ const DASH = {
         "iso": "CZE",
         "reg": 3,
         "f": 0.83,
+        "tot": 24,
         "t": 66,
         "p": -1.64,
         "poly": 0.872
@@ -424,6 +468,7 @@ const DASH = {
         "iso": "DEU",
         "reg": 3,
         "f": 0.26,
+        "tot": 19,
         "t": 82.6,
         "p": -1.52,
         "poly": 0.871
@@ -433,6 +478,7 @@ const DASH = {
         "iso": "DJI",
         "reg": 1,
         "f": 0.36,
+        "tot": 16,
         "t": 69,
         "p": 0.35,
         "poly": 0.23
@@ -442,6 +488,7 @@ const DASH = {
         "iso": "DMA",
         "reg": null,
         "f": 0.2,
+        "tot": 9,
         "t": 60.2,
         "p": null,
         "poly": null
@@ -451,6 +498,7 @@ const DASH = {
         "iso": "DNK",
         "reg": 3,
         "f": 0.36,
+        "tot": 29,
         "t": 86,
         "p": -2.66,
         "poly": 0.903
@@ -460,6 +508,7 @@ const DASH = {
         "iso": "DOM",
         "reg": 1,
         "f": 0.33,
+        "tot": 26,
         "t": 66.4,
         "p": 1.09,
         "poly": 0.416
@@ -469,6 +518,7 @@ const DASH = {
         "iso": "DZA",
         "reg": 1,
         "f": 0.38,
+        "tot": 24,
         "t": 65.3,
         "p": -0.98,
         "poly": 0.233
@@ -478,6 +528,7 @@ const DASH = {
         "iso": "ECU",
         "reg": 1,
         "f": 0.42,
+        "tot": 33,
         "t": 73.7,
         "p": 0.56,
         "poly": 0.494
@@ -487,6 +538,7 @@ const DASH = {
         "iso": "EGY",
         "reg": 1,
         "f": 0.44,
+        "tot": 35,
         "t": 44.1,
         "p": -1.06,
         "poly": 0.186
@@ -496,6 +548,7 @@ const DASH = {
         "iso": "ESP",
         "reg": 3,
         "f": 0.33,
+        "tot": 16,
         "t": 73,
         "p": -1.26,
         "poly": 0.866
@@ -505,6 +558,7 @@ const DASH = {
         "iso": "EST",
         "reg": 3,
         "f": 0.27,
+        "tot": 9,
         "t": 63.3,
         "p": -1.31,
         "poly": 0.869
@@ -514,6 +568,7 @@ const DASH = {
         "iso": "ETH",
         "reg": 0,
         "f": 0.21,
+        "tot": 14,
         "t": 90.6,
         "p": 1,
         "poly": 0.169
@@ -523,6 +578,7 @@ const DASH = {
         "iso": "FIN",
         "reg": 3,
         "f": 0.44,
+        "tot": 35,
         "t": 73.3,
         "p": -1.57,
         "poly": 0.838
@@ -532,6 +588,7 @@ const DASH = {
         "iso": "FJI",
         "reg": 1,
         "f": 0.25,
+        "tot": 13,
         "t": 77.6,
         "p": -0.64,
         "poly": 0.421
@@ -541,6 +598,7 @@ const DASH = {
         "iso": "FRA",
         "reg": 3,
         "f": 0.45,
+        "tot": 36,
         "t": 78.3,
         "p": 0.25,
         "poly": 0.822
@@ -550,6 +608,7 @@ const DASH = {
         "iso": "FSM",
         "reg": null,
         "f": 0.47,
+        "tot": 18,
         "t": 43.5,
         "p": null,
         "poly": null
@@ -559,6 +618,7 @@ const DASH = {
         "iso": "GAB",
         "reg": 1,
         "f": 0.33,
+        "tot": 21,
         "t": 74.4,
         "p": -1.15,
         "poly": 0.271
@@ -568,6 +628,7 @@ const DASH = {
         "iso": "GBR",
         "reg": 3,
         "f": 0.28,
+        "tot": 22,
         "t": 72.1,
         "p": -0.69,
         "poly": 0.828
@@ -577,6 +638,7 @@ const DASH = {
         "iso": "GEO",
         "reg": 2,
         "f": 0.45,
+        "tot": 15,
         "t": 63.2,
         "p": 1.34,
         "poly": 0.502
@@ -586,6 +648,7 @@ const DASH = {
         "iso": "GHA",
         "reg": 1,
         "f": 0.2,
+        "tot": 13,
         "t": 66.7,
         "p": -0.19,
         "poly": 0.436
@@ -595,6 +658,7 @@ const DASH = {
         "iso": "GIB",
         "reg": null,
         "f": 0.5,
+        "tot": 1,
         "t": 76.4,
         "p": null,
         "poly": null
@@ -604,6 +668,7 @@ const DASH = {
         "iso": "GIN",
         "reg": 0,
         "f": 0.25,
+        "tot": 16,
         "t": 81.2,
         "p": 0.87,
         "poly": 0.202
@@ -613,6 +678,7 @@ const DASH = {
         "iso": "GMB",
         "reg": 1,
         "f": 0.31,
+        "tot": 18,
         "t": 65.2,
         "p": -1,
         "poly": 0.387
@@ -622,6 +688,7 @@ const DASH = {
         "iso": "GNB",
         "reg": 1,
         "f": 0.39,
+        "tot": 12,
         "t": 76.1,
         "p": -0.6,
         "poly": 0.418
@@ -631,6 +698,7 @@ const DASH = {
         "iso": "GNQ",
         "reg": 1,
         "f": 0.33,
+        "tot": 14,
         "t": 89.4,
         "p": 0.77,
         "poly": 0.175
@@ -640,6 +708,7 @@ const DASH = {
         "iso": "GRC",
         "reg": 2,
         "f": 0.37,
+        "tot": 29,
         "t": 75.6,
         "p": 0.03,
         "poly": 0.645
@@ -649,6 +718,7 @@ const DASH = {
         "iso": "GRD",
         "reg": null,
         "f": 0.2,
+        "tot": 10,
         "t": 70.8,
         "p": null,
         "poly": null
@@ -658,6 +728,7 @@ const DASH = {
         "iso": "GRL",
         "reg": null,
         "f": 0.25,
+        "tot": 1,
         "t": 65.8,
         "p": null,
         "poly": null
@@ -667,6 +738,7 @@ const DASH = {
         "iso": "GTM",
         "reg": 1,
         "f": 0.41,
+        "tot": 32,
         "t": 53.8,
         "p": 0.97,
         "poly": 0.352
@@ -676,6 +748,7 @@ const DASH = {
         "iso": "GUY",
         "reg": 1,
         "f": 0.19,
+        "tot": 11,
         "t": 80.3,
         "p": 0.96,
         "poly": 0.443
@@ -685,6 +758,7 @@ const DASH = {
         "iso": "HND",
         "reg": 1,
         "f": 0.23,
+        "tot": 18,
         "t": 68.9,
         "p": -1.41,
         "poly": 0.34
@@ -694,6 +768,7 @@ const DASH = {
         "iso": "HRV",
         "reg": 2,
         "f": 0.61,
+        "tot": 20,
         "t": 57.8,
         "p": 0.53,
         "poly": 0.686
@@ -703,6 +778,7 @@ const DASH = {
         "iso": "HTI",
         "reg": 1,
         "f": 0.32,
+        "tot": 25,
         "t": 37.7,
         "p": 1.33,
         "poly": 0.247
@@ -712,6 +788,7 @@ const DASH = {
         "iso": "HUN",
         "reg": 1,
         "f": 0.24,
+        "tot": 19,
         "t": 82.3,
         "p": 1.2,
         "poly": 0.4
@@ -721,6 +798,7 @@ const DASH = {
         "iso": "IDN",
         "reg": 1,
         "f": 0.24,
+        "tot": 17,
         "t": 86.3,
         "p": 0.43,
         "poly": 0.385
@@ -730,6 +808,7 @@ const DASH = {
         "iso": "IND",
         "reg": 2,
         "f": 0.24,
+        "tot": 18,
         "t": 60.6,
         "p": 0.12,
         "poly": 0.628
@@ -739,6 +818,7 @@ const DASH = {
         "iso": "IRL",
         "reg": 3,
         "f": 0.38,
+        "tot": 30,
         "t": 68.4,
         "p": -2.33,
         "poly": 0.844
@@ -748,6 +828,7 @@ const DASH = {
         "iso": "IRN",
         "reg": 1,
         "f": 0.54,
+        "tot": 35,
         "t": 62.1,
         "p": 1.14,
         "poly": 0.151
@@ -757,6 +838,7 @@ const DASH = {
         "iso": "IRQ",
         "reg": 0,
         "f": 0.23,
+        "tot": 18,
         "t": 75.3,
         "p": 1.8,
         "poly": 0.177
@@ -766,6 +848,7 @@ const DASH = {
         "iso": "ISL",
         "reg": 3,
         "f": 0.46,
+        "tot": 36,
         "t": 84.8,
         "p": -0.81,
         "poly": 0.841
@@ -775,6 +858,7 @@ const DASH = {
         "iso": "ISR",
         "reg": 3,
         "f": 0.33,
+        "tot": 25,
         "t": 75.4,
         "p": 0.27,
         "poly": 0.716
@@ -784,6 +868,7 @@ const DASH = {
         "iso": "ITA",
         "reg": 3,
         "f": 0.25,
+        "tot": 20,
         "t": 86.2,
         "p": 0.12,
         "poly": 0.785
@@ -793,6 +878,7 @@ const DASH = {
         "iso": "JAM",
         "reg": 2,
         "f": 0.22,
+        "tot": 13,
         "t": 61.9,
         "p": -1.19,
         "poly": 0.647
@@ -802,6 +888,7 @@ const DASH = {
         "iso": "JOR",
         "reg": 0,
         "f": 0.24,
+        "tot": 19,
         "t": 49.4,
         "p": -1.26,
         "poly": 0.178
@@ -811,6 +898,7 @@ const DASH = {
         "iso": "JPN",
         "reg": 3,
         "f": 0.65,
+        "tot": 51,
         "t": 67.5,
         "p": -1.73,
         "poly": 0.8
@@ -820,6 +908,7 @@ const DASH = {
         "iso": "KAZ",
         "reg": 1,
         "f": 0.52,
+        "tot": 16,
         "t": 74.6,
         "p": -0.53,
         "poly": 0.254
@@ -829,6 +918,7 @@ const DASH = {
         "iso": "KEN",
         "reg": 1,
         "f": 0.24,
+        "tot": 14,
         "t": 72.4,
         "p": -0.54,
         "poly": 0.339
@@ -838,6 +928,7 @@ const DASH = {
         "iso": "KGZ",
         "reg": 1,
         "f": 0.44,
+        "tot": 15,
         "t": 67.3,
         "p": -0.54,
         "poly": 0.356
@@ -847,6 +938,7 @@ const DASH = {
         "iso": "KHM",
         "reg": 1,
         "f": 0.21,
+        "tot": 15,
         "t": 82,
         "p": 0.75,
         "poly": 0.227
@@ -856,6 +948,7 @@ const DASH = {
         "iso": "KIR",
         "reg": null,
         "f": 0.6,
+        "tot": 26,
         "t": 74.6,
         "p": null,
         "poly": null
@@ -865,6 +958,7 @@ const DASH = {
         "iso": "KNA",
         "reg": null,
         "f": 0.22,
+        "tot": 9,
         "t": 67.5,
         "p": null,
         "poly": null
@@ -874,6 +968,7 @@ const DASH = {
         "iso": "KOR",
         "reg": 2,
         "f": 0.48,
+        "tot": 36,
         "t": 74.1,
         "p": 0.47,
         "poly": 0.509
@@ -883,6 +978,7 @@ const DASH = {
         "iso": "KWT",
         "reg": 0,
         "f": 0.36,
+        "tot": 23,
         "t": 69.5,
         "p": -1.73,
         "poly": 0.253
@@ -892,6 +988,7 @@ const DASH = {
         "iso": "LAO",
         "reg": 0,
         "f": 0.2,
+        "tot": 14,
         "t": 92.8,
         "p": 0.02,
         "poly": 0.133
@@ -901,6 +998,7 @@ const DASH = {
         "iso": "LBN",
         "reg": 1,
         "f": 0.19,
+        "tot": 15,
         "t": 49.7,
         "p": 1.08,
         "poly": 0.374
@@ -910,6 +1008,7 @@ const DASH = {
         "iso": "LBR",
         "reg": 1,
         "f": 0.22,
+        "tot": 16,
         "t": 78.5,
         "p": 0.38,
         "poly": 0.315
@@ -919,6 +1018,7 @@ const DASH = {
         "iso": "LBY",
         "reg": 0,
         "f": 0.11,
+        "tot": 8,
         "t": 55.6,
         "p": 0.71,
         "poly": 0.119
@@ -928,6 +1028,7 @@ const DASH = {
         "iso": "LCA",
         "reg": null,
         "f": 0.24,
+        "tot": 11,
         "t": 58.7,
         "p": null,
         "poly": null
@@ -937,6 +1038,7 @@ const DASH = {
         "iso": "LIE",
         "reg": null,
         "f": 0.29,
+        "tot": 23,
         "t": 90,
         "p": null,
         "poly": null
@@ -946,6 +1048,7 @@ const DASH = {
         "iso": "LKA",
         "reg": 2,
         "f": 0.33,
+        "tot": 24,
         "t": 75.5,
         "p": 0.12,
         "poly": 0.546
@@ -955,6 +1058,7 @@ const DASH = {
         "iso": "LSO",
         "reg": 1,
         "f": 0.13,
+        "tot": 7,
         "t": 58,
         "p": -0.09,
         "poly": 0.364
@@ -964,6 +1068,7 @@ const DASH = {
         "iso": "LTU",
         "reg": 3,
         "f": 0.61,
+        "tot": 20,
         "t": 58.2,
         "p": -2.27,
         "poly": 0.821
@@ -973,6 +1078,7 @@ const DASH = {
         "iso": "LUX",
         "reg": 3,
         "f": 0.22,
+        "tot": 18,
         "t": 89.8,
         "p": -2.24,
         "poly": 0.856
@@ -982,6 +1088,7 @@ const DASH = {
         "iso": "LVA",
         "reg": 2,
         "f": 0.31,
+        "tot": 10,
         "t": 66.2,
         "p": -2.06,
         "poly": 0.817
@@ -991,6 +1098,7 @@ const DASH = {
         "iso": "MAR",
         "reg": 0,
         "f": 0.18,
+        "tot": 11,
         "t": 59.6,
         "p": -0.26,
         "poly": 0.2
@@ -1000,6 +1108,7 @@ const DASH = {
         "iso": "MCO",
         "reg": null,
         "f": 0.23,
+        "tot": 18,
         "t": 71.3,
         "p": null,
         "poly": null
@@ -1009,6 +1118,7 @@ const DASH = {
         "iso": "MDA",
         "reg": 2,
         "f": 0.47,
+        "tot": 16,
         "t": 62.8,
         "p": -0.19,
         "poly": 0.562
@@ -1018,6 +1128,7 @@ const DASH = {
         "iso": "MDG",
         "reg": 1,
         "f": 0.38,
+        "tot": 25,
         "t": 67,
         "p": 0.46,
         "poly": 0.331
@@ -1027,6 +1138,7 @@ const DASH = {
         "iso": "MDV",
         "reg": 0,
         "f": 0.44,
+        "tot": 25,
         "t": 81,
         "p": -0.79,
         "poly": 0.27
@@ -1036,6 +1148,7 @@ const DASH = {
         "iso": "MEX",
         "reg": 1,
         "f": 0.34,
+        "tot": 27,
         "t": 63.1,
         "p": -0.37,
         "poly": 0.408
@@ -1045,6 +1158,7 @@ const DASH = {
         "iso": "MHL",
         "reg": null,
         "f": 0.26,
+        "tot": 10,
         "t": 46.1,
         "p": null,
         "poly": null
@@ -1054,6 +1168,7 @@ const DASH = {
         "iso": "MKD",
         "reg": 2,
         "f": 0.52,
+        "tot": 16,
         "t": 61.3,
         "p": 0.95,
         "poly": 0.522
@@ -1063,6 +1178,7 @@ const DASH = {
         "iso": "MLI",
         "reg": 1,
         "f": 0.3,
+        "tot": 18,
         "t": 57.6,
         "p": 0.32,
         "poly": 0.351
@@ -1072,6 +1188,7 @@ const DASH = {
         "iso": "MLT",
         "reg": 2,
         "f": 0.22,
+        "tot": 13,
         "t": 93.6,
         "p": 1.28,
         "poly": 0.744
@@ -1081,6 +1198,7 @@ const DASH = {
         "iso": "MMR",
         "reg": 0,
         "f": 0.16,
+        "tot": 12,
         "t": 71.1,
         "p": 1.95,
         "poly": 0.18
@@ -1090,6 +1208,7 @@ const DASH = {
         "iso": "MNE",
         "reg": 1,
         "f": 0.59,
+        "tot": 10,
         "t": 69.2,
         "p": 0.94,
         "poly": 0.497
@@ -1099,6 +1218,7 @@ const DASH = {
         "iso": "MNG",
         "reg": 1,
         "f": 0.39,
+        "tot": 29,
         "t": 85.3,
         "p": -1.32,
         "poly": 0.401
@@ -1108,6 +1228,7 @@ const DASH = {
         "iso": "MOZ",
         "reg": 1,
         "f": 0.19,
+        "tot": 9,
         "t": 55.8,
         "p": -0.11,
         "poly": 0.307
@@ -1117,6 +1238,7 @@ const DASH = {
         "iso": "MRT",
         "reg": 1,
         "f": 0.33,
+        "tot": 21,
         "t": 72.7,
         "p": -0.55,
         "poly": 0.265
@@ -1126,6 +1248,7 @@ const DASH = {
         "iso": "MUS",
         "reg": 3,
         "f": 0.24,
+        "tot": 12,
         "t": 81.8,
         "p": 0.89,
         "poly": 0.699
@@ -1135,6 +1258,7 @@ const DASH = {
         "iso": "MWI",
         "reg": 1,
         "f": 0.23,
+        "tot": 11,
         "t": 75.8,
         "p": -0.87,
         "poly": 0.4
@@ -1144,6 +1268,7 @@ const DASH = {
         "iso": "MYS",
         "reg": 1,
         "f": 0.23,
+        "tot": 15,
         "t": 74.9,
         "p": 1.1,
         "poly": 0.301
@@ -1153,6 +1278,7 @@ const DASH = {
         "iso": "NAM",
         "reg": 2,
         "f": 0.23,
+        "tot": 7,
         "t": 71.3,
         "p": -0.58,
         "poly": 0.655
@@ -1162,6 +1288,7 @@ const DASH = {
         "iso": "NER",
         "reg": 1,
         "f": 0.32,
+        "tot": 19,
         "t": 52.2,
         "p": -1.68,
         "poly": 0.339
@@ -1171,6 +1298,7 @@ const DASH = {
         "iso": "NGA",
         "reg": 1,
         "f": 0.33,
+        "tot": 20,
         "t": 43.7,
         "p": -0.87,
         "poly": 0.329
@@ -1180,6 +1308,7 @@ const DASH = {
         "iso": "NIC",
         "reg": 1,
         "f": 0.21,
+        "tot": 16,
         "t": 73.3,
         "p": 1.04,
         "poly": 0.313
@@ -1189,6 +1318,7 @@ const DASH = {
         "iso": "NIU",
         "reg": null,
         "f": 0.5,
+        "tot": 1,
         "t": 74,
         "p": null,
         "poly": null
@@ -1198,6 +1328,7 @@ const DASH = {
         "iso": "NLD",
         "reg": 3,
         "f": 0.3,
+        "tot": 24,
         "t": 84.5,
         "p": -1.44,
         "poly": 0.835
@@ -1207,6 +1338,7 @@ const DASH = {
         "iso": "NOR",
         "reg": 3,
         "f": 0.25,
+        "tot": 20,
         "t": 79.7,
         "p": -1.91,
         "poly": 0.848
@@ -1216,6 +1348,7 @@ const DASH = {
         "iso": "NPL",
         "reg": 1,
         "f": 0.15,
+        "tot": 10,
         "t": 68.7,
         "p": 1.3,
         "poly": 0.289
@@ -1225,6 +1358,7 @@ const DASH = {
         "iso": "NRU",
         "reg": null,
         "f": 0.43,
+        "tot": 23,
         "t": 92.2,
         "p": null,
         "poly": null
@@ -1234,6 +1368,7 @@ const DASH = {
         "iso": "NZL",
         "reg": 3,
         "f": 0.34,
+        "tot": 27,
         "t": 86.6,
         "p": -2.35,
         "poly": 0.853
@@ -1243,6 +1378,7 @@ const DASH = {
         "iso": "OMN",
         "reg": 0,
         "f": 0.27,
+        "tot": 6,
         "t": 62.1,
         "p": -2.21,
         "poly": 0.167
@@ -1252,6 +1388,7 @@ const DASH = {
         "iso": "PAK",
         "reg": 1,
         "f": 0.24,
+        "tot": 13,
         "t": 48.1,
         "p": -0.89,
         "poly": 0.303
@@ -1261,6 +1398,7 @@ const DASH = {
         "iso": "PAN",
         "reg": 1,
         "f": 0.25,
+        "tot": 20,
         "t": 72.5,
         "p": -0.48,
         "poly": 0.444
@@ -1270,6 +1408,7 @@ const DASH = {
         "iso": "PER",
         "reg": 1,
         "f": 0.25,
+        "tot": 20,
         "t": 80.9,
         "p": 0.32,
         "poly": 0.466
@@ -1279,6 +1418,7 @@ const DASH = {
         "iso": "PHL",
         "reg": 1,
         "f": 0.41,
+        "tot": 32,
         "t": 78.9,
         "p": -1.05,
         "poly": 0.399
@@ -1288,6 +1428,7 @@ const DASH = {
         "iso": "PLW",
         "reg": null,
         "f": 0.38,
+        "tot": 11,
         "t": 62.6,
         "p": null,
         "poly": null
@@ -1297,6 +1438,7 @@ const DASH = {
         "iso": "PNG",
         "reg": 2,
         "f": 0.19,
+        "tot": 9,
         "t": 66.6,
         "p": -1.2,
         "poly": 0.505
@@ -1306,6 +1448,7 @@ const DASH = {
         "iso": "POL",
         "reg": 1,
         "f": 0.35,
+        "tot": 27,
         "t": 71.1,
         "p": 1.52,
         "poly": 0.473
@@ -1315,6 +1458,7 @@ const DASH = {
         "iso": "PRK",
         "reg": 0,
         "f": 0.18,
+        "tot": 12,
         "t": 100,
         "p": -1.1,
         "poly": 0.086
@@ -1324,6 +1468,7 @@ const DASH = {
         "iso": "PRT",
         "reg": 2,
         "f": 0.49,
+        "tot": 39,
         "t": 66.4,
         "p": -1.16,
         "poly": 0.578
@@ -1333,6 +1478,7 @@ const DASH = {
         "iso": "PRY",
         "reg": 1,
         "f": 0.32,
+        "tot": 25,
         "t": 71.7,
         "p": -0.07,
         "poly": 0.338
@@ -1342,6 +1488,7 @@ const DASH = {
         "iso": "QAT",
         "reg": 0,
         "f": 0.25,
+        "tot": 1,
         "t": 63.5,
         "p": -2,
         "poly": 0.087
@@ -1351,6 +1498,7 @@ const DASH = {
         "iso": "ROU",
         "reg": 1,
         "f": 0.34,
+        "tot": 27,
         "t": 72.9,
         "p": 1.04,
         "poly": 0.379
@@ -1360,6 +1508,7 @@ const DASH = {
         "iso": "RUS",
         "reg": 0,
         "f": 0.33,
+        "tot": 26,
         "t": 63.3,
         "p": 0.5,
         "poly": 0.205
@@ -1369,6 +1518,7 @@ const DASH = {
         "iso": "RWA",
         "reg": 1,
         "f": 0.27,
+        "tot": 16,
         "t": 95.8,
         "p": 0.76,
         "poly": 0.188
@@ -1378,6 +1528,7 @@ const DASH = {
         "iso": "SAU",
         "reg": 0,
         "f": 0.2,
+        "tot": 1,
         "t": null,
         "p": -1.55,
         "poly": 0.015
@@ -1387,6 +1538,7 @@ const DASH = {
         "iso": "SDN",
         "reg": 1,
         "f": 0.25,
+        "tot": 17,
         "t": 73.4,
         "p": 0.51,
         "poly": 0.172
@@ -1396,6 +1548,7 @@ const DASH = {
         "iso": "SEN",
         "reg": 2,
         "f": 0.32,
+        "tot": 20,
         "t": 64.5,
         "p": -0.41,
         "poly": 0.551
@@ -1405,6 +1558,7 @@ const DASH = {
         "iso": "SGP",
         "reg": 1,
         "f": 0.28,
+        "tot": 16,
         "t": 93.9,
         "p": -0.79,
         "poly": 0.368
@@ -1414,6 +1568,7 @@ const DASH = {
         "iso": "SLB",
         "reg": 2,
         "f": 0.24,
+        "tot": 11,
         "t": 66.2,
         "p": -1.77,
         "poly": 0.537
@@ -1423,6 +1578,7 @@ const DASH = {
         "iso": "SLE",
         "reg": 1,
         "f": 0.21,
+        "tot": 13,
         "t": 80.8,
         "p": 0.4,
         "poly": 0.33
@@ -1432,6 +1588,7 @@ const DASH = {
         "iso": "SLV",
         "reg": 1,
         "f": 0.54,
+        "tot": 43,
         "t": 50.3,
         "p": 1.44,
         "poly": 0.321
@@ -1441,6 +1598,7 @@ const DASH = {
         "iso": "SMR",
         "reg": null,
         "f": 0.25,
+        "tot": 20,
         "t": 70.7,
         "p": null,
         "poly": null
@@ -1450,6 +1608,7 @@ const DASH = {
         "iso": "SOM",
         "reg": 0,
         "f": 0.08,
+        "tot": 5,
         "t": 99.9,
         "p": 1.5,
         "poly": 0.163
@@ -1459,6 +1618,7 @@ const DASH = {
         "iso": "SRB",
         "reg": 1,
         "f": 0.27,
+        "tot": 22,
         "t": 58.2,
         "p": 0.03,
         "poly": 0.247
@@ -1468,6 +1628,7 @@ const DASH = {
         "iso": "STP",
         "reg": 1,
         "f": 0.4,
+        "tot": 20,
         "t": 70.8,
         "p": -1.96,
         "poly": 0.504
@@ -1477,6 +1638,7 @@ const DASH = {
         "iso": "SUR",
         "reg": 2,
         "f": 0.19,
+        "tot": 9,
         "t": 69.7,
         "p": -1.32,
         "poly": 0.656
@@ -1486,6 +1648,7 @@ const DASH = {
         "iso": "SVK",
         "reg": 3,
         "f": 0.45,
+        "tot": 14,
         "t": 62.1,
         "p": -0.43,
         "poly": 0.818
@@ -1495,6 +1658,7 @@ const DASH = {
         "iso": "SVN",
         "reg": 3,
         "f": 0.48,
+        "tot": 16,
         "t": 63.3,
         "p": 0.64,
         "poly": 0.832
@@ -1504,6 +1668,7 @@ const DASH = {
         "iso": "SWE",
         "reg": 3,
         "f": 0.3,
+        "tot": 23,
         "t": 85.5,
         "p": -2.17,
         "poly": 0.868
@@ -1513,6 +1678,7 @@ const DASH = {
         "iso": "SWZ",
         "reg": 0,
         "f": 0.13,
+        "tot": 7,
         "t": 67.2,
         "p": 1.37,
         "poly": 0.125
@@ -1522,6 +1688,7 @@ const DASH = {
         "iso": "SYC",
         "reg": 1,
         "f": 0.37,
+        "tot": 17,
         "t": 89,
         "p": 0.48,
         "poly": 0.405
@@ -1531,6 +1698,7 @@ const DASH = {
         "iso": "SYR",
         "reg": 1,
         "f": 0.36,
+        "tot": 28,
         "t": 74.6,
         "p": 1.48,
         "poly": 0.154
@@ -1540,6 +1708,7 @@ const DASH = {
         "iso": "TCD",
         "reg": 1,
         "f": 0.24,
+        "tot": 15,
         "t": 68.3,
         "p": 1.21,
         "poly": 0.197
@@ -1549,6 +1718,7 @@ const DASH = {
         "iso": "TGO",
         "reg": 1,
         "f": 0.31,
+        "tot": 20,
         "t": 73.7,
         "p": 0.98,
         "poly": 0.261
@@ -1558,6 +1728,7 @@ const DASH = {
         "iso": "THA",
         "reg": 1,
         "f": 0.37,
+        "tot": 29,
         "t": 57.5,
         "p": 0.46,
         "poly": 0.259
@@ -1567,6 +1738,7 @@ const DASH = {
         "iso": "TJK",
         "reg": 1,
         "f": 0.35,
+        "tot": 12,
         "t": 89.4,
         "p": -0.59,
         "poly": 0.209
@@ -1576,6 +1748,7 @@ const DASH = {
         "iso": "TKM",
         "reg": 0,
         "f": 0.42,
+        "tot": 14,
         "t": 94.5,
         "p": -2.46,
         "poly": 0.131
@@ -1585,6 +1758,7 @@ const DASH = {
         "iso": "TLS",
         "reg": 2,
         "f": 0.56,
+        "tot": 10,
         "t": 78.9,
         "p": -0.25,
         "poly": 0.663
@@ -1594,6 +1768,7 @@ const DASH = {
         "iso": "TON",
         "reg": null,
         "f": 0.32,
+        "tot": 17,
         "t": 61.9,
         "p": null,
         "poly": null
@@ -1603,6 +1778,7 @@ const DASH = {
         "iso": "TTO",
         "reg": 2,
         "f": 0.24,
+        "tot": 14,
         "t": 61.8,
         "p": -1.9,
         "poly": 0.707
@@ -1612,6 +1788,7 @@ const DASH = {
         "iso": "TUN",
         "reg": 1,
         "f": 0.3,
+        "tot": 21,
         "t": 74,
         "p": 0.94,
         "poly": 0.269
@@ -1621,6 +1798,7 @@ const DASH = {
         "iso": "TUR",
         "reg": 1,
         "f": 0.37,
+        "tot": 29,
         "t": 81.6,
         "p": 0.99,
         "poly": 0.436
@@ -1630,6 +1808,7 @@ const DASH = {
         "iso": "TUV",
         "reg": null,
         "f": 0.27,
+        "tot": 12,
         "t": 82.5,
         "p": null,
         "poly": null
@@ -1639,6 +1818,7 @@ const DASH = {
         "iso": "TWN",
         "reg": 2,
         "f": 0.45,
+        "tot": 19,
         "t": 67.4,
         "p": -1.17,
         "poly": 0.61
@@ -1648,6 +1828,7 @@ const DASH = {
         "iso": "TZA",
         "reg": 1,
         "f": 0.21,
+        "tot": 13,
         "t": 72,
         "p": -1.5,
         "poly": 0.356
@@ -1657,6 +1838,7 @@ const DASH = {
         "iso": "UGA",
         "reg": 1,
         "f": 0.22,
+        "tot": 10,
         "t": 68.5,
         "p": -0.04,
         "poly": 0.269
@@ -1666,6 +1848,7 @@ const DASH = {
         "iso": "UKR",
         "reg": 1,
         "f": 0.44,
+        "tot": 15,
         "t": 68.4,
         "p": -0.21,
         "poly": 0.476
@@ -1675,6 +1858,7 @@ const DASH = {
         "iso": "URY",
         "reg": 2,
         "f": 0.22,
+        "tot": 17,
         "t": 82.3,
         "p": -1.3,
         "poly": 0.708
@@ -1684,6 +1868,7 @@ const DASH = {
         "iso": "USA",
         "reg": 3,
         "f": 0.51,
+        "tot": 40,
         "t": 69.4,
         "p": -0.49,
         "poly": 0.783
@@ -1693,6 +1878,7 @@ const DASH = {
         "iso": "UZB",
         "reg": 1,
         "f": 0.5,
+        "tot": 17,
         "t": 85,
         "p": -1.88,
         "poly": 0.176
@@ -1702,6 +1888,7 @@ const DASH = {
         "iso": "VCT",
         "reg": null,
         "f": 0.22,
+        "tot": 10,
         "t": 69.4,
         "p": null,
         "poly": null
@@ -1711,6 +1898,7 @@ const DASH = {
         "iso": "VEN",
         "reg": 1,
         "f": 0.33,
+        "tot": 26,
         "t": 69.3,
         "p": -0.29,
         "poly": 0.504
@@ -1720,6 +1908,7 @@ const DASH = {
         "iso": "VGB",
         "reg": null,
         "f": 0.5,
+        "tot": 1,
         "t": 57.5,
         "p": null,
         "poly": null
@@ -1729,6 +1918,7 @@ const DASH = {
         "iso": "VNM",
         "reg": 0,
         "f": 0.22,
+        "tot": 14,
         "t": 98.7,
         "p": -0.07,
         "poly": 0.171
@@ -1738,6 +1928,7 @@ const DASH = {
         "iso": "VUT",
         "reg": 2,
         "f": 0.29,
+        "tot": 12,
         "t": 63.7,
         "p": -1.32,
         "poly": 0.687
@@ -1747,6 +1938,7 @@ const DASH = {
         "iso": "WSM",
         "reg": null,
         "f": 0.25,
+        "tot": 15,
         "t": 77.9,
         "p": null,
         "poly": null
@@ -1756,6 +1948,7 @@ const DASH = {
         "iso": "YEM",
         "reg": 1,
         "f": 0.15,
+        "tot": 8,
         "t": 69.3,
         "p": 0.91,
         "poly": 0.192
@@ -1765,6 +1958,7 @@ const DASH = {
         "iso": "ZAF",
         "reg": 1,
         "f": 0.27,
+        "tot": 21,
         "t": 74.7,
         "p": 1.71,
         "poly": 0.401
@@ -1774,6 +1968,7 @@ const DASH = {
         "iso": "ZMB",
         "reg": 1,
         "f": 0.25,
+        "tot": 14,
         "t": 57.1,
         "p": -0.24,
         "poly": 0.363
@@ -1783,6 +1978,7 @@ const DASH = {
         "iso": "ZWE",
         "reg": 1,
         "f": 0.29,
+        "tot": 16,
         "t": 52.9,
         "p": 1.4,
         "poly": 0.267
@@ -1794,6 +1990,7 @@ const DASH = {
         "iso": "AFG",
         "reg": 1,
         "f": 0.33,
+        "tot": 7,
         "t": 45.8,
         "p": 0.14,
         "poly": 0.309
@@ -1803,6 +2000,7 @@ const DASH = {
         "iso": "AGO",
         "reg": 1,
         "f": 0.14,
+        "tot": 3,
         "t": 73.9,
         "p": -0.21,
         "poly": 0.239
@@ -1812,6 +2010,7 @@ const DASH = {
         "iso": "ALB",
         "reg": 2,
         "f": 0.24,
+        "tot": 5,
         "t": 50.9,
         "p": -1.37,
         "poly": 0.517
@@ -1821,6 +2020,7 @@ const DASH = {
         "iso": "AND",
         "reg": null,
         "f": 0.29,
+        "tot": 6,
         "t": 74.2,
         "p": null,
         "poly": null
@@ -1830,6 +2030,7 @@ const DASH = {
         "iso": "ARG",
         "reg": 2,
         "f": 0.48,
+        "tot": 10,
         "t": 76,
         "p": 1.1,
         "poly": 0.787
@@ -1839,6 +2040,7 @@ const DASH = {
         "iso": "ARM",
         "reg": 1,
         "f": 0.38,
+        "tot": 8,
         "t": 61.5,
         "p": 0.88,
         "poly": 0.404
@@ -1848,6 +2050,7 @@ const DASH = {
         "iso": "ATG",
         "reg": null,
         "f": 0.19,
+        "tot": 4,
         "t": 84.6,
         "p": null,
         "poly": null
@@ -1857,6 +2060,7 @@ const DASH = {
         "iso": "AUS",
         "reg": 3,
         "f": 0.33,
+        "tot": 7,
         "t": 93.3,
         "p": -1.15,
         "poly": 0.875
@@ -1866,6 +2070,7 @@ const DASH = {
         "iso": "AUT",
         "reg": 3,
         "f": 0.43,
+        "tot": 9,
         "t": 74.6,
         "p": -0.49,
         "poly": 0.866
@@ -1875,6 +2080,7 @@ const DASH = {
         "iso": "AZE",
         "reg": 1,
         "f": 0.52,
+        "tot": 11,
         "t": 61.4,
         "p": 0.39,
         "poly": 0.213
@@ -1884,6 +2090,7 @@ const DASH = {
         "iso": "BDI",
         "reg": 1,
         "f": 0.29,
+        "tot": 6,
         "t": 79.1,
         "p": 1.5,
         "poly": 0.255
@@ -1893,6 +2100,7 @@ const DASH = {
         "iso": "BEL",
         "reg": 3,
         "f": 0.24,
+        "tot": 5,
         "t": 89.9,
         "p": -1.85,
         "poly": 0.896
@@ -1902,6 +2110,7 @@ const DASH = {
         "iso": "BEN",
         "reg": 2,
         "f": 0.43,
+        "tot": 9,
         "t": 65.5,
         "p": -1.04,
         "poly": 0.612
@@ -1911,6 +2120,7 @@ const DASH = {
         "iso": "BFA",
         "reg": 2,
         "f": 0.33,
+        "tot": 7,
         "t": 60,
         "p": -0.76,
         "poly": 0.564
@@ -1920,6 +2130,7 @@ const DASH = {
         "iso": "BGD",
         "reg": 1,
         "f": 0.19,
+        "tot": 4,
         "t": 72.9,
         "p": 1.15,
         "poly": 0.364
@@ -1929,6 +2140,7 @@ const DASH = {
         "iso": "BGR",
         "reg": 2,
         "f": 0.48,
+        "tot": 10,
         "t": 54.8,
         "p": -1.19,
         "poly": 0.677
@@ -1938,6 +2150,7 @@ const DASH = {
         "iso": "BHR",
         "reg": 0,
         "f": 0.24,
+        "tot": 5,
         "t": 62.3,
         "p": 1.46,
         "poly": 0.165
@@ -1947,6 +2160,7 @@ const DASH = {
         "iso": "BHS",
         "reg": null,
         "f": 0.19,
+        "tot": 4,
         "t": 90,
         "p": null,
         "poly": null
@@ -1956,6 +2170,7 @@ const DASH = {
         "iso": "BIH",
         "reg": 2,
         "f": 0.29,
+        "tot": 6,
         "t": 55.8,
         "p": 1.26,
         "poly": 0.585
@@ -1965,6 +2180,7 @@ const DASH = {
         "iso": "BLR",
         "reg": 1,
         "f": 0.52,
+        "tot": 11,
         "t": 81.2,
         "p": 1.24,
         "poly": 0.24
@@ -1974,6 +2190,7 @@ const DASH = {
         "iso": "BLZ",
         "reg": null,
         "f": 0.24,
+        "tot": 5,
         "t": 76.9,
         "p": null,
         "poly": null
@@ -1983,6 +2200,7 @@ const DASH = {
         "iso": "BOL",
         "reg": 2,
         "f": 0.38,
+        "tot": 8,
         "t": 85.7,
         "p": 0.91,
         "poly": 0.663
@@ -1992,6 +2210,7 @@ const DASH = {
         "iso": "BRA",
         "reg": 2,
         "f": 0.24,
+        "tot": 5,
         "t": 81.5,
         "p": 0.04,
         "poly": 0.837
@@ -2001,6 +2220,7 @@ const DASH = {
         "iso": "BRB",
         "reg": 2,
         "f": 0.19,
+        "tot": 4,
         "t": 61.4,
         "p": -3.39,
         "poly": 0.776
@@ -2010,6 +2230,7 @@ const DASH = {
         "iso": "BTN",
         "reg": 2,
         "f": 0.43,
+        "tot": 6,
         "t": 68,
         "p": -1.3,
         "poly": 0.55
@@ -2019,6 +2240,7 @@ const DASH = {
         "iso": "BWA",
         "reg": 3,
         "f": 0.19,
+        "tot": 4,
         "t": 80.2,
         "p": -1.81,
         "poly": 0.696
@@ -2028,6 +2250,7 @@ const DASH = {
         "iso": "CAF",
         "reg": 1,
         "f": 0.24,
+        "tot": 5,
         "t": 58.1,
         "p": 0.88,
         "poly": 0.329
@@ -2037,6 +2260,7 @@ const DASH = {
         "iso": "CAN",
         "reg": 3,
         "f": 0.33,
+        "tot": 7,
         "t": 63.3,
         "p": -1.41,
         "poly": 0.831
@@ -2046,6 +2270,7 @@ const DASH = {
         "iso": "CHE",
         "reg": 3,
         "f": 0.24,
+        "tot": 5,
         "t": 47.2,
         "p": -1.75,
         "poly": 0.897
@@ -2055,6 +2280,7 @@ const DASH = {
         "iso": "CHL",
         "reg": 3,
         "f": 0.38,
+        "tot": 8,
         "t": 77.8,
         "p": -1.5,
         "poly": 0.881
@@ -2064,6 +2290,7 @@ const DASH = {
         "iso": "CIV",
         "reg": 1,
         "f": 0.38,
+        "tot": 8,
         "t": 49.8,
         "p": 1.03,
         "poly": 0.458
@@ -2073,6 +2300,7 @@ const DASH = {
         "iso": "CMR",
         "reg": 1,
         "f": 0.38,
+        "tot": 8,
         "t": 64.2,
         "p": 1.13,
         "poly": 0.312
@@ -2082,6 +2310,7 @@ const DASH = {
         "iso": "COD",
         "reg": 1,
         "f": 0.14,
+        "tot": 3,
         "t": 58.3,
         "p": 0.86,
         "poly": 0.288
@@ -2091,6 +2320,7 @@ const DASH = {
         "iso": "COG",
         "reg": 1,
         "f": 0.33,
+        "tot": 7,
         "t": 62.7,
         "p": 0.21,
         "poly": 0.243
@@ -2100,6 +2330,7 @@ const DASH = {
         "iso": "COL",
         "reg": 2,
         "f": 0.48,
+        "tot": 10,
         "t": 48.4,
         "p": 0.78,
         "poly": 0.617
@@ -2109,6 +2340,7 @@ const DASH = {
         "iso": "COM",
         "reg": 1,
         "f": 0.43,
+        "tot": 9,
         "t": 66.2,
         "p": 0.71,
         "poly": 0.401
@@ -2118,6 +2350,7 @@ const DASH = {
         "iso": "CPV",
         "reg": 2,
         "f": 0.38,
+        "tot": 8,
         "t": 63.8,
         "p": -0.88,
         "poly": 0.785
@@ -2127,6 +2360,7 @@ const DASH = {
         "iso": "CRI",
         "reg": 3,
         "f": 0.24,
+        "tot": 5,
         "t": 67.6,
         "p": -1.42,
         "poly": 0.902
@@ -2136,6 +2370,7 @@ const DASH = {
         "iso": "CUB",
         "reg": 0,
         "f": 0.19,
+        "tot": 4,
         "t": 92.8,
         "p": -0.45,
         "poly": 0.146
@@ -2145,6 +2380,7 @@ const DASH = {
         "iso": "CYP",
         "reg": 3,
         "f": 0.38,
+        "tot": 8,
         "t": 83.1,
         "p": 0.36,
         "poly": 0.832
@@ -2154,6 +2390,7 @@ const DASH = {
         "iso": "CZE",
         "reg": 3,
         "f": 0.81,
+        "tot": 17,
         "t": 62.3,
         "p": -1.73,
         "poly": 0.873
@@ -2163,6 +2400,7 @@ const DASH = {
         "iso": "DEU",
         "reg": 3,
         "f": 0.24,
+        "tot": 5,
         "t": 75,
         "p": -2.06,
         "poly": 0.894
@@ -2172,6 +2410,7 @@ const DASH = {
         "iso": "DJI",
         "reg": 1,
         "f": 0.33,
+        "tot": 7,
         "t": 67.9,
         "p": 0.19,
         "poly": 0.249
@@ -2181,6 +2420,7 @@ const DASH = {
         "iso": "DMA",
         "reg": null,
         "f": 0.19,
+        "tot": 4,
         "t": 56.8,
         "p": null,
         "poly": null
@@ -2190,6 +2430,7 @@ const DASH = {
         "iso": "DNK",
         "reg": 3,
         "f": 0.29,
+        "tot": 6,
         "t": 86.1,
         "p": -3,
         "poly": 0.918
@@ -2199,6 +2440,7 @@ const DASH = {
         "iso": "DOM",
         "reg": 2,
         "f": 0.43,
+        "tot": 9,
         "t": 64.4,
         "p": -0.36,
         "poly": 0.613
@@ -2208,6 +2450,7 @@ const DASH = {
         "iso": "DZA",
         "reg": 1,
         "f": 0.38,
+        "tot": 8,
         "t": 48,
         "p": -1.19,
         "poly": 0.32
@@ -2217,6 +2460,7 @@ const DASH = {
         "iso": "ECU",
         "reg": 2,
         "f": 0.29,
+        "tot": 6,
         "t": 76.5,
         "p": 1.08,
         "poly": 0.626
@@ -2226,6 +2470,7 @@ const DASH = {
         "iso": "EGY",
         "reg": 1,
         "f": 0.62,
+        "tot": 13,
         "t": 40.5,
         "p": -0.18,
         "poly": 0.199
@@ -2235,6 +2480,7 @@ const DASH = {
         "iso": "ESP",
         "reg": 3,
         "f": 0.38,
+        "tot": 8,
         "t": 72.5,
         "p": -1.17,
         "poly": 0.875
@@ -2244,6 +2490,7 @@ const DASH = {
         "iso": "EST",
         "reg": 3,
         "f": 0.24,
+        "tot": 5,
         "t": 62.3,
         "p": -1.36,
         "poly": 0.882
@@ -2253,6 +2500,7 @@ const DASH = {
         "iso": "ETH",
         "reg": 1,
         "f": 0.19,
+        "tot": 4,
         "t": 89.8,
         "p": 0.81,
         "poly": 0.247
@@ -2262,6 +2510,7 @@ const DASH = {
         "iso": "FIN",
         "reg": 3,
         "f": 0.43,
+        "tot": 9,
         "t": 69.6,
         "p": -1.5,
         "poly": 0.878
@@ -2271,6 +2520,7 @@ const DASH = {
         "iso": "FJI",
         "reg": 1,
         "f": 0.19,
+        "tot": 4,
         "t": 75.4,
         "p": -0.67,
         "poly": 0.308
@@ -2280,6 +2530,7 @@ const DASH = {
         "iso": "FRA",
         "reg": 3,
         "f": 0.38,
+        "tot": 8,
         "t": 80.4,
         "p": 0.11,
         "poly": 0.88
@@ -2289,6 +2540,7 @@ const DASH = {
         "iso": "FSM",
         "reg": null,
         "f": 0.43,
+        "tot": 9,
         "t": 43.5,
         "p": null,
         "poly": null
@@ -2298,6 +2550,7 @@ const DASH = {
         "iso": "GAB",
         "reg": 1,
         "f": 0.33,
+        "tot": 7,
         "t": 52,
         "p": -0.66,
         "poly": 0.363
@@ -2307,6 +2560,7 @@ const DASH = {
         "iso": "GBR",
         "reg": 3,
         "f": 0.29,
+        "tot": 6,
         "t": 64.8,
         "p": -0.63,
         "poly": 0.864
@@ -2316,6 +2570,7 @@ const DASH = {
         "iso": "GEO",
         "reg": 2,
         "f": 0.52,
+        "tot": 11,
         "t": 61.2,
         "p": 1.16,
         "poly": 0.545
@@ -2325,6 +2580,7 @@ const DASH = {
         "iso": "GHA",
         "reg": 3,
         "f": 0.29,
+        "tot": 6,
         "t": 74.4,
         "p": -0.47,
         "poly": 0.739
@@ -2334,6 +2590,7 @@ const DASH = {
         "iso": "GIN",
         "reg": 1,
         "f": 0.33,
+        "tot": 7,
         "t": 72.2,
         "p": 1.27,
         "poly": 0.295
@@ -2343,6 +2600,7 @@ const DASH = {
         "iso": "GMB",
         "reg": 1,
         "f": 0.38,
+        "tot": 8,
         "t": 56.2,
         "p": -0.66,
         "poly": 0.299
@@ -2352,6 +2610,7 @@ const DASH = {
         "iso": "GNB",
         "reg": 1,
         "f": 0.43,
+        "tot": 9,
         "t": 75.7,
         "p": -0.79,
         "poly": 0.442
@@ -2361,6 +2620,7 @@ const DASH = {
         "iso": "GNQ",
         "reg": 1,
         "f": 0.33,
+        "tot": 7,
         "t": 92.9,
         "p": 0.86,
         "poly": 0.182
@@ -2370,6 +2630,7 @@ const DASH = {
         "iso": "GRC",
         "reg": 3,
         "f": 0.43,
+        "tot": 9,
         "t": 69,
         "p": -1.09,
         "poly": 0.883
@@ -2379,6 +2640,7 @@ const DASH = {
         "iso": "GRD",
         "reg": null,
         "f": 0.19,
+        "tot": 4,
         "t": 74.8,
         "p": null,
         "poly": null
@@ -2388,6 +2650,7 @@ const DASH = {
         "iso": "GTM",
         "reg": 2,
         "f": 0.24,
+        "tot": 5,
         "t": 63.6,
         "p": -0.7,
         "poly": 0.579
@@ -2397,6 +2660,7 @@ const DASH = {
         "iso": "GUY",
         "reg": 2,
         "f": 0.24,
+        "tot": 5,
         "t": 75.6,
         "p": 1.15,
         "poly": 0.597
@@ -2406,6 +2670,7 @@ const DASH = {
         "iso": "HND",
         "reg": 1,
         "f": 0.24,
+        "tot": 5,
         "t": 58.4,
         "p": -0.74,
         "poly": 0.467
@@ -2415,6 +2680,7 @@ const DASH = {
         "iso": "HRV",
         "reg": 2,
         "f": 0.62,
+        "tot": 13,
         "t": 55.3,
         "p": 0.42,
         "poly": 0.787
@@ -2424,6 +2690,7 @@ const DASH = {
         "iso": "HTI",
         "reg": 1,
         "f": 0.38,
+        "tot": 8,
         "t": 38.3,
         "p": 0.99,
         "poly": 0.398
@@ -2433,6 +2700,7 @@ const DASH = {
         "iso": "HUN",
         "reg": 2,
         "f": 0.24,
+        "tot": 5,
         "t": 67.4,
         "p": 1.34,
         "poly": 0.735
@@ -2442,6 +2710,7 @@ const DASH = {
         "iso": "IDN",
         "reg": 2,
         "f": 0.33,
+        "tot": 7,
         "t": 78.3,
         "p": 0.65,
         "poly": 0.668
@@ -2451,6 +2720,7 @@ const DASH = {
         "iso": "IND",
         "reg": 2,
         "f": 0.19,
+        "tot": 4,
         "t": 62.5,
         "p": 0.44,
         "poly": 0.636
@@ -2460,6 +2730,7 @@ const DASH = {
         "iso": "IRL",
         "reg": 3,
         "f": 0.33,
+        "tot": 7,
         "t": 61.9,
         "p": -3.37,
         "poly": 0.893
@@ -2469,6 +2740,7 @@ const DASH = {
         "iso": "IRN",
         "reg": 1,
         "f": 0.48,
+        "tot": 10,
         "t": 65,
         "p": 0.98,
         "poly": 0.186
@@ -2478,6 +2750,7 @@ const DASH = {
         "iso": "IRQ",
         "reg": 1,
         "f": 0.29,
+        "tot": 6,
         "t": 72.7,
         "p": 1.8,
         "poly": 0.341
@@ -2487,6 +2760,7 @@ const DASH = {
         "iso": "ISL",
         "reg": 3,
         "f": 0.52,
+        "tot": 11,
         "t": 77.5,
         "p": -0.77,
         "poly": 0.871
@@ -2496,6 +2770,7 @@ const DASH = {
         "iso": "ISR",
         "reg": 3,
         "f": 0.38,
+        "tot": 8,
         "t": 67.7,
         "p": 0.56,
         "poly": 0.748
@@ -2505,6 +2780,7 @@ const DASH = {
         "iso": "ITA",
         "reg": 3,
         "f": 0.24,
+        "tot": 5,
         "t": 78.7,
         "p": 0.23,
         "poly": 0.857
@@ -2514,6 +2790,7 @@ const DASH = {
         "iso": "JAM",
         "reg": 2,
         "f": 0.24,
+        "tot": 5,
         "t": 51.5,
         "p": -1.32,
         "poly": 0.772
@@ -2523,6 +2800,7 @@ const DASH = {
         "iso": "JOR",
         "reg": 0,
         "f": 0.29,
+        "tot": 6,
         "t": 47.9,
         "p": -1.04,
         "poly": 0.236
@@ -2532,6 +2810,7 @@ const DASH = {
         "iso": "JPN",
         "reg": 3,
         "f": 0.62,
+        "tot": 13,
         "t": 60.4,
         "p": -1.9,
         "poly": 0.842
@@ -2541,6 +2820,7 @@ const DASH = {
         "iso": "KAZ",
         "reg": 1,
         "f": 0.38,
+        "tot": 8,
         "t": 77.1,
         "p": -0.49,
         "poly": 0.242
@@ -2550,6 +2830,7 @@ const DASH = {
         "iso": "KEN",
         "reg": 1,
         "f": 0.24,
+        "tot": 5,
         "t": 72.9,
         "p": 0.22,
         "poly": 0.475
@@ -2559,6 +2840,7 @@ const DASH = {
         "iso": "KGZ",
         "reg": 1,
         "f": 0.52,
+        "tot": 11,
         "t": 66,
         "p": -0.33,
         "poly": 0.375
@@ -2568,6 +2850,7 @@ const DASH = {
         "iso": "KHM",
         "reg": 1,
         "f": 0.19,
+        "tot": 4,
         "t": 77.5,
         "p": 0.04,
         "poly": 0.291
@@ -2577,6 +2860,7 @@ const DASH = {
         "iso": "KIR",
         "reg": null,
         "f": 0.52,
+        "tot": 11,
         "t": 72.3,
         "p": null,
         "poly": null
@@ -2586,6 +2870,7 @@ const DASH = {
         "iso": "KNA",
         "reg": null,
         "f": 0.19,
+        "tot": 4,
         "t": 67.5,
         "p": null,
         "poly": null
@@ -2595,6 +2880,7 @@ const DASH = {
         "iso": "KOR",
         "reg": 3,
         "f": 0.48,
+        "tot": 10,
         "t": 63.8,
         "p": 0.17,
         "poly": 0.804
@@ -2604,6 +2890,7 @@ const DASH = {
         "iso": "KWT",
         "reg": 0,
         "f": 0.43,
+        "tot": 9,
         "t": 64.5,
         "p": -1.4,
         "poly": 0.311
@@ -2613,6 +2900,7 @@ const DASH = {
         "iso": "LAO",
         "reg": 0,
         "f": 0.19,
+        "tot": 4,
         "t": 99.3,
         "p": -0.52,
         "poly": 0.097
@@ -2622,6 +2910,7 @@ const DASH = {
         "iso": "LBN",
         "reg": 1,
         "f": 0.19,
+        "tot": 4,
         "t": 48.8,
         "p": 1.09,
         "poly": 0.435
@@ -2631,6 +2920,7 @@ const DASH = {
         "iso": "LBR",
         "reg": 2,
         "f": 0.24,
+        "tot": 5,
         "t": 74.4,
         "p": 0.33,
         "poly": 0.541
@@ -2640,6 +2930,7 @@ const DASH = {
         "iso": "LBY",
         "reg": 0,
         "f": 0.14,
+        "tot": 3,
         "t": 55.6,
         "p": 1.38,
         "poly": 0.179
@@ -2649,6 +2940,7 @@ const DASH = {
         "iso": "LCA",
         "reg": null,
         "f": 0.19,
+        "tot": 4,
         "t": 50.1,
         "p": null,
         "poly": null
@@ -2658,6 +2950,7 @@ const DASH = {
         "iso": "LIE",
         "reg": null,
         "f": 0.24,
+        "tot": 5,
         "t": 83.1,
         "p": null,
         "poly": null
@@ -2667,6 +2960,7 @@ const DASH = {
         "iso": "LKA",
         "reg": 1,
         "f": 0.43,
+        "tot": 9,
         "t": 77,
         "p": 0.43,
         "poly": 0.474
@@ -2676,6 +2970,7 @@ const DASH = {
         "iso": "LSO",
         "reg": 2,
         "f": 0.14,
+        "tot": 3,
         "t": 51.7,
         "p": 0.16,
         "poly": 0.566
@@ -2685,6 +2980,7 @@ const DASH = {
         "iso": "LTU",
         "reg": 3,
         "f": 0.57,
+        "tot": 12,
         "t": 52.6,
         "p": -2.84,
         "poly": 0.825
@@ -2694,6 +2990,7 @@ const DASH = {
         "iso": "LUX",
         "reg": 3,
         "f": 0.19,
+        "tot": 4,
         "t": 90.9,
         "p": -2.32,
         "poly": 0.874
@@ -2703,6 +3000,7 @@ const DASH = {
         "iso": "LVA",
         "reg": 2,
         "f": 0.29,
+        "tot": 6,
         "t": 61.6,
         "p": -2.48,
         "poly": 0.819
@@ -2712,6 +3010,7 @@ const DASH = {
         "iso": "MAR",
         "reg": 0,
         "f": 0.19,
+        "tot": 4,
         "t": 44.3,
         "p": -0.67,
         "poly": 0.256
@@ -2721,6 +3020,7 @@ const DASH = {
         "iso": "MCO",
         "reg": null,
         "f": 0.19,
+        "tot": 4,
         "t": 75.4,
         "p": null,
         "poly": null
@@ -2730,6 +3030,7 @@ const DASH = {
         "iso": "MDA",
         "reg": 2,
         "f": 0.43,
+        "tot": 9,
         "t": 59.3,
         "p": -0.23,
         "poly": 0.537
@@ -2739,6 +3040,7 @@ const DASH = {
         "iso": "MDG",
         "reg": 1,
         "f": 0.38,
+        "tot": 8,
         "t": 58.7,
         "p": 1.05,
         "poly": 0.425
@@ -2748,6 +3050,7 @@ const DASH = {
         "iso": "MDV",
         "reg": 1,
         "f": 0.43,
+        "tot": 9,
         "t": 81,
         "p": 0.54,
         "poly": 0.38
@@ -2757,6 +3060,7 @@ const DASH = {
         "iso": "MEX",
         "reg": 2,
         "f": 0.33,
+        "tot": 7,
         "t": 57.6,
         "p": 0.03,
         "poly": 0.662
@@ -2766,6 +3070,7 @@ const DASH = {
         "iso": "MHL",
         "reg": null,
         "f": 0.24,
+        "tot": 5,
         "t": 49.5,
         "p": null,
         "poly": null
@@ -2775,6 +3080,7 @@ const DASH = {
         "iso": "MKD",
         "reg": 2,
         "f": 0.52,
+        "tot": 11,
         "t": 58.2,
         "p": 1.08,
         "poly": 0.53
@@ -2784,6 +3090,7 @@ const DASH = {
         "iso": "MLI",
         "reg": 2,
         "f": 0.38,
+        "tot": 8,
         "t": 40.4,
         "p": 0.33,
         "poly": 0.545
@@ -2793,6 +3100,7 @@ const DASH = {
         "iso": "MLT",
         "reg": 2,
         "f": 0.19,
+        "tot": 4,
         "t": 93.5,
         "p": 1.06,
         "poly": 0.789
@@ -2802,6 +3110,7 @@ const DASH = {
         "iso": "MMR",
         "reg": 0,
         "f": 0.14,
+        "tot": 3,
         "t": 73,
         "p": 1.42,
         "poly": 0.224
@@ -2811,6 +3120,7 @@ const DASH = {
         "iso": "MNE",
         "reg": 1,
         "f": 0.54,
+        "tot": 7,
         "t": 69,
         "p": 0.82,
         "poly": 0.478
@@ -2820,6 +3130,7 @@ const DASH = {
         "iso": "MNG",
         "reg": 2,
         "f": 0.52,
+        "tot": 11,
         "t": 74.3,
         "p": 0.14,
         "poly": 0.672
@@ -2829,6 +3140,7 @@ const DASH = {
         "iso": "MOZ",
         "reg": 1,
         "f": 0.19,
+        "tot": 4,
         "t": 45.3,
         "p": -0.82,
         "poly": 0.43
@@ -2838,6 +3150,7 @@ const DASH = {
         "iso": "MRT",
         "reg": 1,
         "f": 0.43,
+        "tot": 9,
         "t": 65.6,
         "p": -0.97,
         "poly": 0.38
@@ -2847,6 +3160,7 @@ const DASH = {
         "iso": "MUS",
         "reg": 3,
         "f": 0.24,
+        "tot": 5,
         "t": 78.3,
         "p": 0.79,
         "poly": 0.728
@@ -2856,6 +3170,7 @@ const DASH = {
         "iso": "MWI",
         "reg": 1,
         "f": 0.24,
+        "tot": 5,
         "t": 70.4,
         "p": -0.84,
         "poly": 0.498
@@ -2865,6 +3180,7 @@ const DASH = {
         "iso": "MYS",
         "reg": 1,
         "f": 0.19,
+        "tot": 4,
         "t": 79.3,
         "p": 1.12,
         "poly": 0.335
@@ -2874,6 +3190,7 @@ const DASH = {
         "iso": "NAM",
         "reg": 2,
         "f": 0.19,
+        "tot": 4,
         "t": 71.6,
         "p": -0.62,
         "poly": 0.66
@@ -2883,6 +3200,7 @@ const DASH = {
         "iso": "NER",
         "reg": 2,
         "f": 0.29,
+        "tot": 6,
         "t": 57.2,
         "p": -0.97,
         "poly": 0.544
@@ -2892,6 +3210,7 @@ const DASH = {
         "iso": "NGA",
         "reg": 1,
         "f": 0.33,
+        "tot": 7,
         "t": 51.7,
         "p": -0.91,
         "poly": 0.48
@@ -2901,6 +3220,7 @@ const DASH = {
         "iso": "NIC",
         "reg": 1,
         "f": 0.19,
+        "tot": 4,
         "t": 70.2,
         "p": 0.24,
         "poly": 0.427
@@ -2910,6 +3230,7 @@ const DASH = {
         "iso": "NLD",
         "reg": 3,
         "f": 0.29,
+        "tot": 6,
         "t": 78.6,
         "p": -1.31,
         "poly": 0.868
@@ -2919,6 +3240,7 @@ const DASH = {
         "iso": "NOR",
         "reg": 3,
         "f": 0.24,
+        "tot": 5,
         "t": 77.1,
         "p": -2.29,
         "poly": 0.893
@@ -2928,6 +3250,7 @@ const DASH = {
         "iso": "NPL",
         "reg": 1,
         "f": 0.14,
+        "tot": 3,
         "t": 70.1,
         "p": 1,
         "poly": 0.447
@@ -2937,6 +3260,7 @@ const DASH = {
         "iso": "NRU",
         "reg": null,
         "f": 0.48,
+        "tot": 10,
         "t": 90.7,
         "p": null,
         "poly": null
@@ -2946,6 +3270,7 @@ const DASH = {
         "iso": "NZL",
         "reg": 3,
         "f": 0.33,
+        "tot": 7,
         "t": 78.6,
         "p": -2.52,
         "poly": 0.886
@@ -2955,6 +3280,7 @@ const DASH = {
         "iso": "OMN",
         "reg": 0,
         "f": 0.28,
+        "tot": 5,
         "t": 61.1,
         "p": -2.04,
         "poly": 0.166
@@ -2964,6 +3290,7 @@ const DASH = {
         "iso": "PAK",
         "reg": 1,
         "f": 0.24,
+        "tot": 5,
         "t": 52.5,
         "p": -0.78,
         "poly": 0.383
@@ -2973,6 +3300,7 @@ const DASH = {
         "iso": "PAN",
         "reg": 2,
         "f": 0.19,
+        "tot": 4,
         "t": 73.8,
         "p": -0.87,
         "poly": 0.739
@@ -2982,6 +3310,7 @@ const DASH = {
         "iso": "PER",
         "reg": 2,
         "f": 0.29,
+        "tot": 6,
         "t": 82.9,
         "p": -0.05,
         "poly": 0.782
@@ -2991,6 +3320,7 @@ const DASH = {
         "iso": "PHL",
         "reg": 2,
         "f": 0.33,
+        "tot": 7,
         "t": 75.8,
         "p": -1.15,
         "poly": 0.51
@@ -3000,6 +3330,7 @@ const DASH = {
         "iso": "PLW",
         "reg": null,
         "f": 0.43,
+        "tot": 9,
         "t": 62.8,
         "p": null,
         "poly": null
@@ -3009,6 +3340,7 @@ const DASH = {
         "iso": "PNG",
         "reg": 1,
         "f": 0.19,
+        "tot": 4,
         "t": 66.7,
         "p": -1.56,
         "poly": 0.476
@@ -3018,6 +3350,7 @@ const DASH = {
         "iso": "POL",
         "reg": 3,
         "f": 0.52,
+        "tot": 11,
         "t": 55.7,
         "p": 1.53,
         "poly": 0.836
@@ -3027,6 +3360,7 @@ const DASH = {
         "iso": "PRK",
         "reg": 0,
         "f": 0.14,
+        "tot": 3,
         "t": 100,
         "p": -1,
         "poly": 0.084
@@ -3036,6 +3370,7 @@ const DASH = {
         "iso": "PRT",
         "reg": 3,
         "f": 0.48,
+        "tot": 10,
         "t": 56.6,
         "p": -2.22,
         "poly": 0.887
@@ -3045,6 +3380,7 @@ const DASH = {
         "iso": "PRY",
         "reg": 2,
         "f": 0.24,
+        "tot": 5,
         "t": 63.5,
         "p": -1.15,
         "poly": 0.591
@@ -3054,6 +3390,7 @@ const DASH = {
         "iso": "ROU",
         "reg": 2,
         "f": 0.52,
+        "tot": 11,
         "t": 50.1,
         "p": 0.2,
         "poly": 0.66
@@ -3063,6 +3400,7 @@ const DASH = {
         "iso": "RUS",
         "reg": 1,
         "f": 0.43,
+        "tot": 9,
         "t": 62.5,
         "p": 0.23,
         "poly": 0.304
@@ -3072,6 +3410,7 @@ const DASH = {
         "iso": "RWA",
         "reg": 1,
         "f": 0.33,
+        "tot": 7,
         "t": 97.1,
         "p": 0.74,
         "poly": 0.197
@@ -3081,6 +3420,7 @@ const DASH = {
         "iso": "SAU",
         "reg": 0,
         "f": 1,
+        "tot": 1,
         "t": null,
         "p": -1.3,
         "poly": 0.015
@@ -3090,6 +3430,7 @@ const DASH = {
         "iso": "SDN",
         "reg": 1,
         "f": 0.14,
+        "tot": 3,
         "t": 59.2,
         "p": 1.04,
         "poly": 0.203
@@ -3099,6 +3440,7 @@ const DASH = {
         "iso": "SEN",
         "reg": 2,
         "f": 0.38,
+        "tot": 8,
         "t": 62.7,
         "p": -1.1,
         "poly": 0.692
@@ -3108,6 +3450,7 @@ const DASH = {
         "iso": "SGP",
         "reg": 1,
         "f": 0.29,
+        "tot": 6,
         "t": 94.5,
         "p": -1,
         "poly": 0.397
@@ -3117,6 +3460,7 @@ const DASH = {
         "iso": "SLB",
         "reg": 2,
         "f": 0.24,
+        "tot": 5,
         "t": 65.7,
         "p": -1.56,
         "poly": 0.531
@@ -3126,6 +3470,7 @@ const DASH = {
         "iso": "SLE",
         "reg": 2,
         "f": 0.19,
+        "tot": 4,
         "t": 83.2,
         "p": 0.39,
         "poly": 0.492
@@ -3135,6 +3480,7 @@ const DASH = {
         "iso": "SLV",
         "reg": 2,
         "f": 0.52,
+        "tot": 11,
         "t": 50.6,
         "p": 0.83,
         "poly": 0.592
@@ -3144,6 +3490,7 @@ const DASH = {
         "iso": "SMR",
         "reg": null,
         "f": 0.29,
+        "tot": 6,
         "t": 65.6,
         "p": null,
         "poly": null
@@ -3153,6 +3500,7 @@ const DASH = {
         "iso": "SOM",
         "reg": 0,
         "f": 0,
+        "tot": 0,
         "t": null,
         "p": 2.25,
         "poly": 0.172
@@ -3162,6 +3510,7 @@ const DASH = {
         "iso": "SRB",
         "reg": 2,
         "f": 0.62,
+        "tot": 13,
         "t": 57.6,
         "p": -0.14,
         "poly": 0.528
@@ -3171,6 +3520,7 @@ const DASH = {
         "iso": "STP",
         "reg": 2,
         "f": 0.43,
+        "tot": 9,
         "t": 73.3,
         "p": -2.05,
         "poly": 0.671
@@ -3180,6 +3530,7 @@ const DASH = {
         "iso": "SUR",
         "reg": 2,
         "f": 0.24,
+        "tot": 5,
         "t": 66.8,
         "p": -1.2,
         "poly": 0.767
@@ -3189,6 +3540,7 @@ const DASH = {
         "iso": "SVK",
         "reg": 3,
         "f": 0.48,
+        "tot": 10,
         "t": 56.7,
         "p": -0.75,
         "poly": 0.842
@@ -3198,6 +3550,7 @@ const DASH = {
         "iso": "SVN",
         "reg": 3,
         "f": 0.48,
+        "tot": 10,
         "t": 58.7,
         "p": 0.48,
         "poly": 0.841
@@ -3207,6 +3560,7 @@ const DASH = {
         "iso": "SWE",
         "reg": 3,
         "f": 0.24,
+        "tot": 5,
         "t": 83.9,
         "p": -2.1,
         "poly": 0.913
@@ -3216,6 +3570,7 @@ const DASH = {
         "iso": "SWZ",
         "reg": 0,
         "f": 0.19,
+        "tot": 4,
         "t": 60.5,
         "p": 1.31,
         "poly": 0.129
@@ -3225,6 +3580,7 @@ const DASH = {
         "iso": "SYC",
         "reg": 2,
         "f": 0.43,
+        "tot": 9,
         "t": 88,
         "p": 0.33,
         "poly": 0.488
@@ -3234,6 +3590,7 @@ const DASH = {
         "iso": "SYR",
         "reg": 1,
         "f": 0.33,
+        "tot": 7,
         "t": 67,
         "p": 2.02,
         "poly": 0.144
@@ -3243,6 +3600,7 @@ const DASH = {
         "iso": "TCD",
         "reg": 1,
         "f": 0.29,
+        "tot": 6,
         "t": 57.8,
         "p": 1.71,
         "poly": 0.279
@@ -3252,6 +3610,7 @@ const DASH = {
         "iso": "TGO",
         "reg": 1,
         "f": 0.43,
+        "tot": 9,
         "t": 70.1,
         "p": 1.64,
         "poly": 0.394
@@ -3261,6 +3620,7 @@ const DASH = {
         "iso": "THA",
         "reg": 1,
         "f": 0.48,
+        "tot": 10,
         "t": 69.3,
         "p": 1.66,
         "poly": 0.354
@@ -3270,6 +3630,7 @@ const DASH = {
         "iso": "TJK",
         "reg": 1,
         "f": 0.38,
+        "tot": 8,
         "t": 89.6,
         "p": -0.99,
         "poly": 0.215
@@ -3279,6 +3640,7 @@ const DASH = {
         "iso": "TKM",
         "reg": 0,
         "f": 0.38,
+        "tot": 8,
         "t": 92.4,
         "p": -2.37,
         "poly": 0.12
@@ -3288,6 +3650,7 @@ const DASH = {
         "iso": "TLS",
         "reg": 2,
         "f": 0.5,
+        "tot": 7,
         "t": 79.2,
         "p": -0.23,
         "poly": 0.65
@@ -3297,6 +3660,7 @@ const DASH = {
         "iso": "TON",
         "reg": null,
         "f": 0.29,
+        "tot": 6,
         "t": 66.4,
         "p": null,
         "poly": null
@@ -3306,6 +3670,7 @@ const DASH = {
         "iso": "TTO",
         "reg": 3,
         "f": 0.33,
+        "tot": 7,
         "t": 65.6,
         "p": -2.04,
         "poly": 0.758
@@ -3315,6 +3680,7 @@ const DASH = {
         "iso": "TUN",
         "reg": 1,
         "f": 0.33,
+        "tot": 7,
         "t": 79.1,
         "p": 0.69,
         "poly": 0.43
@@ -3324,6 +3690,7 @@ const DASH = {
         "iso": "TUR",
         "reg": 2,
         "f": 0.33,
+        "tot": 7,
         "t": 82.8,
         "p": 1.84,
         "poly": 0.499
@@ -3333,6 +3700,7 @@ const DASH = {
         "iso": "TUV",
         "reg": null,
         "f": 0.24,
+        "tot": 5,
         "t": 80,
         "p": null,
         "poly": null
@@ -3342,6 +3710,7 @@ const DASH = {
         "iso": "TWN",
         "reg": 3,
         "f": 0.48,
+        "tot": 10,
         "t": 65,
         "p": -1.77,
         "poly": 0.802
@@ -3351,6 +3720,7 @@ const DASH = {
         "iso": "TZA",
         "reg": 1,
         "f": 0.24,
+        "tot": 5,
         "t": 63.5,
         "p": -1.09,
         "poly": 0.446
@@ -3360,6 +3730,7 @@ const DASH = {
         "iso": "UGA",
         "reg": 1,
         "f": 0.24,
+        "tot": 5,
         "t": 66.6,
         "p": -0.03,
         "poly": 0.308
@@ -3369,6 +3740,7 @@ const DASH = {
         "iso": "UKR",
         "reg": 1,
         "f": 0.48,
+        "tot": 10,
         "t": 66.4,
         "p": 0.1,
         "poly": 0.473
@@ -3378,6 +3750,7 @@ const DASH = {
         "iso": "URY",
         "reg": 3,
         "f": 0.19,
+        "tot": 4,
         "t": 89.7,
         "p": -3.1,
         "poly": 0.892
@@ -3387,6 +3760,7 @@ const DASH = {
         "iso": "USA",
         "reg": 3,
         "f": 0.52,
+        "tot": 11,
         "t": 61.9,
         "p": 0.4,
         "poly": 0.868
@@ -3396,6 +3770,7 @@ const DASH = {
         "iso": "UZB",
         "reg": 1,
         "f": 0.48,
+        "tot": 10,
         "t": 83.3,
         "p": -2.12,
         "poly": 0.168
@@ -3405,6 +3780,7 @@ const DASH = {
         "iso": "VCT",
         "reg": null,
         "f": 0.24,
+        "tot": 5,
         "t": 67.1,
         "p": null,
         "poly": null
@@ -3414,6 +3790,7 @@ const DASH = {
         "iso": "VEN",
         "reg": 1,
         "f": 0.48,
+        "tot": 10,
         "t": 57.4,
         "p": 1.67,
         "poly": 0.386
@@ -3423,6 +3800,7 @@ const DASH = {
         "iso": "VNM",
         "reg": 0,
         "f": 0.19,
+        "tot": 4,
         "t": 99.4,
         "p": -0.79,
         "poly": 0.155
@@ -3432,6 +3810,7 @@ const DASH = {
         "iso": "VUT",
         "reg": 2,
         "f": 0.29,
+        "tot": 6,
         "t": 62.2,
         "p": -1.29,
         "poly": 0.694
@@ -3441,6 +3820,7 @@ const DASH = {
         "iso": "WSM",
         "reg": null,
         "f": 0.19,
+        "tot": 4,
         "t": 77.8,
         "p": null,
         "poly": null
@@ -3450,6 +3830,7 @@ const DASH = {
         "iso": "YEM",
         "reg": 1,
         "f": 0.14,
+        "tot": 3,
         "t": 68.3,
         "p": 1.54,
         "poly": 0.244
@@ -3459,6 +3840,7 @@ const DASH = {
         "iso": "ZAF",
         "reg": 3,
         "f": 0.19,
+        "tot": 4,
         "t": 73.4,
         "p": 0.09,
         "poly": 0.754
@@ -3468,6 +3850,7 @@ const DASH = {
         "iso": "ZMB",
         "reg": 1,
         "f": 0.29,
+        "tot": 6,
         "t": 54.4,
         "p": 0.06,
         "poly": 0.465
@@ -3477,6 +3860,7 @@ const DASH = {
         "iso": "ZWE",
         "reg": 1,
         "f": 0.29,
+        "tot": 6,
         "t": 55.4,
         "p": 2.29,
         "poly": 0.274
