@@ -4254,7 +4254,7 @@ const DASH = {
     },
     {
       "outcome": "Turnout (VAP)",
-      "label": "Polling occasions, 10-yr",
+      "label": "Turnout, voting-age pop. (10-yr)",
       "est": -1.719,
       "lo": -2.905,
       "hi": -0.533,
@@ -4299,7 +4299,7 @@ const DASH = {
     },
     {
       "outcome": "Societal polarization",
-      "label": "Polling occasions, 10-yr",
+      "label": "Societal polarization (10-yr)",
       "est": -0.123,
       "lo": -0.199,
       "hi": -0.047,
