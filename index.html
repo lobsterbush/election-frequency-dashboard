@@ -122,6 +122,27 @@ svg{display:block;width:100%;height:auto;overflow:visible}
 .coef-cc-pt{fill:var(--reg0)}
 .zero{stroke:var(--color-ink-2);stroke-width:1}
 .coef-lab{fill:var(--color-ink-2);font-size:11px;font-family:var(--font-body)}
+.coef-val{fill:var(--color-ink);font-size:10.5px;font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.coef-line.ns{stroke:oklch(0.72 0.02 258)}
+.coef-pt.ns{fill:oklch(0.72 0.02 258)}
+.coef-cc.ns{stroke:oklch(0.78 0.05 40)}
+
+/* scatter enhancements */
+.ci-band{fill:var(--color-accent);opacity:0.09}
+.crosshair{stroke:var(--color-ink-2);stroke-width:1;stroke-dasharray:3 3;opacity:0.55}
+.pt{transition:r 140ms ease,opacity 140ms ease}
+.pt-label{fill:var(--color-ink);font-size:11px;font-family:var(--font-body);
+  paint-order:stroke;stroke:var(--color-paper);stroke-width:3px;stroke-linejoin:round}
+.axis-hi{fill:var(--color-ink);font-family:var(--font-mono);font-size:11px;font-weight:500}
+.trend{stroke:var(--color-accent);stroke-width:1.6;fill:none;opacity:0.9}
+.era{stroke:var(--color-rule);stroke-width:1}
+.era-lab{fill:var(--color-ink-2);font-size:10px;font-family:var(--font-mono)}
+
+/* motion: grow-in + scroll reveal, all opacity/transform, reduced-motion safe */
+.js-anim .figure{opacity:0;transform:translateY(10px);transition:opacity 340ms ease,transform 340ms ease}
+.js-anim .figure.in{opacity:1;transform:none}
+@keyframes figFade{from{opacity:0.35}to{opacity:1}}
+.chart-fade{animation:figFade 220ms ease}
 
 .methods dl{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:var(--s2) var(--s5);margin:0}
 .methods dt{font-family:var(--font-mono);font-size:0.85rem;color:var(--color-accent)}
@@ -134,7 +155,10 @@ footer .contact{color:var(--color-ink-2);font-size:0.95rem}
 footer a{text-decoration:none}
 .note{background:var(--color-paper);border:1px solid var(--color-rule);border-left:3px solid var(--color-accent);
   padding:var(--s4) var(--s5);font-size:0.92rem;color:var(--color-ink-2);margin-top:var(--s5)}
-@media(prefers-reduced-motion:reduce){*{transition-duration:120ms!important}}
+@media(prefers-reduced-motion:reduce){
+  *{transition-duration:100ms!important;animation-duration:1ms!important}
+  .js-anim .figure{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
