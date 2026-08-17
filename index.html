@@ -332,6 +332,23 @@ footer a{text-decoration:none}
   specifications for that outcome.</div>
 </div></section>
 
+<section id="explorer"><div class="wrap">
+  <h2>Explore every specification</h2>
+  <p class="section-lead">Pick an outcome, then pin any analytical choice or leave it open. The curve
+  and the summary recompute from the specifications that match, so you can check for yourself whether a
+  result depends on the choices, rather than taking one model's word for it.</p>
+  <div class="controls" id="exp-controls"></div>
+  <div class="figure">
+    <div class="figwrap">
+      <svg id="explorerChart" viewBox="0 0 720 300" role="img" aria-label="Interactive specification curve"></svg>
+      <div class="tip" id="tipx"></div>
+    </div>
+    <p class="readout" id="explorer-sum"></p>
+  </div>
+  <div class="note">Descriptive within-country associations, not causal. Each point is one model of the
+  election effect on the chosen outcome; colour marks significance at 5%.</div>
+</div></section>
+
 <section id="methods" class="methods"><div class="wrap">
   <h2>What's behind the numbers</h2>
   <p class="section-lead">Everything here is real, drawn straight from the analysis outputs. Sources
@@ -357,7 +374,7 @@ footer a{text-decoration:none}
     <a href="https://charlescrabtree.org">charlescrabtree.org</a></div>
 </div></footer>
 
-<script src="data.js?v=6"></script>
-<script src="app.js?v=6"></script>
+<script src="data.js?v=7"></script>
+<script src="app.js?v=7"></script>
 </body>
 </html>

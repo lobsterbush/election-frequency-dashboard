@@ -446,6 +446,72 @@
     });
   })();
 
+  // ---- 9. interactive specification-curve explorer ------------------------
+  (function explorer() {
+    const svg = document.getElementById("explorerChart");
+    const tip = document.getElementById("tipx");
+    const sumEl = document.getElementById("explorer-sum");
+    const host = document.getElementById("exp-controls");
+    const L = DASH.explorerLevels;
+    const state = { o: L.outcome[3], s: "Any", c: "Any", tr: "Any", fe: "Any" };
+
+    function group(title, key, opts, withAny) {
+      const g = document.createElement("div"); g.className = "ctrl-group";
+      const sp = document.createElement("span"); sp.textContent = title; g.appendChild(sp);
+      const seg = document.createElement("div"); seg.className = "seg"; seg.style.flexWrap = "wrap";
+      (withAny ? ["Any"].concat(opts) : opts).forEach((o) => {
+        const b = document.createElement("button");
+        b.textContent = o; b.setAttribute("aria-pressed", String(state[key] === o));
+        b.addEventListener("click", () => {
+          state[key] = o;
+          [...seg.children].forEach((c) => c.setAttribute("aria-pressed", String(c === b)));
+          draw();
+        });
+        seg.appendChild(b);
+      });
+      g.appendChild(seg); host.appendChild(g);
+    }
+    group("Outcome", "o", L.outcome, false);
+    group("Sample", "s", L.sample, true);
+    group("Controls", "c", L.controls, true);
+    group("Election timing", "tr", L.treat, true);
+    group("Fixed effects", "fe", L.fe, true);
+
+    const W = 720, H = 300, M = { t: 12, r: 16, b: 30, l: 48 };
+    const COL = { "-1": "#9b2f2f", "0": "#b9b3aa", "1": "#3730a3" };
+    function draw() {
+      const pts = DASH.explorer.filter((p) => p.o === state.o &&
+        (state.s === "Any" || p.s === state.s) && (state.c === "Any" || p.c === state.c) &&
+        (state.tr === "Any" || p.tr === state.tr) && (state.fe === "Any" || p.fe === state.fe))
+        .slice().sort((a, b) => a.est - b.est).map((p, i) => ({ ...p, rank: i + 1 }));
+      clear(svg); fade(svg);
+      if (!pts.length) { sumEl.textContent = "No specifications match."; return; }
+      const x = scale(1, Math.max(pts.length, 2), M.l, W - M.r);
+      const ests = pts.map((p) => p.est).slice().sort((a, b) => a - b);
+      const q = (f) => ests[Math.floor(f * (ests.length - 1))];
+      let lo = q(0.02), hi = q(0.98); const pad = (hi - lo) * 0.35 || 0.05; lo -= pad; hi += pad;
+      if (lo > 0) lo = -pad; if (hi < 0) hi = pad;
+      const y = scale(lo, hi, H - M.b, M.t), clip = (v) => Math.max(lo, Math.min(hi, v));
+      const med = ests[Math.floor(0.5 * (ests.length - 1))];
+      const axis = el("g", { class: "axis" }); svg.appendChild(axis);
+      ticks(lo, hi, 4).forEach((t) => axis.appendChild(el("text", { x: M.l - 6, y: y(t) + 4, "text-anchor": "end" }, t.toFixed(2))));
+      svg.appendChild(el("line", { class: "zero", x1: M.l, x2: W - M.r, y1: y(0), y2: y(0) }));
+      svg.appendChild(el("line", { x1: M.l, x2: W - M.r, y1: y(med), y2: y(med),
+        stroke: "var(--color-ink-2)", "stroke-width": 1, "stroke-dasharray": "3 3", opacity: 0.7 }));
+      pts.forEach((p) => svg.appendChild(el("line", { x1: x(p.rank), x2: x(p.rank),
+        y1: y(clip(p.lo)), y2: y(clip(p.hi)), stroke: COL[p.dir], "stroke-width": 0.6, opacity: 0.35 })));
+      pts.forEach((p) => svg.appendChild(el("circle", { cx: x(p.rank), cy: y(p.est), r: 1.7, fill: COL[p.dir] })));
+      axis.appendChild(el("text", { class: "axis-title", x: (M.l + W - M.r) / 2, y: H - 6, "text-anchor": "middle" },
+        pts.length + " specifications, ranked by coefficient"));
+      const sig = pts.filter((p) => p.dir !== 0).length;
+      const posSig = pts.filter((p) => p.dir === 1).length, negSig = pts.filter((p) => p.dir === -1).length;
+      sumEl.textContent = "n = " + pts.length + " · median " + med.toFixed(3) +
+        " SD · " + Math.round(100 * sig / pts.length) + "% significant · " +
+        Math.round(100 * posSig / pts.length) + "% + / " + Math.round(100 * negSig / pts.length) + "% −";
+    }
+    draw();
+  })();
+
   // ---- scroll reveal + initial paint --------------------------------------
   scatter.draw();
   ranking.draw();
