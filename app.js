@@ -417,10 +417,10 @@
   specCurve("spec-division", "spec-division-sum", DASH.specDivision, "");
   specCurve("spec-turnout", "spec-turnout-sum", DASH.specTurnout, "pp");
 
-  // ---- 8. across-outcomes forest plot -------------------------------------
-  (function outcomes() {
-    const svg = document.getElementById("outcomesChart"), tip = document.getElementById("tipo");
-    const d = DASH.outcomes, W = 720, rowH = 46, M = { t: 14, r: 30, b: 40, l: 220 };
+  // ---- 8. across-outcomes forest plots (shared renderer) ------------------
+  function forest(svgId, tipId, d, hoverExtra) {
+    const svg = document.getElementById(svgId), tip = document.getElementById(tipId);
+    const W = 720, rowH = 46, M = { t: 14, r: 30, b: 40, l: 220 };
     const H = M.t + M.b + d.length * rowH; svg.setAttribute("viewBox", "0 0 " + W + " " + H);
     let lo = Math.min.apply(null, d.map((r) => r.lo)), hi = Math.max.apply(null, d.map((r) => r.hi));
     const span = hi - lo; lo -= span * 0.12; hi += span * 0.18;
@@ -439,12 +439,15 @@
       svg.appendChild(el("text", { class: "coef-val", x: x(r.hi) + 8, y: cy + 4 }, (r.est > 0 ? "+" : "") + r.est.toFixed(2)));
       const hit = el("rect", { x: 0, y: cy - rowH / 2, width: W, height: rowH, fill: "transparent" });
       hit.addEventListener("mousemove", () => tipShow(tip, svg, x(r.est), cy,
-        "<b>" + r.label + "</b><br>" + (r.est > 0 ? "+" : "") + r.est.toFixed(3) + " SD<br>" +
-        "<span class='k'>" + Math.round(r.pctPosSig * 100) + "% of specs positive &amp; sig.</span>"));
+        "<b>" + r.label + "</b><br>" + (r.est > 0 ? "+" : "") + r.est.toFixed(3) + " SD" +
+        (hoverExtra ? "<br><span class='k'>" + hoverExtra(r) + "</span>" : "")));
       hit.addEventListener("mouseleave", () => tipHide(tip));
       svg.appendChild(hit);
     });
-  })();
+  }
+  forest("outcomesChart", "tipo", DASH.outcomes,
+    (r) => Math.round(r.pctPosSig * 100) + "% of specs positive & sig.");
+  forest("democracyChart", "tipdem", DASH.democracy, null);
 
   // ---- 9. interactive specification-curve explorer ------------------------
   (function explorer() {
