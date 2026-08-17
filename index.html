@@ -281,6 +281,43 @@ footer a{text-decoration:none}
   </div>
 </div></section>
 
+<section id="dynamics"><div class="wrap">
+  <h2>What an election does to division</h2>
+  <p class="section-lead">A country-year model with country and year fixed effects, tracing political
+  division in the years around a national election. If elections drove division, the jump would land
+  at the election year. Instead division drifts up before the vote too, so this looks like a build-up,
+  not an effect of the election itself. Hover for the numbers.</p>
+  <div class="figure"><div class="figwrap">
+    <svg id="dynChart" viewBox="0 0 720 380" role="img" aria-label="Division around elections"></svg>
+    <div class="tip" id="tipd"></div>
+  </div></div>
+  <div class="note">Descriptive within-country associations, not causal estimates. Election timing is
+  endogenous (snap elections come in crises), and the pre-election rise signals anticipation.</div>
+</div></section>
+
+<section id="specs"><div class="wrap">
+  <h2>Across every specification</h2>
+  <p class="section-lead">Rather than trust one model, each coefficient below is re-estimated across
+  every reasonable combination of outcome, treatment, controls, fixed effects, and sample. Each dot is
+  one specification, ranked by size; the dashed line is the median. This is the honest test of whether
+  a result survives analytical choices.</p>
+  <div class="coefgrid">
+    <div>
+      <div class="coeftitle">Division: does holding an election raise it?</div>
+      <svg id="spec-division" viewBox="0 0 460 240" role="img" aria-label="Division specification curve"></svg>
+      <p class="readout" id="spec-division-sum"></p>
+    </div>
+    <div>
+      <div class="coeftitle">Indifference: does voting more often lower turnout?</div>
+      <svg id="spec-turnout" viewBox="0 0 460 240" role="img" aria-label="Turnout specification curve"></svg>
+      <p class="readout" id="spec-turnout-sum"></p>
+    </div>
+  </div>
+  <div class="note">The contrast is the point. Division sits on zero and its sign flips with the
+  measure you pick; turnout is negative in almost every specification. The robust political consequence
+  of frequent elections is on engagement, not division.</div>
+</div></section>
+
 <section id="methods" class="methods"><div class="wrap">
   <h2>What's behind the numbers</h2>
   <p class="section-lead">Everything here is real, drawn straight from the analysis outputs. Sources
@@ -306,7 +343,7 @@ footer a{text-decoration:none}
     <a href="https://charlescrabtree.org">charlescrabtree.org</a></div>
 </div></footer>
 
-<script src="data.js?v=4"></script>
-<script src="app.js?v=4"></script>
+<script src="data.js?v=5"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>

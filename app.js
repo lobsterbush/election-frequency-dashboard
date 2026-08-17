@@ -349,6 +349,74 @@
   impPanel("imp-division", "Division (polarization)");
   impPanel("imp-turnout", "Indifference (turnout)");
 
+  // ---- 6. election dynamics (event-time plot) -----------------------------
+  (function dynamics() {
+    const svg = document.getElementById("dynChart"), tip = document.getElementById("tipd");
+    const d = DASH.dynamics, W = 720, H = 380, M = { t: 20, r: 24, b: 52, l: 62 };
+    const x = scale(-2.4, 2.4, M.l, W - M.r);
+    let lo = Math.min.apply(null, d.map((r) => r.lo)), hi = Math.max.apply(null, d.map((r) => r.hi));
+    const pad = (hi - lo) * 0.1; lo -= pad; hi += pad; if (lo > 0) lo = -pad;
+    const y = scale(lo, hi, H - M.b, M.t);
+    const axis = el("g", { class: "axis" }); svg.appendChild(axis);
+    ticks(lo, hi, 5).forEach((t) => {
+      axis.appendChild(el("line", { class: "gridline", x1: M.l, x2: W - M.r, y1: y(t), y2: y(t) }));
+      axis.appendChild(el("text", { x: M.l - 8, y: y(t) + 4, "text-anchor": "end" }, t));
+    });
+    svg.appendChild(el("line", { class: "zero", x1: M.l, x2: W - M.r, y1: y(0), y2: y(0) }));
+    const labs = ["2 yrs before", "1 yr before", "election year", "1 yr after", "2 yrs after"];
+    d.forEach((r, i) => axis.appendChild(el("text", { x: x(r.t), y: H - M.b + 18, "text-anchor": "middle",
+      "font-size": 10 }, labs[i])));
+    svg.appendChild(el("text", { class: "axis-title", x: 16, y: (M.t + H - M.b) / 2, "text-anchor": "middle",
+      transform: "rotate(-90 16 " + ((M.t + H - M.b) / 2) + ")" },
+      "Change in polarization vs a normal year"));
+    let line = "";
+    d.forEach((r, i) => { line += (i ? " L" : "M") + x(r.t) + "," + y(r.est); });
+    svg.appendChild(el("path", { d: line, fill: "none", stroke: "#3730a3", "stroke-width": 1, opacity: 0.5 }));
+    d.forEach((r) => {
+      svg.appendChild(el("line", { x1: x(r.t), x2: x(r.t), y1: y(r.lo), y2: y(r.hi),
+        stroke: "#3730a3", "stroke-width": 1.4 }));
+      const c = el("circle", { cx: x(r.t), cy: y(r.est), r: 5, fill: "#3730a3" });
+      c.addEventListener("mousemove", () => tipShow(tip, svg, x(r.t), y(r.est),
+        "<b>" + labs[d.indexOf(r)] + "</b><br>" + r.est.toFixed(3) + " [" + r.lo.toFixed(2) + ", " + r.hi.toFixed(2) + "]"));
+      c.addEventListener("mouseleave", () => tipHide(tip));
+      svg.appendChild(c);
+    });
+  })();
+
+  // ---- 7. specification curves --------------------------------------------
+  function specCurve(svgId, sumId, data, unit) {
+    const svg = document.getElementById(svgId); clear(svg);
+    const pts = data.points, S = data.summary;
+    const W = 460, H = 240, M = { t: 12, r: 14, b: 26, l: 44 };
+    const x = scale(1, pts.length, M.l, W - M.r);
+    // robust y-domain from the 3rd-97th percentile of estimates, padded
+    const ests = pts.map((p) => p.est).slice().sort((a, b) => a - b);
+    const q = (f) => ests[Math.floor(f * (ests.length - 1))];
+    let lo = q(0.02), hi = q(0.98); const pad = (hi - lo) * 0.35 || 1; lo -= pad; hi += pad;
+    if (lo > 0) lo = -pad; if (hi < 0) hi = pad;
+    const y = scale(lo, hi, H - M.b, M.t);
+    const clip = (v) => Math.max(lo, Math.min(hi, v));
+    const axis = el("g", { class: "axis" }); svg.appendChild(axis);
+    ticks(lo, hi, 4).forEach((t) => axis.appendChild(el("text", { x: M.l - 6, y: y(t) + 4, "text-anchor": "end" }, t)));
+    svg.appendChild(el("line", { class: "zero", x1: M.l, x2: W - M.r, y1: y(0), y2: y(0) }));
+    svg.appendChild(el("line", { x1: M.l, x2: W - M.r, y1: y(S.median), y2: y(S.median),
+      stroke: "var(--color-ink-2)", "stroke-width": 1, "stroke-dasharray": "3 3", opacity: 0.7 }));
+    const COL = { "-1": "#9b2f2f", "0": "#b9b3aa", "1": "#3730a3" };
+    pts.forEach((p) => {
+      svg.appendChild(el("line", { x1: x(p.rank), x2: x(p.rank), y1: y(clip(p.lo)), y2: y(clip(p.hi)),
+        stroke: COL[p.dir], "stroke-width": 0.5, opacity: 0.35 }));
+    });
+    pts.forEach((p) => svg.appendChild(el("circle", { cx: x(p.rank), cy: y(p.est), r: 1.4, fill: COL[p.dir] })));
+    axis.appendChild(el("text", { class: "axis-title", x: (M.l + W - M.r) / 2, y: H - 6,
+      "text-anchor": "middle" }, pts.length + " specifications, ranked"));
+    const pct = (v) => Math.round(v * 100);
+    document.getElementById(sumId).innerHTML =
+      "median " + S.median + " " + unit + " · " + pct(S.pctSig) + "% significant · " +
+      pct(S.pctPosSig) + "% + / " + pct(S.pctNegSig) + "% −";
+  }
+  specCurve("spec-division", "spec-division-sum", DASH.specDivision, "");
+  specCurve("spec-turnout", "spec-turnout-sum", DASH.specTurnout, "pp");
+
   // ---- scroll reveal + initial paint --------------------------------------
   scatter.draw();
   ranking.draw();
