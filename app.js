@@ -417,6 +417,35 @@
   specCurve("spec-division", "spec-division-sum", DASH.specDivision, "");
   specCurve("spec-turnout", "spec-turnout-sum", DASH.specTurnout, "pp");
 
+  // ---- 8. across-outcomes forest plot -------------------------------------
+  (function outcomes() {
+    const svg = document.getElementById("outcomesChart"), tip = document.getElementById("tipo");
+    const d = DASH.outcomes, W = 720, rowH = 46, M = { t: 14, r: 30, b: 40, l: 220 };
+    const H = M.t + M.b + d.length * rowH; svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    let lo = Math.min.apply(null, d.map((r) => r.lo)), hi = Math.max.apply(null, d.map((r) => r.hi));
+    const span = hi - lo; lo -= span * 0.12; hi += span * 0.18;
+    const x = scale(lo, hi, M.l, W - M.r);
+    svg.appendChild(el("line", { class: "zero", x1: x(0), x2: x(0), y1: M.t, y2: H - M.b }));
+    const axis = el("g", { class: "axis" }); svg.appendChild(axis);
+    ticks(lo, hi, 5).forEach((t) => axis.appendChild(el("text", { x: x(t), y: H - M.b + 16, "text-anchor": "middle" }, t)));
+    axis.appendChild(el("text", { class: "axis-title", x: (M.l + W - M.r) / 2, y: H - 6, "text-anchor": "middle" },
+      "Change in an election year (standard deviations)"));
+    const col = (r) => (!r.sig ? "#9a938a" : r.est > 0 ? "#3730a3" : "#9b2f2f");
+    d.forEach((r, i) => {
+      const cy = M.t + i * rowH + rowH / 2;
+      svg.appendChild(el("line", { x1: x(r.lo), x2: x(r.hi), y1: cy, y2: cy, stroke: col(r), "stroke-width": 1.6 }));
+      svg.appendChild(el("circle", { cx: x(r.est), cy: cy, r: 6, fill: col(r) }));
+      svg.appendChild(el("text", { class: "bar-lab", x: M.l - 12, y: cy + 4, "text-anchor": "end" }, r.label));
+      svg.appendChild(el("text", { class: "coef-val", x: x(r.hi) + 8, y: cy + 4 }, (r.est > 0 ? "+" : "") + r.est.toFixed(2)));
+      const hit = el("rect", { x: 0, y: cy - rowH / 2, width: W, height: rowH, fill: "transparent" });
+      hit.addEventListener("mousemove", () => tipShow(tip, svg, x(r.est), cy,
+        "<b>" + r.label + "</b><br>" + (r.est > 0 ? "+" : "") + r.est.toFixed(3) + " SD<br>" +
+        "<span class='k'>" + Math.round(r.pctPosSig * 100) + "% of specs positive &amp; sig.</span>"));
+      hit.addEventListener("mouseleave", () => tipHide(tip));
+      svg.appendChild(hit);
+    });
+  })();
+
   // ---- scroll reveal + initial paint --------------------------------------
   scatter.draw();
   ranking.draw();

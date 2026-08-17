@@ -9138,6 +9138,58 @@ const DASH = {
         "dir": 0
       }
     ]
-  }
+  },
+  "outcomes": [
+    {
+      "outcome": "soc_polarization",
+      "label": "Societal polarization",
+      "est": -0.027,
+      "lo": -0.043,
+      "hi": -0.012,
+      "sig": 1,
+      "pctPosSig": 0,
+      "pctNegSig": 0.25
+    },
+    {
+      "outcome": "polarization",
+      "label": "Political division",
+      "est": 0.021,
+      "lo": -0,
+      "hi": 0.042,
+      "sig": 0,
+      "pctPosSig": 0.22,
+      "pctNegSig": 0.06
+    },
+    {
+      "outcome": "cs_particip",
+      "label": "Civil-society participation",
+      "est": 0.024,
+      "lo": 0.01,
+      "hi": 0.039,
+      "sig": 1,
+      "pctPosSig": 0.37,
+      "pctNegSig": 0.11
+    },
+    {
+      "outcome": "pol_violence",
+      "label": "Political violence",
+      "est": 0.047,
+      "lo": 0.026,
+      "hi": 0.067,
+      "sig": 1,
+      "pctPosSig": 0.33,
+      "pctNegSig": 0.05
+    },
+    {
+      "outcome": "mass_mob",
+      "label": "Mass mobilization",
+      "est": 0.095,
+      "lo": 0.068,
+      "hi": 0.122,
+      "sig": 1,
+      "pctPosSig": 0.47,
+      "pctNegSig": 0
+    }
+  ]
 };
 
