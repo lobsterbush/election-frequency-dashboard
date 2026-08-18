@@ -449,6 +449,57 @@
     (r) => Math.round(r.pctPosSig * 100) + "% of specs positive & sig.");
   forest("democracyChart", "tipdem", DASH.democracy, null);
 
+  // ---- 8b. regime heterogeneity: small multiples across the spectrum -------
+  (function regimeHet() {
+    const grid = document.getElementById("regimegrid");
+    if (!grid || !DASH.regimeHet) return;
+    // static regime legend (shares the site-wide colour scale)
+    const leg = document.getElementById("reglegend");
+    REG.forEach((name, i) => {
+      const s = document.createElement("span");
+      s.innerHTML = '<span class="dot" style="background:' + REGCOL[i] + '"></span>' + name;
+      leg.appendChild(s);
+    });
+    const XLAB = [["Closed", "autoc."], ["Elect.", "autoc."], ["Elect.", "dem."], ["Liberal", "dem."]];
+    function panel(rows, title) {
+      const wrap = document.createElement("div"); wrap.className = "rp";
+      const h = document.createElement("p"); h.className = "rp-title"; h.textContent = title;
+      wrap.appendChild(h);
+      const svg = el("svg", { viewBox: "0 0 300 210", role: "img", "aria-label": title + " by regime" });
+      wrap.appendChild(svg); grid.appendChild(wrap);
+      const W = 300, H = 210, M = { t: 12, r: 14, b: 40, l: 42 };
+      const x = scale(-0.45, 3.45, M.l, W - M.r);
+      let lo = Math.min.apply(null, rows.map((r) => r.lo)), hi = Math.max.apply(null, rows.map((r) => r.hi));
+      const span = hi - lo || 0.1; lo -= span * 0.14; hi += span * 0.14;
+      if (lo > 0) lo = -span * 0.1; if (hi < 0) hi = span * 0.1;
+      const y = scale(lo, hi, H - M.b, M.t);
+      const axis = el("g", { class: "axis" }); svg.appendChild(axis);
+      ticks(lo, hi, 3).forEach((t) => {
+        axis.appendChild(el("line", { class: "gridline", x1: M.l, x2: W - M.r, y1: y(t), y2: y(t) }));
+        axis.appendChild(el("text", { x: M.l - 6, y: y(t) + 4, "text-anchor": "end" }, t.toFixed(2)));
+      });
+      svg.appendChild(el("line", { class: "zero", x1: M.l, x2: W - M.r, y1: y(0), y2: y(0) }));
+      // connecting line to make the shape across the spectrum legible
+      let line = ""; rows.forEach((r, i) => { line += (i ? " L" : "M") + x(r.reg) + "," + y(r.est); });
+      svg.appendChild(el("path", { d: line, fill: "none", stroke: "var(--color-ink-2)", "stroke-width": 1, opacity: 0.3 }));
+      rows.forEach((r) => {
+        svg.appendChild(el("line", { x1: x(r.reg), x2: x(r.reg), y1: y(r.lo), y2: y(r.hi),
+          stroke: REGCOL[r.reg], "stroke-width": 1.5, opacity: r.sig ? 1 : 0.5 }));
+        svg.appendChild(el("circle", { cx: x(r.reg), cy: y(r.est), r: r.sig ? 5 : 3.5,
+          fill: r.sig ? REGCOL[r.reg] : "var(--color-paper)", stroke: REGCOL[r.reg], "stroke-width": 1.4 }));
+        const t = el("text", { x: x(r.reg), y: H - M.b + 15, "text-anchor": "middle", "font-size": 9,
+          fill: "var(--color-ink-2)", "font-family": "var(--font-mono)" });
+        t.appendChild(el("tspan", { x: x(r.reg), dy: 0 }, XLAB[r.reg][0]));
+        t.appendChild(el("tspan", { x: x(r.reg), dy: 10 }, XLAB[r.reg][1]));
+        svg.appendChild(t);
+      });
+    }
+    DASH.regimeHetOrder.forEach((key) => {
+      const rows = DASH.regimeHet.filter((r) => r.outcome === key).slice().sort((a, b) => a.reg - b.reg);
+      if (rows.length) panel(rows, rows[0].label);
+    });
+  })();
+
   // ---- 9. interactive specification-curve explorer ------------------------
   (function explorer() {
     const svg = document.getElementById("explorerChart");

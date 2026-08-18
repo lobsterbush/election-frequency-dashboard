@@ -144,6 +144,22 @@ svg{display:block;width:100%;height:auto;overflow:visible}
 @keyframes figFade{from{opacity:0.35}to{opacity:1}}
 .chart-fade{animation:figFade 220ms ease}
 
+/* part dividers: group the sections into a clear three-act structure */
+.part{padding:var(--s8) 0 var(--s2)}
+.part .num{font-family:var(--font-mono);font-size:0.82rem;color:var(--color-accent);
+  letter-spacing:0.12em;text-transform:uppercase;display:block;margin-bottom:var(--s2)}
+.part h2{font-size:clamp(1.55rem,3.6vw,2.25rem);margin:0}
+.part p{color:var(--color-ink-2);font-size:1.08rem;margin-top:var(--s3);max-width:60ch}
+
+/* regime heterogeneity: small multiples across the regime spectrum */
+.reglegend{display:flex;flex-wrap:wrap;gap:var(--s4);margin-bottom:var(--s5);
+  font-size:0.85rem;color:var(--color-ink-2);font-family:var(--font-mono)}
+.reglegend span{display:inline-flex;align-items:center;gap:var(--s2)}
+.reglegend .dot{width:11px;height:11px;border-radius:50%;flex:none}
+.regimegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--s4)}
+.regimegrid .rp{background:var(--color-paper);border:1px solid var(--color-rule);padding:var(--s3) var(--s3) var(--s2)}
+.regimegrid .rp-title{font-family:var(--font-display);font-weight:600;font-size:1rem;margin:0 0 var(--s1)}
+
 .methods dl{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:var(--s2) var(--s5);margin:0}
 .methods dt{font-family:var(--font-mono);font-size:0.85rem;color:var(--color-accent)}
 .methods dd{margin:0;color:var(--color-ink-2);font-size:0.95rem}
@@ -166,18 +182,66 @@ footer a{text-decoration:none}
 <nav class="nav"><div class="wrap">
   <span class="mark">Elections &amp; their consequences</span>
   <span class="navlinks">
-    <a href="#findings">Findings</a>
+    <a href="#landscape">Landscape</a>
+    <a href="#frequency">Voting more often</a>
+    <a href="#holding">Holding an election</a>
     <a href="#methods">Methods</a>
-    <a href="https://charlescrabtree.org">charlescrabtree.org</a>
   </span>
 </div></nav>
 
 <header class="hero"><div class="wrap">
   <h1>How often nations vote, and what it does to them</h1>
   <p class="lead">A country-year record of national elections since 1945, and a first look at
-  whether voting more often changes political division and political indifference. Explore it below.</p>
+  whether elections change political division, indifference, mobilization, and the quality of
+  democracy. The story comes in three parts: how often the world votes, what voting <em>more
+  often</em> does, and what <em>holding</em> an election does. Explore each below.</p>
   <div class="stats" id="stats"></div>
 </div></header>
+
+<!-- ===================== PART 1: THE LANDSCAPE ===================== -->
+<div class="part" id="landscape"><div class="wrap">
+  <span class="num">Part 1</span>
+  <h2>The landscape: how often the world votes</h2>
+  <p>Before any consequences, the raw record. Elections have grown far more common since 1945, and a
+  handful of countries go to the polls strikingly often.</p>
+</div></div>
+
+<section id="time"><div class="wrap">
+  <h2>Elections over time</h2>
+  <p class="section-lead">National polling occasions worldwide each year, 1945 to 2024. The rise
+  tracks decolonisation, the third wave of democratisation, and the post-communist transitions.</p>
+  <div class="figure"><div class="figwrap">
+    <svg id="timeseries" viewBox="0 0 720 340" role="img" aria-label="Elections per year worldwide"></svg>
+    <div class="tip" id="tip3"></div>
+  </div></div>
+</div></section>
+
+<section id="ranking"><div class="wrap">
+  <h2>Who votes most often</h2>
+  <p class="section-lead">Total national elections held since 1945, collapsed to one polling
+  occasion per day. Choose how many countries to show; hover for the count.</p>
+  <div class="controls">
+    <div class="ctrl-group"><span>Show top</span>
+      <div class="seg" id="topn">
+        <button data-n="10" aria-pressed="false">10</button>
+        <button data-n="20" aria-pressed="true">20</button>
+        <button data-n="30" aria-pressed="false">30</button>
+      </div>
+    </div>
+  </div>
+  <div class="figure"><div class="figwrap">
+    <svg id="rankingChart" viewBox="0 0 720 620" role="img" aria-label="Top countries by election frequency"></svg>
+    <div class="tip" id="tip2"></div>
+  </div></div>
+</div></section>
+
+<!-- ============ PART 2: DOES VOTING MORE OFTEN CHANGE POLITICS? ============ -->
+<div class="part" id="frequency"><div class="wrap">
+  <span class="num">Part 2</span>
+  <h2>Does voting <em>more often</em> change politics?</h2>
+  <p>Here the treatment is how frequently a country votes. Two outcomes anchor the question: turnout,
+  a proxy for indifference, and polarization, a proxy for division. One is robust; the other is not.</p>
+</div></div>
 
 <section id="findings"><div class="wrap">
   <h2>The two findings, interactively</h2>
@@ -213,35 +277,6 @@ footer a{text-decoration:none}
   not evidence that elections <em>cause</em> the outcome. That is why regime type is always on the plot.</div>
 </div></section>
 
-<section id="ranking"><div class="wrap">
-  <h2>Who votes most often</h2>
-  <p class="section-lead">Total national elections held since 1945, collapsed to one polling
-  occasion per day. Choose how many countries to show; hover for the count.</p>
-  <div class="controls">
-    <div class="ctrl-group"><span>Show top</span>
-      <div class="seg" id="topn">
-        <button data-n="10" aria-pressed="false">10</button>
-        <button data-n="20" aria-pressed="true">20</button>
-        <button data-n="30" aria-pressed="false">30</button>
-      </div>
-    </div>
-  </div>
-  <div class="figure"><div class="figwrap">
-    <svg id="rankingChart" viewBox="0 0 720 620" role="img" aria-label="Top countries by election frequency"></svg>
-    <div class="tip" id="tip2"></div>
-  </div></div>
-</div></section>
-
-<section id="time"><div class="wrap">
-  <h2>Elections over time</h2>
-  <p class="section-lead">National polling occasions worldwide each year, 1945 to 2024. The rise
-  tracks decolonisation, the third wave of democratisation, and the post-communist transitions.</p>
-  <div class="figure"><div class="figwrap">
-    <svg id="timeseries" viewBox="0 0 720 340" role="img" aria-label="Elections per year worldwide"></svg>
-    <div class="tip" id="tip3"></div>
-  </div></div>
-</div></section>
-
 <section id="robustness"><div class="wrap">
   <h2>Does the pattern hold up</h2>
   <p class="section-lead">The frequency coefficient (per one standard deviation) with country and
@@ -254,33 +289,6 @@ footer a{text-decoration:none}
     <div><div class="coeftitle">Division: polarization</div>
       <svg id="coef-division" viewBox="0 0 460 260" role="img" aria-label="Division robustness coefficients"></svg></div>
   </div>
-</div></section>
-
-<section id="imputation"><div class="wrap">
-  <h2>With the missing data filled in</h2>
-  <p class="section-lead">Multiple imputation (Amelia, m set to the maximum missingness) pooled with
-  Rubin's rules, so imputation uncertainty is carried into the intervals, against the complete-case
-  estimate. Standard errors clustered by country, the treatment level.</p>
-  <div class="coefgrid">
-    <div><div class="coeftitle">Division (polarization)</div>
-      <svg id="imp-division" viewBox="0 0 460 170" role="img" aria-label="Division: imputation vs complete case"></svg></div>
-    <div><div class="coeftitle">Indifference (turnout)</div>
-      <svg id="imp-turnout" viewBox="0 0 460 170" role="img" aria-label="Turnout: imputation vs complete case"></svg></div>
-  </div>
-</div></section>
-
-<section id="dynamics"><div class="wrap">
-  <h2>What an election does to division</h2>
-  <p class="section-lead">A country-year model with country and year fixed effects, tracing political
-  division in the years around a national election. If elections drove division, the jump would land
-  at the election year. Instead division drifts up before the vote too, so this looks like a build-up,
-  not an effect of the election itself. Hover for the numbers.</p>
-  <div class="figure"><div class="figwrap">
-    <svg id="dynChart" viewBox="0 0 720 380" role="img" aria-label="Division around elections"></svg>
-    <div class="tip" id="tipd"></div>
-  </div></div>
-  <div class="note">Descriptive within-country associations, not causal estimates. Election timing is
-  endogenous (snap elections come in crises), and the pre-election rise signals anticipation.</div>
 </div></section>
 
 <section id="specs"><div class="wrap">
@@ -304,6 +312,41 @@ footer a{text-decoration:none}
   <div class="note">The contrast is the point. Division sits on zero and its sign flips with the
   measure you pick; turnout is negative in almost every specification. The robust political consequence
   of frequent elections is on engagement, not division.</div>
+</div></section>
+
+<section id="imputation"><div class="wrap">
+  <h2>With the missing data filled in</h2>
+  <p class="section-lead">Multiple imputation (Amelia, m set to the maximum missingness) pooled with
+  Rubin's rules, so imputation uncertainty is carried into the intervals, against the complete-case
+  estimate. Standard errors clustered by country, the treatment level.</p>
+  <div class="coefgrid">
+    <div><div class="coeftitle">Division (polarization)</div>
+      <svg id="imp-division" viewBox="0 0 460 170" role="img" aria-label="Division: imputation vs complete case"></svg></div>
+    <div><div class="coeftitle">Indifference (turnout)</div>
+      <svg id="imp-turnout" viewBox="0 0 460 170" role="img" aria-label="Turnout: imputation vs complete case"></svg></div>
+  </div>
+</div></section>
+
+<!-- ============ PART 3: WHAT DOES HOLDING AN ELECTION DO? ============ -->
+<div class="part" id="holding"><div class="wrap">
+  <span class="num">Part 3</span>
+  <h2>What does <em>holding</em> an election do?</h2>
+  <p>Now the treatment is a single election year. What changes when a country goes to the polls? Not
+  division, it turns out, but mobilization, democratic quality, and the mix depends on the regime.</p>
+</div></div>
+
+<section id="dynamics"><div class="wrap">
+  <h2>What an election does to division</h2>
+  <p class="section-lead">A country-year model with country and year fixed effects, tracing political
+  division in the years around a national election. If elections drove division, the jump would land
+  at the election year. Instead division drifts up before the vote too, so this looks like a build-up,
+  not an effect of the election itself. Hover for the numbers.</p>
+  <div class="figure"><div class="figwrap">
+    <svg id="dynChart" viewBox="0 0 720 380" role="img" aria-label="Division around elections"></svg>
+    <div class="tip" id="tipd"></div>
+  </div></div>
+  <div class="note">Descriptive within-country associations, not causal estimates. Election timing is
+  endogenous (snap elections come in crises), and the pre-election rise signals anticipation.</div>
 </div></section>
 
 <section id="outcomes"><div class="wrap">
@@ -332,6 +375,20 @@ footer a{text-decoration:none}
   </div></div>
   <div class="note">Descriptive within-country associations, not causal: democracies hold more
   elections, so read these as gains that coincide with elections, not gains they cause.</div>
+</div></section>
+
+<section id="regime"><div class="wrap">
+  <h2>Where do elections matter most?</h2>
+  <p class="section-lead">The same election effect, re-estimated <em>within</em> each Regimes-of-the-World
+  category, from closed autocracy to liberal democracy. Each small panel is one outcome; each dot an
+  effect for one regime type, with its 95% interval. The pattern the project cares about is the hump in
+  mass mobilization: elections mobilize most in the contested middle, electoral autocracies and
+  electoral democracies, and least at the two extremes.</p>
+  <div class="reglegend" id="reglegend"></div>
+  <div class="regimegrid" id="regimegrid"></div>
+  <div class="note">Descriptive within-country associations, not causal. Reading left to right in each
+  panel moves from closed autocracy to liberal democracy; a solid dot is significant at 5%, a faded one
+  is not.</div>
 </div></section>
 
 <section id="explorer"><div class="wrap">
@@ -372,11 +429,11 @@ footer a{text-decoration:none}
 
 <footer><div class="wrap">
   <div class="big">National elections frequency and its political consequences</div>
-  <div class="contact">Charles Crabtree, with Kiyoteru Tsutsui, Daisuke Asahara, and Liang-Yu Ko ·
+  <div class="contact">Daisuke Asahara, Charles Crabtree, Liang-Yu Ko, Sho Miyazaki, and Kiyoteru Tsutsui ·
     <a href="https://charlescrabtree.org">charlescrabtree.org</a></div>
 </div></footer>
 
-<script src="data.js?v=8"></script>
-<script src="app.js?v=8"></script>
+<script src="data.js?v=9"></script>
+<script src="app.js?v=9"></script>
 </body>
 </html>

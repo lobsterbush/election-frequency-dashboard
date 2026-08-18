@@ -7346,6 +7346,189 @@ const DASH = {
       "sig": 1
     }
   ],
+  "regimeHet": [
+    {
+      "outcome": "mass_mob",
+      "label": "Mass mobilization",
+      "reg": 0,
+      "est": 0.044,
+      "lo": -0.042,
+      "hi": 0.129,
+      "sig": 0
+    },
+    {
+      "outcome": "mass_mob",
+      "label": "Mass mobilization",
+      "reg": 1,
+      "est": 0.09,
+      "lo": 0.036,
+      "hi": 0.144,
+      "sig": 1
+    },
+    {
+      "outcome": "mass_mob",
+      "label": "Mass mobilization",
+      "reg": 2,
+      "est": 0.084,
+      "lo": 0.028,
+      "hi": 0.14,
+      "sig": 1
+    },
+    {
+      "outcome": "mass_mob",
+      "label": "Mass mobilization",
+      "reg": 3,
+      "est": 0.031,
+      "lo": -0.002,
+      "hi": 0.063,
+      "sig": 0
+    },
+    {
+      "outcome": "polarization",
+      "label": "Political division",
+      "reg": 0,
+      "est": -0.024,
+      "lo": -0.087,
+      "hi": 0.039,
+      "sig": 0
+    },
+    {
+      "outcome": "polarization",
+      "label": "Political division",
+      "reg": 1,
+      "est": 0.015,
+      "lo": -0.019,
+      "hi": 0.048,
+      "sig": 0
+    },
+    {
+      "outcome": "polarization",
+      "label": "Political division",
+      "reg": 2,
+      "est": 0.04,
+      "lo": 0.005,
+      "hi": 0.074,
+      "sig": 1
+    },
+    {
+      "outcome": "polarization",
+      "label": "Political division",
+      "reg": 3,
+      "est": 0.018,
+      "lo": -0.006,
+      "hi": 0.042,
+      "sig": 0
+    },
+    {
+      "outcome": "pol_violence",
+      "label": "Political violence",
+      "reg": 0,
+      "est": -0.019,
+      "lo": -0.078,
+      "hi": 0.039,
+      "sig": 0
+    },
+    {
+      "outcome": "pol_violence",
+      "label": "Political violence",
+      "reg": 1,
+      "est": 0.016,
+      "lo": -0.024,
+      "hi": 0.057,
+      "sig": 0
+    },
+    {
+      "outcome": "pol_violence",
+      "label": "Political violence",
+      "reg": 2,
+      "est": 0.031,
+      "lo": -0.007,
+      "hi": 0.07,
+      "sig": 0
+    },
+    {
+      "outcome": "pol_violence",
+      "label": "Political violence",
+      "reg": 3,
+      "est": 0.018,
+      "lo": 0.001,
+      "hi": 0.036,
+      "sig": 1
+    },
+    {
+      "outcome": "cs_particip",
+      "label": "Civil-society participation",
+      "reg": 0,
+      "est": -0.01,
+      "lo": -0.059,
+      "hi": 0.04,
+      "sig": 0
+    },
+    {
+      "outcome": "cs_particip",
+      "label": "Civil-society participation",
+      "reg": 1,
+      "est": 0.016,
+      "lo": -0.011,
+      "hi": 0.042,
+      "sig": 0
+    },
+    {
+      "outcome": "cs_particip",
+      "label": "Civil-society participation",
+      "reg": 2,
+      "est": 0.033,
+      "lo": 0.002,
+      "hi": 0.063,
+      "sig": 1
+    },
+    {
+      "outcome": "cs_particip",
+      "label": "Civil-society participation",
+      "reg": 3,
+      "est": -0,
+      "lo": -0.004,
+      "hi": 0.004,
+      "sig": 0
+    },
+    {
+      "outcome": "dem_electoral",
+      "label": "Electoral democracy",
+      "reg": 0,
+      "est": 0.041,
+      "lo": 0.018,
+      "hi": 0.064,
+      "sig": 1
+    },
+    {
+      "outcome": "dem_electoral",
+      "label": "Electoral democracy",
+      "reg": 1,
+      "est": -0.034,
+      "lo": -0.055,
+      "hi": -0.013,
+      "sig": 1
+    },
+    {
+      "outcome": "dem_electoral",
+      "label": "Electoral democracy",
+      "reg": 2,
+      "est": -0.008,
+      "lo": -0.024,
+      "hi": 0.008,
+      "sig": 0
+    },
+    {
+      "outcome": "dem_electoral",
+      "label": "Electoral democracy",
+      "reg": 3,
+      "est": -0.003,
+      "lo": -0.008,
+      "hi": 0.001,
+      "sig": 0
+    }
+  ],
+  "regimeHetOrder": ["mass_mob", "polarization", "pol_violence", "cs_particip", "dem_electoral"],
   "explorer": [
     {
       "o": "Political division",
