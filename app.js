@@ -151,9 +151,7 @@
     });
 
     // direct labels on a few notable, always-shown countries (Tufte: label, don't legend)
-    const notable = ["Mongolia", "Japan", "United States"];
-    const maxPt = shown.reduce((a, b) => (b.f > a.f ? b : a), shown[0]);
-    if (maxPt && notable.indexOf(maxPt.c) < 0) notable.push(maxPt.c);
+    const notable = ["Japan", "United States"];
     notable.forEach((name) => {
       const d = shown.find((p) => p.c === name); if (!d) return;
       const px = x(d.f), py = y(d[meta.key]), right = px > S.W - 140;
@@ -231,7 +229,7 @@
     axis.appendChild(el("text", { class: "axis-title", x: (R.M.l + R.W - R.M.r) / 2, y: H - 6, "text-anchor": "middle" },
       "Total national elections, " + WINLAB[state.period]));
     data.forEach((d, i) => {
-      const cy = R.M.t + i * band + band / 2, hl = (d.c === "Mongolia" || d.c === "Japan");
+      const cy = R.M.t + i * band + band / 2, hl = (d.c === "Japan");
       if (hl) svg.appendChild(el("rect", { x: 0, y: cy - band / 2, width: R.W, height: band, fill: "var(--color-accent)", opacity: 0.05 }));
       svg.appendChild(el("line", { x1: R.M.l, x2: x(d.tot), y1: cy, y2: cy, stroke: rcol(d), "stroke-width": 2, opacity: 0.45 }));
       svg.appendChild(el("circle", { cx: x(d.tot), cy: cy, r: 6, fill: rcol(d), stroke: "#fff", "stroke-width": 1 }));

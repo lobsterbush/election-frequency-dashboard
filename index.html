@@ -218,14 +218,20 @@ footer a{text-decoration:none}
 
 <section id="ranking"><div class="wrap">
   <h2>Who votes most often</h2>
-  <p class="section-lead">Total national elections held since 1945, collapsed to one polling
-  occasion per day. Choose how many countries to show; hover for the count.</p>
+  <p class="section-lead">Total national elections in the chosen period, collapsed to one polling
+  occasion per day. Choose the period and how many countries to show; hover for the count.</p>
   <div class="controls">
     <div class="ctrl-group"><span>Show top</span>
       <div class="seg" id="topn">
         <button data-n="10" aria-pressed="false">10</button>
         <button data-n="20" aria-pressed="true">20</button>
         <button data-n="30" aria-pressed="false">30</button>
+      </div>
+    </div>
+    <div class="ctrl-group"><span>Period</span>
+      <div class="seg" data-role="period">
+        <button data-p="1945" aria-pressed="true">1945–2024</button>
+        <button data-p="2000" aria-pressed="false">2000–2020</button>
       </div>
     </div>
   </div>
@@ -245,9 +251,9 @@ footer a{text-decoration:none}
 
 <section id="findings"><div class="wrap">
   <h2>The two findings, interactively</h2>
-  <p class="section-lead">Each dot is a country, averaged over the full record, 1945 to 2024. Move
-  between the two outcomes, switch regime types on and off, or hover a country. The fitted line and
-  correlation recompute from whatever is showing, so you can see how much any group drives the pattern.</p>
+  <p class="section-lead">Each dot is a country, averaged over the chosen period. Move between the two
+  outcomes, switch the period, toggle regime types, or hover a country. The fitted line and correlation
+  recompute from whatever is showing, so you can see how much any group drives the pattern.</p>
 
   <div class="controls">
     <div class="ctrl-group"><span>Outcome</span>
@@ -256,11 +262,17 @@ footer a{text-decoration:none}
         <button data-v="p" aria-pressed="false">Polarization (division)</button>
       </div>
     </div>
+    <div class="ctrl-group"><span>Period</span>
+      <div class="seg" data-role="period">
+        <button data-p="1945" aria-pressed="true">1945–2024</button>
+        <button data-p="2000" aria-pressed="false">2000–2020</button>
+      </div>
+    </div>
     <div class="ctrl-group"><span>Regime type</span>
       <div class="legend" id="legend"></div>
     </div>
     <div class="ctrl-group"><span>Find a country</span>
-      <input type="search" id="search" placeholder="e.g. Mongolia" autocomplete="off">
+      <input type="search" id="search" placeholder="e.g. Japan" autocomplete="off">
     </div>
   </div>
 
@@ -433,7 +445,7 @@ footer a{text-decoration:none}
     <a href="https://charlescrabtree.org">charlescrabtree.org</a></div>
 </div></footer>
 
-<script src="data.js?v=9"></script>
-<script src="app.js?v=9"></script>
+<script src="data.js?v=10"></script>
+<script src="app.js?v=10"></script>
 </body>
 </html>
