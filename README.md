@@ -12,7 +12,8 @@ Live: https://lobsterbush.github.io/election-frequency-dashboard/
   political polarization, with a fit line and correlation that recompute as you
   filter by regime type or search a country.
 - A ranking of the most frequent electorates.
-- National elections worldwide per year, 1945 to 2024.
+- National elections worldwide per year, 1945 to 2026. The final year is still
+  running, so its count is partial and the series is drawn dashed there.
 - Robustness of the estimates across alternative measures, and a comparison of
   complete-case and multiply-imputed results.
 

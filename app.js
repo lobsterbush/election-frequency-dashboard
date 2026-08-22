@@ -263,21 +263,35 @@
     [1950, 1970, 1990, 2010].forEach((t) => axis.appendChild(el("text", { x: x(t), y: H - M.b + 16, "text-anchor": "middle" }, t)));
     svg.appendChild(el("text", { class: "axis-title", x: 14, y: (M.t + H - M.b) / 2, "text-anchor": "middle",
       transform: "rotate(-90 14 " + ((M.t + H - M.b) / 2) + ")" }, "elections that year"));
+    // The calendar year in progress is only partly counted, so it is drawn
+    // dashed and left out of the trend: its low count is coverage, not decline.
+    const partialY = DASH.meta.partialYear || null;
+    const isPartial = (p) => partialY !== null && p.y >= partialY;
+    const full = d.filter((p) => !isPartial(p));
     let area = "M" + x(xmin) + "," + y(0), line = "";
-    d.forEach((p, i) => { const px = x(p.y), py = y(p.n); area += " L" + px + "," + py; line += (i ? " L" : "M") + px + "," + py; });
-    area += " L" + x(xmax) + "," + y(0) + " Z";
+    full.forEach((p, i) => { const px = x(p.y), py = y(p.n); area += " L" + px + "," + py; line += (i ? " L" : "M") + px + "," + py; });
+    area += " L" + x(full[full.length - 1].y) + "," + y(0) + " Z";
     svg.appendChild(el("path", { d: area, fill: "var(--color-ink-2)", opacity: 0.08 }));
     svg.appendChild(el("path", { d: line, fill: "none", stroke: "var(--color-ink-2)", "stroke-width": 1, opacity: 0.5 }));
-    // 5-year centred moving average
+    if (full.length < d.length) {
+      let tail = "M" + x(full[full.length - 1].y) + "," + y(full[full.length - 1].n);
+      d.filter(isPartial).forEach((p) => { tail += " L" + x(p.y) + "," + y(p.n); });
+      svg.appendChild(el("path", { d: tail, fill: "none", stroke: "var(--color-ink-2)",
+        "stroke-width": 1, "stroke-dasharray": "3 3", opacity: 0.5 }));
+      const last = d[d.length - 1];
+      svg.appendChild(el("text", { class: "era-lab", x: x(last.y) - 4, y: y(last.n) - 8,
+        "text-anchor": "end", fill: "var(--color-ink-2)" }, last.y + " partial"));
+    }
+    // 5-year centred moving average, complete years only
     let trend = "";
-    d.forEach((p, i) => {
-      const lo = Math.max(0, i - 2), hi = Math.min(d.length - 1, i + 2);
-      let s = 0, c = 0; for (let j = lo; j <= hi; j++) { s += d[j].n; c++; }
+    full.forEach((p, i) => {
+      const lo = Math.max(0, i - 2), hi = Math.min(full.length - 1, i + 2);
+      let s = 0, c = 0; for (let j = lo; j <= hi; j++) { s += full[j].n; c++; }
       trend += (i ? " L" : "M") + x(p.y) + "," + y(s / c);
     });
     svg.appendChild(el("path", { class: "trend", d: trend }));
-    // mark the busiest year
-    const peak = d.reduce((a, b) => (b.n > a.n ? b : a), d[0]);
+    // mark the busiest complete year
+    const peak = full.reduce((a, b) => (b.n > a.n ? b : a), full[0]);
     svg.appendChild(el("circle", { cx: x(peak.y), cy: y(peak.n), r: 3.5, fill: "var(--color-accent)" }));
     svg.appendChild(el("text", { class: "era-lab", x: x(peak.y), y: y(peak.n) - 8, "text-anchor": "middle",
       fill: "var(--color-accent)" }, peak.y + ": " + peak.n));
@@ -289,7 +303,8 @@
       let best = d[0], bd = Infinity;
       for (const p of d) { const dd = Math.abs(x(p.y) - loc.x); if (dd < bd) { bd = dd; best = p; } }
       hover.setAttribute("x1", x(best.y)); hover.setAttribute("x2", x(best.y)); hover.setAttribute("opacity", 1);
-      tipShow(tip, svg, x(best.y), y(best.n), "<b>" + best.y + "</b><br>" + best.n + " elections");
+      tipShow(tip, svg, x(best.y), y(best.n), "<b>" + best.y + "</b><br>" + best.n +
+        " elections" + (isPartial(best) ? "<br><i>year still in progress</i>" : ""));
     });
     svg.addEventListener("mouseleave", () => { hover.setAttribute("opacity", 0); tipHide(tip); });
   })();

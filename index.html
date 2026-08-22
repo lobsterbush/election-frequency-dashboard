@@ -208,8 +208,9 @@ footer a{text-decoration:none}
 
 <section id="time"><div class="wrap">
   <h2>Elections over time</h2>
-  <p class="section-lead">National polling occasions worldwide each year, 1945 to 2024. The rise
-  tracks decolonisation, the third wave of democratisation, and the post-communist transitions.</p>
+  <p class="section-lead">National polling occasions worldwide each year, 1945 to 2026. The rise
+  tracks decolonisation, the third wave of democratisation, and the post-communist transitions.
+  2026 is still running, so its count is partial and the series is drawn dashed there.</p>
   <div class="figure"><div class="figwrap">
     <svg id="timeseries" viewBox="0 0 720 340" role="img" aria-label="Elections per year worldwide"></svg>
     <div class="tip" id="tip3"></div>
@@ -230,7 +231,7 @@ footer a{text-decoration:none}
     </div>
     <div class="ctrl-group"><span>Period</span>
       <div class="seg" data-role="period">
-        <button data-p="1945" aria-pressed="true">1945–2024</button>
+        <button data-p="1945" aria-pressed="true">1945–2026</button>
         <button data-p="2000" aria-pressed="false">2000–2020</button>
       </div>
     </div>
@@ -265,7 +266,7 @@ footer a{text-decoration:none}
     </div>
     <div class="ctrl-group"><span>Period</span>
       <div class="seg" data-role="period">
-        <button data-p="1945" aria-pressed="true">1945–2024</button>
+        <button data-p="1945" aria-pressed="true">1945–2026</button>
         <button data-p="2000" aria-pressed="false">2000–2020</button>
       </div>
     </div>
@@ -433,7 +434,8 @@ footer a{text-decoration:none}
     <dt>Indifference</dt><dd>Voter turnout, share of registered voters. Lower turnout is the proxy.</dd>
     <dt>Sources</dt><dd>NELDA 6.0 (1945–2020, authoritative); International IDEA for the post-2020
       extension, with IFES ElectionGuide filling the country-years IDEA lacks (held elections only, to
-      2026); V-Dem v14 (outcomes and covariates); World Bank (robustness covariates).</dd>
+      2026); V-Dem v14 (outcomes and covariates); World Bank (robustness covariates). 2026 is the
+      calendar year in progress, so its counts are partial and it is excluded from the trend line.</dd>
     <dt>Cross-check</dt><dd>The three election sources agree closely where they overlap: NELDA vs IDEA
       and NELDA vs ElectionGuide before 2020 (both 98% within one election), and IDEA vs ElectionGuide
       after 2020 (93% exact, 99% within one), so the sources reinforce rather than pull against the counts.</dd>
@@ -450,7 +452,7 @@ footer a{text-decoration:none}
     <a href="https://charlescrabtree.org">charlescrabtree.org</a></div>
 </div></footer>
 
-<script src="data.js?v=12"></script>
-<script src="app.js?v=12"></script>
+<script src="data.js?v=13"></script>
+<script src="app.js?v=13"></script>
 </body>
 </html>
